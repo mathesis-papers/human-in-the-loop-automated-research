@@ -71,10 +71,14 @@ kernel and a single required check; an execution plane that separates seats,
 machines and credentials; and a dissemination loop that returns results to
 the authors of the problems and their replies to the loop. In a two-day case
 study, 31 short human messages directed work in which 31 derivation modules
-enlarged two research drafts to 270 and 192 pages, the derivation gate
-refuted 52 claims of the source material in the mathematical draft alone,
-three formal units were merged into the library, each within four hours of
-its preregistration, and ten updates went to a public book. We argue that when machine
+enlarged two research drafts, now of 284 and 195 pages after two rounds of
+whole-paper review, the derivation gate refuted 52 claims of the source
+material in the mathematical draft alone, three formal units were merged into
+the library, each within four hours of its preregistration, and ten updates
+went to a public book. A referee's demand for hand-checkable proofs also
+surfaced two published conjectures that the formal library had already
+settled weeks earlier; the written proofs then passed cross-family review. We
+argue that when machine
 output exceeds human reading capacity, research organisation shifts from
 producing derivations to specifying intent, designing gates and auditing
 evidence, and we offer the method as a reproducible design for that regime.
@@ -122,6 +126,11 @@ the authors of the problem (Sections~\ref{sec:publication}--\ref{sec:outreach});
 and (v) a case study with measurements of human input and gate efficacy
 (Sections~\ref{sec:steering}--\ref{sec:example}). Templates for every protocol
 are given in Appendix~\ref{app:templates}.
+
+In the case study, a referee's demand for hand-checkable proofs led to two
+published conjectures that the formal library had settled six weeks earlier;
+we use the episode as evidence that the ledger serves as the system's memory
+of what is true (Section~\ref{sec:ledgerfirst}).
 
 \paragraph{Thesis.} We argue that when machine output exceeds human reading
 capacity, the scarce human resource is judgement about objectives and
@@ -178,7 +187,7 @@ designing gates, and auditing evidence. We conjecture that this shift is
 general wherever automated derivation is cheap and verification is costly,
 and we support the conjecture with the case study of
 Section~\ref{sec:example}, in which 31 short human messages directed work that
-produced three kernel-checked units and two refereed drafts of 270 and 192
+produced three kernel-checked units and two refereed drafts of 284 and 195
 pages within two days. The methodology of this paper is a concrete design for that regime; in
 mathematics, a proof kernel serves as the arbiter of formal claims, and the
 remaining claims carry an explicit status.
@@ -1208,7 +1217,7 @@ happened. Each row is a kind of activity recorded in the line's queue.
 \toprule
 Activity & Where it ran & Identity route & Gate & Who decided \\
 \midrule
-Derivation and integration rounds; the drafts reached rounds 36 and 37 by 11:08 UTC & Coordinating session and author subagents on a local workstation & The owner's session & Check script per round; referee findings addressed & Coordinating session within the goal \\
+Derivation and integration rounds; the drafts reached rounds 38 and 39 by 12:28 UTC & Coordinating session and author subagents on a local workstation & The owner's session & Check script per round; referee findings addressed & Coordinating session within the goal \\
 Delegated and adversarial jobs (a roundness proof and its review; a counterexample and its review; field and dimension audits; 31 derivation modules, about four at a time) & Second-family command-line jobs on the same computer & Local command-line client & Check script passes; hostile review; author-agent verification & Owner's delegation instruction; coordinating session \\
 Referee rounds, the coverage audit and the whole-paper reviews & Fresh referee and audit subagents & The owner's session & Report written before integration & Coordinating session \\
 Formal units (unit 8 settled after its first push passed; unit 9 opened and waiting on a cache-producing run) & Build-machine agents under heca & Broker SSH execution under a named principal; code-hosting access on the build machine & Kernel, single required check, first push verified & Machine gates; model review of proof shape \\
@@ -1577,11 +1586,14 @@ file of Box~\ref{box:goal}, started a remote formalization agent, and began
 running the loop. Half an hour later the owner widened the intent into three
 papers and asked that concrete tasks go to subagents.
 
-\paragraph{Rounds, referees and units.} By the 22nd hour the mathematical
-draft had been revised in 36 rounds and the physical draft in 37, and
-fourteen referee reports on the two drafts were on file, including one
-whole-paper review of each; a re-review of each on a new snapshot was in
-progress. The formalization line merged three units on the first evening and
+\paragraph{Rounds, referees and units.} At 12:28~UTC on 20 November 2026 the
+mathematical draft had been revised in 38 rounds (284 pages, 331 registered
+checks) and the physical draft in 39 (195 pages, 206 checks and 2{,}352
+example assertions), and sixteen referee reports on the two drafts were on
+file: seven on each, including two whole-paper reviews of each on successive
+frozen snapshots, and two reading both. Both second whole-paper reviews
+returned ``ready after listed minor fixes'' and found no false theorem; the
+fixes were applied. The formalization line merged three units on the first evening and
 opened a fourth the next morning, which was still waiting on shared
 continuous integration (Section~\ref{sec:heca}); ten book pull requests
 carried stabilized results back to the book. Table~\ref{tab:caught} lists what the gates caught
@@ -1610,6 +1622,8 @@ Required check & Machine & A missing build cache failed a unit's check & Rule: w
 Derivation modules & Second family, status ledger & 52 claims of the source material refuted in the mathematical draft, more in the physical draft, including claims of the owner's brief & Kept as refuted claims with counterexamples and corrected statements \\
 Coverage audit & Read-only subagent & 28 partly and 4 not covered book files & Seven further modules \\
 Whole-paper review & Fresh context, after bulk merge & No false theorem; abstract sentences stronger than the theorems; an input presented as derived; status tables not rebuilt; inconsistent wording on formal verification; unattributed classical results & Generated inventory; label tables; uniform refuted format; re-review \\
+Whole-paper re-review & Fresh context, new snapshot & A layout regression that hid table rows; five statements whose only proof was a pointer to the library; novelty claims contradicted by the paper's own citations; wording near a famous open conjecture & Fixed; hand proofs written (Section~\ref{sec:ledgerfirst}) \\
+Cross-family review of the hand proofs & Second family, independent code & Two written proofs of published conjectures & ``Proof correct and complete''; wording repairs applied \\
 Author-seat re-verification & First family on second-family output & A cited article that does not exist (wrong title and journal); wrong titles of cited papers; a probability stated as 0.145 that is 0.165 under the paper's reading & Corrected \\
 Owner & Human & Drafts too conservative; too many parallel jobs & Enlarged; capped \\
 \bottomrule
@@ -1660,6 +1674,41 @@ family's adversarial review caught gaps in delegated proofs, the author seats
 caught bibliographic and numerical errors in module output, the machine gates
 caught an infrastructure failure, and the human caught two matters of
 scale.
+
+\subsection{The ledger first, the written paper second}
+\label{sec:ledgerfirst}
+The second whole-paper review of the mathematical draft flagged five
+statements whose only proof was a pointer to the formal library, which
+contradicted the draft's statement that every proof can be checked by hand.
+The author seat wrote hand proofs for four of them by reading the Lean
+sources, and relabelled the fifth as a library result not proved in the
+paper. Two of the four turned out to settle published conjectures: case~(ii)
+of a weighted Böttcher--Wenzel commutator-norm inequality conjectured by
+Mayumi, Kimura, Ohno and Chruściński in 2024, and the width-three case of a
+quantum max-flow/min-cut conjecture for the bridge tensor network of
+Gesmundo, Lysikov and Steffan, published in 2025. The library had already
+settled both formally in early October 2026: each has a public problem
+record, a preregistration issue (trureturing issues 13715 and 14652) and a
+merged pull request whose required check passed (14172 on 8 October and
+14787 on 9 October), with frozen declarations. Each written proof was then
+reviewed by a second-family command-line job that audited it lemma by lemma
+and ran its own computations; both returned ``proof correct and complete''
+and confirmed that the theorem is the conjectured statement, against
+page-specific transcriptions held in the library; neither review opened the
+primary journal texts. The draft now states that the conjectures were first
+settled by machine-checked proofs in the library and that it gives written
+proofs.
+
+The episode supports three claims of the method. \emph{The formal ledger is
+the system's memory of what is true}: the results existed in the ledger six
+weeks before any agent writing the paper knew of them. \emph{A referee gate
+that insists on hand-checkable proofs converts ledger entries into
+mathematics a human can read.} \emph{Cross-family review with independent
+code is affordable enough to apply to every claim of this weight.} The
+episode also recorded an error of the coordinating session, which first
+reported the two results as findings of the day and corrected their
+provenance after reading the library's records: attribution must be measured,
+not remembered.
 
 \section{Design principles}
 \label{sec:lessons}
@@ -2088,9 +2137,9 @@ The figures in this paper are as of 20 November 2026.
 \toprule
 Source & Version and figures \\
 \midrule
-trureturing \citep{trureturingrepo} & Branch \code{dev} at \code{d3cafbe}: 16{,}436 Lean files, 14{,}832 frozen modules, 5 skills; formalization units in pull requests 31765, 31864 and 31928, preregistered in issues 31739, 31839 and 31913 \\
+trureturing \citep{trureturingrepo} & Pull requests 14172 and 14787 and issues 13715 and 14652 (the two conjectures of Section~\ref{sec:ledgerfirst}); branch \code{dev} at \code{d3cafbe}: 16{,}436 Lean files, 14{,}832 frozen modules, 5 skills; formalization units in pull requests 31765, 31864 and 31928, preregistered in issues 31739, 31839 and 31913 \\
 trureturing-books \citep{booksrepo} & Book pull requests 564, 566, 568, 569, 570, 575, 593, 602, 625 and 628; archive pull request 630 (closed) \\
-Working repositories & \code{mathesis-papers/ternions-and-minimal-arcs} (270 pages), \code{mathesis-papers/axiom-omega-origin-of-quantum-mechanics} (192 pages), \code{mathesis-papers/human-in-the-loop-automated-research}; all public \\
+Working repositories & \code{mathesis-papers/ternions-and-minimal-arcs} (284 pages), \code{mathesis-papers/axiom-omega-origin-of-quantum-mechanics} (195 pages), \code{mathesis-papers/human-in-the-loop-automated-research}; all public \\
 Mathesis \citep{mathesisrepo} & Branch \code{develop} at \code{e544a7b}; referee prompts in \code{api/crates/layer3-review/src/referee_prompts.rs} \\
 Mathesis catalog \citep{catalogrepo} & Commit \code{3f4c6e9}: 54 papers, 47 with DOI, 352 statements \\
 Outreach control repository (private) & Aggregate counts from its contact, result, note and submission tables \\
