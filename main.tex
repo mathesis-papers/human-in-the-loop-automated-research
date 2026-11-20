@@ -73,9 +73,9 @@ the authors of the problems and their replies to the loop. In a two-day case
 study, 31 short human messages directed work in which 31 derivation modules
 enlarged two research drafts, now of 284 and 195 pages after two rounds of
 whole-paper review, the derivation gate refuted 52 claims of the source
-material in the mathematical draft alone, three formal units were merged into
-the library, each within four hours of its preregistration, and ten updates
-went to a public book. A referee's demand for hand-checkable proofs also
+material in the mathematical draft alone, six formal units were merged into
+the library, five of them within four hours of their preregistration, and 87
+corrections went back to a public book in eight pull requests. A referee's demand for hand-checkable proofs also
 surfaced two published conjectures that the formal library had already
 settled weeks earlier; the written proofs then passed cross-family review. We
 argue that when machine
@@ -187,7 +187,7 @@ designing gates, and auditing evidence. We conjecture that this shift is
 general wherever automated derivation is cheap and verification is costly,
 and we support the conjecture with the case study of
 Section~\ref{sec:example}, in which 31 short human messages directed work that
-produced three kernel-checked units and two refereed drafts of 284 and 195
+produced six kernel-checked units and two refereed drafts of 284 and 195
 pages within two days. The methodology of this paper is a concrete design for that regime; in
 mathematics, a proof kernel serves as the arbiter of formal claims, and the
 remaining claims carry an explicit status.
@@ -880,16 +880,21 @@ bounded by its goal file---its own worktree and scratch directory, a cap on
 build threads, recorded process identifiers---and is replaced by a fresh
 agent with a small context when its context grows large; a waiting agent uses
 one blocking command for continuous integration instead of polling. In the
-AXIOM-$\Omega$ line three units were merged in one day: a rank-one
-classification from faithful round-trip comparison, the rigidity of the
-continuous cosine doubling equation on the circle, and the reduction of a
-two-readout law to d'Alembert's functional equation; a fourth unit was
-preregistered and opened the next day \citep{prereg31739,axiomprs}.%
-\footnote{The public issue titles number the units 1, 7, 8 and 9: the first
-goal file reserved units 2--6 for later, and the second goal file continued
-with unit~7.} From preregistration to merge the three units took 3~h~46~min,
-1~h~09~min and 1~h~08~min; from pull request to merge, 2~h~13~min, 38~min and
-39~min. Appendix~\ref{app:templates} shows the structure of a public
+AXIOM-$\Omega$ line six units were merged, each preregistered before any
+Lean was written: on the first evening a rank-one classification from
+faithful round-trip comparison, the rigidity of the continuous cosine
+doubling equation on the circle, and the reduction of a two-readout law to
+d'Alembert's functional equation; on the second night a classification from
+continuity on exponential rays, a Chebyshev recurrence for the quaternion
+heap, and a finite least-action inequality for cosines
+\citep{prereg31739,axiomprs}.%
+\footnote{The public issue titles number the units 1, 7, 8, 9, 10 and 11:
+the first goal file reserved units 2--6 for later, and the second goal file
+continued with unit~7.} From preregistration to merge the units took
+3~h~46~min, 1~h~09~min, 1~h~08~min, 13~h~24~min, 1~h~56~min and 1~h~08~min;
+the fourth waited on shared continuous integration (Section~\ref{sec:night}).
+Two preregistration issues stay open on purpose, each disclosing a missing
+binding certificate of the escape audit. Appendix~\ref{app:templates} shows the structure of a public
 preregistration issue and of a pull-request header.
 
 \section{The execution and identity plane}
@@ -1080,13 +1085,9 @@ episode produced the rule.
 called done. The general principle is that agents wait on events and
 coordinators watch: an agent blocks on one event and does nothing else, and
 the coordinating session, which runs anyway, observes the event and wakes the
-agent. The fourth unit of the case study shows the cost of the alternative
-and the limit of the remedy. Its pull request waited on a cache-producing
-run of the shared continuous integration that ended after about five hours
-with the status ``incomplete, rerun to continue''; the remote agent, which had
-earlier spent tens of millions of input tokens on polling and had been told
-to stop, restarted the producer once on the coordinator's message and went
-idle again. Formal throughput is bounded by shared continuous integration.
+agent. The remote agent of the case study had earlier spent tens of millions
+of input tokens on polling before it was told to stop. Formal throughput is
+bounded by shared continuous integration (Section~\ref{sec:night}).
 
 \subsection{CMA: managed agents as a service}
 \label{sec:cma}
@@ -1220,7 +1221,7 @@ Activity & Where it ran & Identity route & Gate & Who decided \\
 Derivation and integration rounds; the drafts reached rounds 38 and 39 by 12:28 UTC & Coordinating session and author subagents on a local workstation & The owner's session & Check script per round; referee findings addressed & Coordinating session within the goal \\
 Delegated and adversarial jobs (a roundness proof and its review; a counterexample and its review; field and dimension audits; 31 derivation modules, about four at a time) & Second-family command-line jobs on the same computer & Local command-line client & Check script passes; hostile review; author-agent verification & Owner's delegation instruction; coordinating session \\
 Referee rounds, the coverage audit and the whole-paper reviews & Fresh referee and audit subagents & The owner's session & Report written before integration & Coordinating session \\
-Formal units (unit 8 settled after its first push passed; unit 9 opened and waiting on a cache-producing run) & Build-machine agents under heca & Broker SSH execution under a named principal; code-hosting access on the build machine & Kernel, single required check, first push verified & Machine gates; model review of proof shape \\
+Formal units (unit 8 settled after its first push passed; unit 9 opened, then merged after the second night's re-routing; units 10 and 11 merged) & Build-machine agents under heca & Broker SSH execution under a named principal; code-hosting access on the build machine & Kernel, single required check, first push verified & Machine gates; model review of proof shape \\
 Book updates (two merged) & Author subagents; hosted checks & Code-hosting identity of the session & Book structure check; required checks; squash merge & Standing instruction to write back to the book \\
 The drafts' working repositories (an archive pull request in the book repository, closed; then three public repositories) & Coordinating session & Code-hosting identity of the session & Review by a second team member; later the platform's formal review & Owner's instructions; second team member \\
 Outreach and notes running alongside & Managed agents on CMA; coordinator on hosted CI & Scoped broker credentials; the coordinator's own mailbox token & Review of the exact version; fresh mailbox check & Review loop under standing decisions \\
@@ -1249,14 +1250,20 @@ book's structure check locally, and the pull request is squash-merged when
 the required checks are green. The AXIOM-$\Omega$ line wrote back through
 ten such pull requests in two days, each merged within 45 minutes of being
 opened (median about 18 minutes); one of them corrected a sentence of an
-earlier one after a new result contradicted it.
+earlier one after a new result contradicted it. After the drafts were
+finished, eight further pull requests carried 87 corrections from the drafts
+back into the book, all merged. A project rule introduced in the book
+repository that day requires a false or overstated statement to be corrected
+in place to the strongest statement that can be proved, with examples showing
+that its hypotheses cannot be dropped; it replaced the planned form of the
+write-back, correction remarks appended to the text.
 
 \paragraph{Where the drafts live.} The research drafts and this paper live in
 three public working repositories of the review platform's organisation:
 \begin{itemize}[itemsep=0pt]
 \item \code{mathesis-papers/ternions-and-minimal-arcs} (the mathematical draft),
 \item \code{mathesis-papers/axiom-omega-origin-of-quantum-mechanics} (the physical draft),
-\item \code{mathesis-papers/human-in-the-loop-automated-research} (this paper).
+\item \code{mathesis-papers/human-in-the-loop-automated-research} (this paper, 44 pages in this version).
 \end{itemize}
 Their stated
 purpose is to turn the book's content into papers in academic language and to
@@ -1530,51 +1537,57 @@ books, for an origin-free comparison of points: a ternary operation on a
 manifold and a comparison function invariant under its transports that
 obeys a round-trip law. On 19 November 2026 the owner asked whether the
 axioms made sense in the light of the current library. Figure~\ref{fig:timeline}
-shows the next 22~hours as durations from that first message; all figures of
-this section were read at 11:08~UTC on 20 November 2026.
+shows the next 33~hours as durations from that first message. Figures in this
+section carry the time at which they were read.
 
 \begin{figure}[htbp]
 \centering
-\begin{tikzpicture}[x=0.6cm,y=0.62cm,
+\begin{tikzpicture}[x=0.4cm,y=0.62cm,
   lane/.style={font=\scriptsize,anchor=east},
-  ev/.style={circle,fill=humanred,inner sep=1.1pt},
-  bk/.style={rectangle,fill=linkblue,inner sep=1.4pt},
-  rf/.style={diamond,fill=reviewgreen,inner sep=1.2pt},
-  dj/.style={circle,fill=standorange,inner sep=1.1pt}]
-\foreach \y/\t in {0/Owner,-1/Formal units,-2/Book and repos,-3/Referee reports,-4/Jobs and modules}{
+  ev/.style={circle,fill=humanred,inner sep=1.0pt},
+  bk/.style={rectangle,fill=linkblue,inner sep=1.3pt},
+  rf/.style={diamond,fill=reviewgreen,inner sep=1.1pt},
+  dj/.style={circle,fill=standorange,inner sep=1.0pt}]
+\foreach \y/\t in {0/Owner,-1/Formal units,-2/Book and repos,-3/Reviews,-4/Jobs and modules}{
   \node[lane] at (-0.2,\y) {\t};
-  \draw[planegray!40] (0,\y) -- (22.3,\y);}
-\foreach \x in {0,2,...,22}{\draw[planegray] (\x,-4.6) -- (\x,-4.45) node[below=2pt,font=\tiny] {\x\,h};}
-\draw[planegray] (0,-4.45) -- (22.3,-4.45);
+  \draw[planegray!40] (0,\y) -- (33.6,\y);}
+\foreach \x in {0,4,...,32}{\draw[planegray] (\x,-4.6) -- (\x,-4.45) node[below=2pt,font=\tiny] {\x\,h};}
+\draw[planegray] (0,-4.45) -- (33.6,-4.45);
 \foreach \x in {0,0.12,0.65,1.15,2.02,2.47,2.50,2.52,2.98,3.18,3.65,4.58,4.63,4.83,15.52,15.62,16.07,16.10,17.93,18.03,18.45,18.65,18.72,18.73,19.18,19.82,19.88,20.00,20.72,20.78,20.79}{\node[ev] at (\x,0) {};}
 \node[font=\tiny,above] at (2.02,0.15) {goal};
-\node[font=\tiny,above] at (2.9,0.55) {three papers};
 \node[font=\tiny,above] at (15.62,0.15) {delegate};
-\node[font=\tiny,above] at (17.9,0.55) {enlarge, cap};
-\node[font=\tiny,above] at (19.9,0.15) {genre};
-\node[font=\tiny,above] at (21.2,0.55) {repositories};
+\node[font=\tiny,above] at (18.4,0.55) {enlarge, genre, repositories};
 \draw[line width=3pt,linkblue!60] (2.27,-1) -- (6.04,-1);
 \draw[line width=3pt,linkblue!60] (6.90,-1) -- (8.05,-1);
 \draw[line width=3pt,linkblue!60] (8.76,-1) -- (9.90,-1);
-\draw[line width=3pt,linkblue!25] (15.63,-1) -- (22.0,-1);
-\node[font=\tiny,above] at (4.15,-0.95) {unit 1};
+\draw[line width=3pt,linkblue!60] (15.63,-1) -- (29.03,-1);
+\draw[line width=3pt,linkblue!60] (29.85,-1) -- (31.78,-1);
+\draw[line width=3pt,linkblue!60] (31.93,-1) -- (33.05,-1);
+\draw[line width=1.2pt,planegray] (16.67,-1.32) -- (21.79,-1.32);
+\draw[line width=1.2pt,planegray] (21.85,-1.32) -- (27.15,-1.32);
+\node[font=\tiny,above] at (4.15,-0.95) {1};
 \node[font=\tiny,above] at (7.47,-0.95) {7};
 \node[font=\tiny,above] at (9.33,-0.95) {8};
-\node[font=\tiny,above] at (18.8,-0.95) {unit 9 (waiting on shared CI)};
-\foreach \x in {3.70,4.20,4.66,4.92,6.23,7.12,8.95,10.13,17.25,18.31}{\node[bk] at (\x,-2) {};}
-\node[draw=linkblue,inner sep=1.4pt] at (18.55,-2) {};
-\node[draw=linkblue,fill=white,diamond,inner sep=1.2pt] at (20.71,-2) {};
-\foreach \x in {20.80,20.81,20.82}{\node[draw=linkblue,fill=linkblue!30,inner sep=1.4pt] at (\x,-2) {};}
-\foreach \x in {4.17,4.68,8.00,10.65,16.63,4.30,5.10,5.65,6.43,17.25,11.27,17.72,20.08,20.68}{\node[rf] at (\x,-3) {};}
+\node[font=\tiny,above] at (22.3,-0.95) {9};
+\node[font=\tiny,above] at (30.8,-0.95) {10};
+\node[font=\tiny,above] at (32.5,-0.95) {11};
+\node[font=\tiny,below] at (21.9,-1.32) {two full cache builds};
+\foreach \x in {3.70,4.20,4.66,4.92,6.23,7.12,8.95,10.13,17.25,18.31,24.08,24.63,25.20,25.63,25.98,26.43,26.85,27.53}{\node[bk] at (\x,-2) {};}
+\node[draw=linkblue,inner sep=1.3pt] at (18.55,-2) {};
+\node[draw=linkblue,fill=white,diamond,inner sep=1.1pt] at (20.71,-2) {};
+\foreach \x in {20.80,20.81,20.82}{\node[draw=linkblue,fill=linkblue!30,inner sep=1.3pt] at (\x,-2) {};}
+\foreach \x in {4.17,4.68,8.00,10.65,16.63,4.30,5.10,5.65,6.43,17.25,11.27,17.72,20.08,20.68,22.00,22.20,23.08,23.10}{\node[rf] at (\x,-3) {};}
 \foreach \x in {15.82,15.88,16.15,16.62,17.05,17.22,18.13,18.33,18.35,18.36,18.38,18.64,18.71,18.73,18.76,19.09,19.13,19.14,19.16,19.39,19.46,19.52,19.61,19.79,19.83,19.88,19.96,20.07,20.16,20.21,20.27,20.76,20.76,20.80,20.82,21.11,21.14,21.19}{\node[dj] at (\x,-4) {};}
 \end{tikzpicture}
-\caption{The first 22~hours of the AXIOM-$\Omega$ line, in hours after the
-owner's first message. Owner messages (red); formal units from
-preregistration to merge (bars; unit~9 still open); book pull requests at
-merge (filled squares), the archive pull request at opening (open square) and
-at closing (open diamond), and the three working repositories at creation
-(shaded squares); referee reports, including the two whole-paper reviews
-(green); results of delegated jobs and of the 31 derivation modules (orange).}
+\caption{The first 33~hours of the AXIOM-$\Omega$ line, in hours after the
+owner's first message. Owner messages up to 11:08~UTC on 20 November (red);
+formal units from preregistration to merge (bars, numbered as in the public
+issues) and the two full cache builds (grey); book pull requests at merge,
+including the eight write-back pull requests (filled squares), the archive
+pull request at opening (open square) and closing (open diamond), and the
+three working repositories at creation (shaded squares); referee reports,
+whole-paper reviews and the two cross-family proof reviews (green); results
+of delegated jobs and of the 31 derivation modules (orange).}
 \label{fig:timeline}
 \end{figure}
 
@@ -1593,9 +1606,8 @@ example assertions), and sixteen referee reports on the two drafts were on
 file: seven on each, including two whole-paper reviews of each on successive
 frozen snapshots, and two reading both. Both second whole-paper reviews
 returned ``ready after listed minor fixes'' and found no false theorem; the
-fixes were applied. The formalization line merged three units on the first evening and
-opened a fourth the next morning, which was still waiting on shared
-continuous integration (Section~\ref{sec:heca}); ten book pull requests
+fixes were applied. The formalization line merged three units on the first
+evening and three more on the second night (Section~\ref{sec:night}); ten book pull requests
 carried stabilized results back to the book. Table~\ref{tab:caught} lists what the gates caught
 along the way.
 
@@ -1624,6 +1636,7 @@ Coverage audit & Read-only subagent & 28 partly and 4 not covered book files & S
 Whole-paper review & Fresh context, after bulk merge & No false theorem; abstract sentences stronger than the theorems; an input presented as derived; status tables not rebuilt; inconsistent wording on formal verification; unattributed classical results & Generated inventory; label tables; uniform refuted format; re-review \\
 Whole-paper re-review & Fresh context, new snapshot & A layout regression that hid table rows; five statements whose only proof was a pointer to the library; novelty claims contradicted by the paper's own citations; wording near a famous open conjecture & Fixed; hand proofs written (Section~\ref{sec:ledgerfirst}) \\
 Cross-family review of the hand proofs & Second family, independent code & Two written proofs of published conjectures & ``Proof correct and complete''; wording repairs applied \\
+Post-deposit review of a unit & Review seat after the first freeze & A one-directional statement without its converse or necessity examples & Preregistration amended first; equivalence frozen \\
 Author-seat re-verification & First family on second-family output & A cited article that does not exist (wrong title and journal); wrong titles of cited papers; a probability stated as 0.145 that is 0.165 under the paper's reading & Corrected \\
 Owner & Human & Drafts too conservative; too many parallel jobs & Enlarged; capped \\
 \bottomrule
@@ -1674,6 +1687,56 @@ family's adversarial review caught gaps in delegated proofs, the author seats
 caught bibliographic and numerical errors in module output, the machine gates
 caught an infrastructure failure, and the human caught two matters of
 scale.
+
+\subsection{The second night: formal units under shared infrastructure}
+\label{sec:night}
+Units 9, 10 and 11 were merged on the second night at 18:08, 20:53 and
+22:10~UTC, within about four hours of each other. The episodes that preceded
+and accompanied them are method data on how the control structure behaves
+when shared infrastructure changes underneath it.
+
+\paragraph{Two builds that stored nothing.} Unit 9's pull request waited on a
+full cache-producing build of the shared continuous integration. Two such
+builds of about five hours each ended ``incomplete, rerun to continue''; the
+second started from zero, because the first had never stored its progress.
+The coordinating session found this only by reading the run log after the
+second failure. In the meantime it had told the owner that the run was
+continuing from saved progress, an inference stated as fact, and it corrected
+the statement in the same report channel. The rule that followed is the one
+of Section~\ref{sec:ledgerfirst}: state what was read, not what was inferred.
+
+\paragraph{A gate that changed under a waiting unit.} While the second build
+ran, the repository's continuous integration was changed so that pull
+requests receive scoped checks of the affected modules and no full build;
+the build had become obsolete about three and a half hours before it ended.
+The build-machine agent detected the change when a re-request produced no
+run, and handed the unit back as blocked. The coordinating session
+re-routed it within minutes---update the branch to the current integration
+branch and run the new scoped checks---and unit 9 merged 1~h~40~min after
+the re-routing message.
+
+\paragraph{A delivery criterion that could not be met.} The full reports on
+the integration branch then failed for a long run of consecutive pushes: at
+22:19~UTC on 20 November, 102 consecutive completed runs between 13:32 and
+20:25~UTC had failed, a window that began before unit 9 was merged, and 17 of
+the 18 runs completed after it succeeded. Because the goal file's delivery
+criterion---the first push to the integration branch verified---could not be
+met for reasons outside the unit, the coordinating session changed it for the
+remaining units to: scoped required checks pass, merge, and record the run of
+the first push and its result without waiting.
+
+\paragraph{A review gate after deposit.} The first deposit of unit 10 froze a
+one-directional statement. Review after deposit rejected it for a missing
+converse and for missing examples showing that the hypotheses are necessary.
+The agent amended the public preregistration before editing the Lean, and the
+frozen statement is the equivalence.
+
+\paragraph{Shared-machine limits under pressure.} During the night a local
+check rebuilt dependencies a second time; the build-machine agent stopped the
+processes it had registered and copied the missing pinned dependency files
+read-only from the main checkout, recording where it had taken them from. The
+coordinating session restated the limits to the agent that night: stop only
+recorded process identifiers, and treat other working trees as read-only.
 
 \subsection{The ledger first, the written paper second}
 \label{sec:ledgerfirst}
@@ -2137,9 +2200,9 @@ The figures in this paper are as of 20 November 2026.
 \toprule
 Source & Version and figures \\
 \midrule
-trureturing \citep{trureturingrepo} & Pull requests 14172 and 14787 and issues 13715 and 14652 (the two conjectures of Section~\ref{sec:ledgerfirst}); branch \code{dev} at \code{d3cafbe}: 16{,}436 Lean files, 14{,}832 frozen modules, 5 skills; formalization units in pull requests 31765, 31864 and 31928, preregistered in issues 31739, 31839 and 31913 \\
-trureturing-books \citep{booksrepo} & Book pull requests 564, 566, 568, 569, 570, 575, 593, 602, 625 and 628; archive pull request 630 (closed) \\
-Working repositories & \code{mathesis-papers/ternions-and-minimal-arcs} (284 pages), \code{mathesis-papers/axiom-omega-origin-of-quantum-mechanics} (195 pages), \code{mathesis-papers/human-in-the-loop-automated-research}; all public \\
+trureturing \citep{trureturingrepo} & Pull requests 14172 and 14787 and issues 13715 and 14652 (the two conjectures of Section~\ref{sec:ledgerfirst}); branch \code{dev} at \code{d3cafbe}: 16{,}436 Lean files, 14{,}832 frozen modules, 5 skills; formalization units in pull requests 31765, 31864, 31928, 32093, 32449 and 32477, preregistered in issues 31739, 31839, 31913, 32083, 32404 and 32465 \\
+trureturing-books \citep{booksrepo} & Book pull requests 564, 566, 568, 569, 570, 575, 593, 602, 625 and 628; archive pull request 630 (closed); write-back pull requests 658, 660, 662, 667, 670, 672, 674 and 675 (87 corrections) \\
+Working repositories & \code{mathesis-papers/ternions-and-minimal-arcs} (284 pages), \code{mathesis-papers/axiom-omega-origin-of-quantum-mechanics} (195 pages), \code{mathesis-papers/human-in-the-loop-automated-research} (44 pages); all public \\
 Mathesis \citep{mathesisrepo} & Branch \code{develop} at \code{e544a7b}; referee prompts in \code{api/crates/layer3-review/src/referee_prompts.rs} \\
 Mathesis catalog \citep{catalogrepo} & Commit \code{3f4c6e9}: 54 papers, 47 with DOI, 352 statements \\
 Outreach control repository (private) & Aggregate counts from its contact, result, note and submission tables \\
