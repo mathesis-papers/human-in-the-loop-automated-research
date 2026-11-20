@@ -893,8 +893,9 @@ the first goal file reserved units 2--6 for later, and the second goal file
 continued with unit~7.} From preregistration to merge the units took
 3~h~46~min, 1~h~09~min, 1~h~08~min, 13~h~24~min, 1~h~56~min and 1~h~08~min;
 the fourth waited on shared continuous integration (Section~\ref{sec:night}).
-Two preregistration issues stay open on purpose, each disclosing a missing
-binding certificate of the escape audit. Appendix~\ref{app:templates} shows the structure of a public
+After the six units, one audit registration closed a disclosed gap in the
+escape audit of the last unit; one preregistration issue stays open on
+purpose, disclosing a missing binding certificate (Section~\ref{sec:night}). Appendix~\ref{app:templates} shows the structure of a public
 preregistration issue and of a pull-request header.
 
 \section{The execution and identity plane}
@@ -1731,6 +1732,20 @@ converse and for missing examples showing that the hypotheses are necessary.
 The agent amended the public preregistration before editing the Lean, and the
 frozen statement is the equivalence.
 
+\paragraph{Classify a gap before working on it.} After the six units, the
+coordinating session asked the build-machine agent to classify each of the
+two disclosed audit gaps before writing any Lean: closable inside the line,
+needing a change to shared tooling, or a real mathematical difference between
+source and frozen statement. Both were first assessed as closable inside the
+line. One was closed within about an hour: the audit registration was merged
+after its scoped required checks passed, and its issue was closed. The other
+was reclassified by evidence: its Lean equivalence passed the kernel, but the
+repository's audit tool did not issue the certificate within its work budget,
+and two attempts each drove the tool to a very large memory footprint on the
+shared build machine; the agent stopped its own recorded process both times,
+kept the evidence for the tool's owner and left the issue open, and the
+coordinating session forbade a third attempt on that machine.
+
 \paragraph{Shared-machine limits under pressure.} During the night a local
 check rebuilt dependencies a second time; the build-machine agent stopped the
 processes it had registered and copied the missing pinned dependency files
@@ -2200,7 +2215,7 @@ The figures in this paper are as of 20 November 2026.
 \toprule
 Source & Version and figures \\
 \midrule
-trureturing \citep{trureturingrepo} & Pull requests 14172 and 14787 and issues 13715 and 14652 (the two conjectures of Section~\ref{sec:ledgerfirst}); branch \code{dev} at \code{d3cafbe}: 16{,}436 Lean files, 14{,}832 frozen modules, 5 skills; formalization units in pull requests 31765, 31864, 31928, 32093, 32449 and 32477, preregistered in issues 31739, 31839, 31913, 32083, 32404 and 32465 \\
+trureturing \citep{trureturingrepo} & Pull requests 14172 and 14787 and issues 13715 and 14652 (the two conjectures of Section~\ref{sec:ledgerfirst}); branch \code{dev} at \code{d3cafbe}: 16{,}436 Lean files, 14{,}832 frozen modules, 5 skills; formalization units in pull requests 31765, 31864, 31928, 32093, 32449 and 32477, preregistered in issues 31739, 31839, 31913, 32083, 32404 and 32465; audit registration in pull request 32533 \\
 trureturing-books \citep{booksrepo} & Book pull requests 564, 566, 568, 569, 570, 575, 593, 602, 625 and 628; archive pull request 630 (closed); write-back pull requests 658, 660, 662, 667, 670, 672, 674 and 675 (87 corrections) \\
 Working repositories & \code{mathesis-papers/ternions-and-minimal-arcs} (284 pages), \code{mathesis-papers/axiom-omega-origin-of-quantum-mechanics} (195 pages), \code{mathesis-papers/human-in-the-loop-automated-research} (44 pages); all public \\
 Mathesis \citep{mathesisrepo} & Branch \code{develop} at \code{e544a7b}; referee prompts in \code{api/crates/layer3-review/src/referee_prompts.rs} \\
