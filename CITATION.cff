@@ -1,0 +1,56 @@
+cff-version: 1.2.0
+message: "If you cite this methodology manuscript or its archived benchmark artifacts, please use the metadata below."
+title: "Human-in-the-Loop Automated Research: Verification-Centered Scientific Discovery"
+version: "1.0"
+date-released: "2026-11-27"
+license: CC-BY-4.0
+repository-code: "https://github.com/mathesis-papers/human-in-the-loop-automated-research"
+authors:
+  - given-names: Chloe
+    family-names: Chew
+    affiliation: "ChronoAI Pte Ltd, Singapore"
+  - given-names: Abigail
+    family-names: Deng
+    affiliation: "ChronoAI Pte Ltd, Singapore"
+  - given-names: Zongzhe
+    family-names: Huang
+    affiliation: "ChronoAI Pte Ltd, Singapore"
+  - given-names: Louis
+    family-names: Li
+    affiliation: "ChronoAI Pte Ltd, Singapore"
+  - given-names: Rona
+    family-names: Liang
+    affiliation: "ChronoAI Pte Ltd, Singapore"
+  - given-names: Kai Huei
+    family-names: Lim
+    affiliation: "ChronoAI Pte Ltd, Singapore"
+  - given-names: Kai Wei
+    family-names: Lim
+    affiliation: "ChronoAI Pte Ltd, Singapore"
+  - given-names: Yitian
+    family-names: Liu
+    affiliation: "ChronoAI Pte Ltd, Singapore"
+  - given-names: Haobo
+    family-names: Ma
+    affiliation: "ChronoAI Pte Ltd, Singapore"
+  - given-names: Wen
+    family-names: Niu
+    affiliation: "ChronoAI Pte Ltd, Singapore"
+  - given-names: Jianwei
+    family-names: Su
+    affiliation: "ChronoAI Pte Ltd, Singapore"
+  - given-names: Calvin
+    family-names: Tan
+    affiliation: "ChronoAI Pte Ltd, Singapore"
+  - given-names: Haylee
+    family-names: Wang
+    affiliation: "ChronoAI Pte Ltd, Singapore"
+  - given-names: Jason
+    family-names: Wang
+    affiliation: "ChronoAI Pte Ltd, Singapore"
+  - given-names: Shining
+    family-names: Wang
+    affiliation: "ChronoAI Pte Ltd, Singapore"
+  - given-names: Wenlin
+    family-names: Zhang
+    affiliation: "ChronoAI Pte Ltd, Singapore; National University of Singapore, Singapore"

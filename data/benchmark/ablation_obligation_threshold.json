@@ -1,0 +1,281 @@
+{
+  "n_total": 20,
+  "n_flawed": 10,
+  "n_valid": 10,
+  "arms": {
+    "arm1_claude_prose": {
+      "TP": 10,
+      "FN": 0,
+      "FP": 2,
+      "TN": 8,
+      "recall_pct": 100.0,
+      "fpr_slop_pct": 20.0,
+      "precision_pct": 83.3,
+      "f1_pct": 90.9,
+      "accuracy_pct": 90.0,
+      "fisher_exact_p": 0.000714
+    },
+    "arm2_codex_prose": {
+      "TP": 10,
+      "FN": 0,
+      "FP": 3,
+      "TN": 7,
+      "recall_pct": 100.0,
+      "fpr_slop_pct": 30.0,
+      "precision_pct": 76.9,
+      "f1_pct": 87.0,
+      "accuracy_pct": 85.0,
+      "fisher_exact_p": 0.003096
+    },
+    "arm3_prose_union": {
+      "TP": 10,
+      "FN": 0,
+      "FP": 3,
+      "TN": 7,
+      "recall_pct": 100.0,
+      "fpr_slop_pct": 30.0,
+      "precision_pct": 76.9,
+      "f1_pct": 87.0,
+      "accuracy_pct": 85.0,
+      "fisher_exact_p": 0.003096
+    },
+    "arm3b_prose_intersection": {
+      "TP": 10,
+      "FN": 0,
+      "FP": 2,
+      "TN": 8,
+      "recall_pct": 100.0,
+      "fpr_slop_pct": 20.0,
+      "precision_pct": 83.3,
+      "f1_pct": 90.9,
+      "accuracy_pct": 90.0,
+      "fisher_exact_p": 0.000714
+    },
+    "arm4_exec_gate_standalone": {
+      "TP": 9,
+      "FN": 1,
+      "FP": 0,
+      "TN": 10,
+      "recall_pct": 90.0,
+      "fpr_slop_pct": 0.0,
+      "precision_pct": 100.0,
+      "f1_pct": 94.7,
+      "accuracy_pct": 95.0,
+      "fisher_exact_p": 0.000119
+    },
+    "arm5_prose_union_plus_exec_gate": {
+      "TP": 9,
+      "FN": 1,
+      "FP": 0,
+      "TN": 10,
+      "recall_pct": 90.0,
+      "fpr_slop_pct": 0.0,
+      "precision_pct": 100.0,
+      "f1_pct": 94.7,
+      "accuracy_pct": 95.0,
+      "fisher_exact_p": 0.000119
+    }
+  },
+  "per_claim": [
+    {
+      "blind_id": "ab_01",
+      "item_id": "flaw_10_horodecki_realign",
+      "source_arxiv": "2611.04568v1",
+      "ground_truth": "FLAWED",
+      "claude_prose": "FLAWED",
+      "codex_prose": "FLAWED",
+      "exec_gate": "FLAWED",
+      "exec_gate_status": "COUNTEREXAMPLE_VERIFIED"
+    },
+    {
+      "blind_id": "ab_02",
+      "item_id": "valid_03_two_del_entropy",
+      "source_arxiv": "2611.01064v1",
+      "ground_truth": "VALID",
+      "claude_prose": "FLAWED",
+      "codex_prose": "FLAWED",
+      "exec_gate": "VALID",
+      "exec_gate_status": "NO_COUNTEREXAMPLE"
+    },
+    {
+      "blind_id": "ab_03",
+      "item_id": "flaw_09_cayley_square",
+      "source_arxiv": "2611.03956v1",
+      "ground_truth": "FLAWED",
+      "claude_prose": "FLAWED",
+      "codex_prose": "FLAWED",
+      "exec_gate": "FLAWED",
+      "exec_gate_status": "COUNTEREXAMPLE_VERIFIED"
+    },
+    {
+      "blind_id": "ab_04",
+      "item_id": "valid_08_gen_fidelity_reduction",
+      "source_arxiv": "2609.09753v3",
+      "ground_truth": "VALID",
+      "claude_prose": "VALID",
+      "codex_prose": "VALID",
+      "exec_gate": "VALID",
+      "exec_gate_status": "NO_COUNTEREXAMPLE"
+    },
+    {
+      "blind_id": "ab_05",
+      "item_id": "flaw_07_petersen_z_n7",
+      "source_arxiv": "2610.24059v1",
+      "ground_truth": "FLAWED",
+      "claude_prose": "FLAWED",
+      "codex_prose": "FLAWED",
+      "exec_gate": "FLAWED",
+      "exec_gate_status": "COUNTEREXAMPLE_VERIFIED"
+    },
+    {
+      "blind_id": "ab_06",
+      "item_id": "valid_04_subentropy_subadd",
+      "source_arxiv": "2611.15431v1",
+      "ground_truth": "VALID",
+      "claude_prose": "FLAWED",
+      "codex_prose": "FLAWED",
+      "exec_gate": "VALID",
+      "exec_gate_status": "NO_COUNTEREXAMPLE"
+    },
+    {
+      "blind_id": "ab_07",
+      "item_id": "flaw_02_subentropy_ssa",
+      "source_arxiv": "2611.15431v1",
+      "ground_truth": "FLAWED",
+      "claude_prose": "FLAWED",
+      "codex_prose": "FLAWED",
+      "exec_gate": "FLAWED",
+      "exec_gate_status": "COUNTEREXAMPLE_VERIFIED"
+    },
+    {
+      "blind_id": "ab_08",
+      "item_id": "valid_06_qutrit_threshold",
+      "source_arxiv": "2611.04568v1",
+      "ground_truth": "VALID",
+      "claude_prose": "VALID",
+      "codex_prose": "VALID",
+      "exec_gate": "VALID",
+      "exec_gate_status": "NO_COUNTEREXAMPLE"
+    },
+    {
+      "blind_id": "ab_09",
+      "item_id": "flaw_06_square_well_covered",
+      "source_arxiv": "2611.03956v1",
+      "ground_truth": "FLAWED",
+      "claude_prose": "FLAWED",
+      "codex_prose": "FLAWED",
+      "exec_gate": "FLAWED",
+      "exec_gate_status": "COUNTEREXAMPLE_VERIFIED"
+    },
+    {
+      "blind_id": "ab_10",
+      "item_id": "flaw_05_residue_coset",
+      "source_arxiv": "2610.29608v1",
+      "ground_truth": "FLAWED",
+      "claude_prose": "FLAWED",
+      "codex_prose": "FLAWED",
+      "exec_gate": "FLAWED",
+      "exec_gate_status": "COUNTEREXAMPLE_VERIFIED"
+    },
+    {
+      "blind_id": "ab_11",
+      "item_id": "flaw_04_two_insertion_L3",
+      "source_arxiv": "2611.01064v1",
+      "ground_truth": "FLAWED",
+      "claude_prose": "FLAWED",
+      "codex_prose": "FLAWED",
+      "exec_gate": "FLAWED",
+      "exec_gate_status": "COUNTEREXAMPLE_VERIFIED"
+    },
+    {
+      "blind_id": "ab_12",
+      "item_id": "valid_02_hypercube_subquorum",
+      "source_arxiv": "2609.25128v4",
+      "ground_truth": "VALID",
+      "claude_prose": "VALID",
+      "codex_prose": "FLAWED",
+      "exec_gate": "VALID",
+      "exec_gate_status": "NO_COUNTEREXAMPLE"
+    },
+    {
+      "blind_id": "ab_13",
+      "item_id": "valid_09_class152_ogf",
+      "source_arxiv": "2611.21657v1",
+      "ground_truth": "VALID",
+      "claude_prose": "VALID",
+      "codex_prose": "VALID",
+      "exec_gate": "VALID",
+      "exec_gate_status": "NO_COUNTEREXAMPLE"
+    },
+    {
+      "blind_id": "ab_14",
+      "item_id": "valid_01_cubic_subquorum",
+      "source_arxiv": "2609.25128v4",
+      "ground_truth": "VALID",
+      "claude_prose": "VALID",
+      "codex_prose": "VALID",
+      "exec_gate": "VALID",
+      "exec_gate_status": "NO_COUNTEREXAMPLE"
+    },
+    {
+      "blind_id": "ab_15",
+      "item_id": "valid_05_complementary_pairing",
+      "source_arxiv": "2610.29608v1",
+      "ground_truth": "VALID",
+      "claude_prose": "VALID",
+      "codex_prose": "VALID",
+      "exec_gate": "VALID",
+      "exec_gate_status": "NO_COUNTEREXAMPLE"
+    },
+    {
+      "blind_id": "ab_16",
+      "item_id": "valid_07_gaussian_uncertainty",
+      "source_arxiv": "2610.05623v2",
+      "ground_truth": "VALID",
+      "claude_prose": "VALID",
+      "codex_prose": "VALID",
+      "exec_gate": "VALID",
+      "exec_gate_status": "NO_COUNTEREXAMPLE"
+    },
+    {
+      "blind_id": "ab_17",
+      "item_id": "flaw_01_wigner_norm",
+      "source_arxiv": "2610.05623v1->v2",
+      "ground_truth": "FLAWED",
+      "claude_prose": "FLAWED",
+      "codex_prose": "FLAWED",
+      "exec_gate": "VALID",
+      "exec_gate_status": "EXEC_ERROR_1"
+    },
+    {
+      "blind_id": "ab_18",
+      "item_id": "flaw_03_subquorum_trees",
+      "source_arxiv": "2609.25128v4",
+      "ground_truth": "FLAWED",
+      "claude_prose": "FLAWED",
+      "codex_prose": "FLAWED",
+      "exec_gate": "FLAWED",
+      "exec_gate_status": "COUNTEREXAMPLE_VERIFIED"
+    },
+    {
+      "blind_id": "ab_19",
+      "item_id": "valid_10_cayley_complete_iff",
+      "source_arxiv": "2611.03956v1",
+      "ground_truth": "VALID",
+      "claude_prose": "VALID",
+      "codex_prose": "VALID",
+      "exec_gate": "VALID",
+      "exec_gate_status": "NO_COUNTEREXAMPLE"
+    },
+    {
+      "blind_id": "ab_20",
+      "item_id": "flaw_08_gen_bw_dpi",
+      "source_arxiv": "2609.09753v3",
+      "ground_truth": "FLAWED",
+      "claude_prose": "FLAWED",
+      "codex_prose": "FLAWED",
+      "exec_gate": "FLAWED",
+      "exec_gate_status": "COUNTEREXAMPLE_VERIFIED"
+    }
+  ]
+}

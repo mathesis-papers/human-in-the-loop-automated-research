@@ -1,0 +1,840 @@
+{
+  "codex": {
+    "rows": [
+      {
+        "blind_id": "pair_01",
+        "pair_key": "arxiv_fidelity",
+        "stratum": "Stratum 1: Public arXiv Collaborative Revisions",
+        "label_desc": "arXiv:2609.09753 (v1 -> v3)",
+        "before": {
+          "correctness_rigor": 6.8,
+          "claim_calibration": 6.8,
+          "verification_grounding": 5.8,
+          "novelty_significance": 6.8,
+          "literature_attribution": 5.9,
+          "clarity_exposition": 6.6,
+          "overall": 6.6
+        },
+        "after": {
+          "correctness_rigor": 8.1,
+          "claim_calibration": 8.3,
+          "verification_grounding": 7.4,
+          "novelty_significance": 8.2,
+          "literature_attribution": 8.3,
+          "clarity_exposition": 7.8,
+          "overall": 8
+        },
+        "delta": {
+          "correctness_rigor": 1.3,
+          "claim_calibration": 1.5,
+          "verification_grounding": 1.6,
+          "novelty_significance": 1.4,
+          "literature_attribution": 2.4,
+          "clarity_exposition": 1.2,
+          "overall": 1.4
+        },
+        "outcome": "after_win",
+        "key_differences": "B supplies an explicit unital qubit DPI counterexample, separate strict convexity violations for the distance and its square, and a stronger sufficient qubit criterion; A leaves the qubit DPI question open and treats higher-dimensional extension less explicitly. B also states the positive-definite output-reference requirement, handles zero operators, strengthens the equality characterization to commutation, and gives substantially fuller attribution, although its cited supplementary verifiers are not available within the permitted text."
+      },
+      {
+        "blind_id": "pair_02",
+        "pair_key": "arxiv_subquorum",
+        "stratum": "Stratum 1: Public arXiv Collaborative Revisions",
+        "label_desc": "arXiv:2609.25128 (v1 -> v4)",
+        "before": {
+          "correctness_rigor": 5.4,
+          "claim_calibration": 7,
+          "verification_grounding": 6,
+          "novelty_significance": 6.5,
+          "literature_attribution": 6.9,
+          "clarity_exposition": 6.1,
+          "overall": 5.9
+        },
+        "after": {
+          "correctness_rigor": 7,
+          "claim_calibration": 6.7,
+          "verification_grounding": 6.1,
+          "novelty_significance": 7.6,
+          "literature_attribution": 7,
+          "clarity_exposition": 7.6,
+          "overall": 7
+        },
+        "delta": {
+          "correctness_rigor": 1.6,
+          "claim_calibration": -0.3,
+          "verification_grounding": 0.1,
+          "novelty_significance": 1.1,
+          "literature_attribution": 0.1,
+          "clarity_exposition": 1.5,
+          "overall": 1.1
+        },
+        "outcome": "after_win",
+        "key_differences": "A gives a subcubic matching characterization, cubic stability identity, and an explicit linear-time tree dynamic program, and replaces B's unsupported ladder normalization/deletion argument with a representative-pair count. B carefully labels the general hypercube statement conjectural and specifies its finite models; A announces a general hypercube theorem and certificates through width 11, but their proofs are beyond the supplied excerpt and therefore receive no verification credit here."
+      },
+      {
+        "blind_id": "pair_03",
+        "pair_key": "arxiv_gaussian",
+        "stratum": "Stratum 1: Public arXiv Collaborative Revisions",
+        "label_desc": "arXiv:2610.05623 (v1 -> v2)",
+        "before": {
+          "correctness_rigor": 3,
+          "claim_calibration": 3.8,
+          "verification_grounding": 4.6,
+          "novelty_significance": 5.4,
+          "literature_attribution": 6.7,
+          "clarity_exposition": 5.3,
+          "overall": 3.8
+        },
+        "after": {
+          "correctness_rigor": 8.2,
+          "claim_calibration": 8.6,
+          "verification_grounding": 7.5,
+          "novelty_significance": 8.1,
+          "literature_attribution": 7.7,
+          "clarity_exposition": 7.5,
+          "overall": 8
+        },
+        "delta": {
+          "correctness_rigor": 5.2,
+          "claim_calibration": 4.8,
+          "verification_grounding": 2.9,
+          "novelty_significance": 2.7,
+          "literature_attribution": 1.0,
+          "clarity_exposition": 2.2,
+          "overall": 4.2
+        },
+        "outcome": "after_win",
+        "key_differences": "A's Wigner inversion lacks a factor of two and its continuous coherence prefactor gives 4 on the vacuum although its theorem gives 2; it also calls all signed periodizations states while explicitly leaving positivity conjectural. B fixes both normalizations, proves positivity and complete inertia including the uncertainty boundary, and supplies an explicit covariance-independent embedding with exponential trace-norm and rescaled basis-coherence proofs, while correctly keeping changing-frame convergence numerical."
+      },
+      {
+        "blind_id": "pair_04",
+        "pair_key": "arxiv_eof",
+        "stratum": "Stratum 1: Public arXiv Collaborative Revisions",
+        "label_desc": "arXiv:2610.18816 (v1 -> v2)",
+        "before": {
+          "correctness_rigor": 8.5,
+          "claim_calibration": 8.3,
+          "verification_grounding": 7.7,
+          "novelty_significance": 8.8,
+          "literature_attribution": 7.4,
+          "clarity_exposition": 7.6,
+          "overall": 8.2
+        },
+        "after": {
+          "correctness_rigor": 8.4,
+          "claim_calibration": 8.3,
+          "verification_grounding": 7.6,
+          "novelty_significance": 8.8,
+          "literature_attribution": 7.5,
+          "clarity_exposition": 7.7,
+          "overall": 8.2
+        },
+        "delta": {
+          "correctness_rigor": -0.1,
+          "claim_calibration": 0.0,
+          "verification_grounding": -0.1,
+          "novelty_significance": 0.0,
+          "literature_attribution": 0.1,
+          "clarity_exposition": 0.1,
+          "overall": 0.0
+        },
+        "outcome": "tie",
+        "key_differences": "Both present the same complete central mechanism: entropy-controlled amplitude cells, a positive covariance remainder represented by weighted differences, and trace-norm iteration with total excess cost 5 eta/(4-eta), including infinite-value and nonattainment cases. A proves the required extended-valued Jensen step directly, while B cites it and more prominently explains the countably nondecomposable separable-state consequence; these small tradeoffs do not change the mathematical result or justify an overall preference."
+      },
+      {
+        "blind_id": "pair_05",
+        "pair_key": "arxiv_insertion",
+        "stratum": "Stratum 1: Public arXiv Collaborative Revisions",
+        "label_desc": "arXiv:2610.39941 (v1 -> v2)",
+        "before": {
+          "correctness_rigor": 7.2,
+          "claim_calibration": 7.7,
+          "verification_grounding": 6.3,
+          "novelty_significance": 7,
+          "literature_attribution": 8,
+          "clarity_exposition": 7,
+          "overall": 7.2
+        },
+        "after": {
+          "correctness_rigor": 7.2,
+          "claim_calibration": 7.7,
+          "verification_grounding": 6.3,
+          "novelty_significance": 7,
+          "literature_attribution": 8,
+          "clarity_exposition": 7.1,
+          "overall": 7.2
+        },
+        "delta": {
+          "correctness_rigor": 0.0,
+          "claim_calibration": 0.0,
+          "verification_grounding": 0.0,
+          "novelty_significance": 0,
+          "literature_attribution": 0,
+          "clarity_exposition": 0.1,
+          "overall": 0.0
+        },
+        "outcome": "tie",
+        "key_differences": "The supplied texts have the same commuting-projection obstruction theorem, source-grid test, unary exact-exchange proof, and substantive counterexamples, with the same separation of the open No-Gap conjecture from proved special cases. A adds an opening sentence defining the motivating question, but neither excerpt includes the later periodic-repair proof or exhaustive certificates, so there is no substantive mathematical or verification difference supporting a winner."
+      },
+      {
+        "blind_id": "pair_06",
+        "pair_key": "axiom_math",
+        "stratum": "Stratum 2: Pre- vs. Post-Multi-Gate Referee Monographs",
+        "label_desc": "mathesis-papers/ternions-and-minimal-arcs (d094941 -> 2525bd3)",
+        "before": {
+          "correctness_rigor": 2.6,
+          "claim_calibration": 3.9,
+          "verification_grounding": 2.3,
+          "novelty_significance": 4.5,
+          "literature_attribution": 6.4,
+          "clarity_exposition": 3.3,
+          "overall": 3.2
+        },
+        "after": {
+          "correctness_rigor": 2.9,
+          "claim_calibration": 5.6,
+          "verification_grounding": 2.6,
+          "novelty_significance": 4.8,
+          "literature_attribution": 6.8,
+          "clarity_exposition": 4,
+          "overall": 3.9
+        },
+        "delta": {
+          "correctness_rigor": 0.3,
+          "claim_calibration": 1.7,
+          "verification_grounding": 0.3,
+          "novelty_significance": 0.3,
+          "literature_attribution": 0.4,
+          "clarity_exposition": 0.7,
+          "overall": 0.7
+        },
+        "outcome": "after_win",
+        "key_differences": "A qualifies the indefinite classification by noncommutativity and global analyticity, restricts the rank encoding criterion to full-sphere targets, and states rotation-product convergence with the essential 'for all choices of axes' quantifier; B's summaries omit these restrictions. A's shorter abstract and explicit credit for classical ingredients improve calibration, but both supplied files omit the middle sections containing the central proofs and formalization details, precluding a soundness or publication-grade assessment."
+      },
+      {
+        "blind_id": "pair_07",
+        "pair_key": "axiom_phys",
+        "stratum": "Stratum 2: Pre- vs. Post-Multi-Gate Referee Monographs",
+        "label_desc": "mathesis-papers/axiom-omega-origin-of-quantum-mechanics (440090b -> 4b4baa5)",
+        "before": {
+          "correctness_rigor": 2.5,
+          "claim_calibration": 5.6,
+          "verification_grounding": 2.1,
+          "novelty_significance": 4,
+          "literature_attribution": 5.9,
+          "clarity_exposition": 2.7,
+          "overall": 3.2
+        },
+        "after": {
+          "correctness_rigor": 2.7,
+          "claim_calibration": 6.7,
+          "verification_grounding": 2.1,
+          "novelty_significance": 4.2,
+          "literature_attribution": 6.9,
+          "clarity_exposition": 5.2,
+          "overall": 3.8
+        },
+        "delta": {
+          "correctness_rigor": 0.2,
+          "claim_calibration": 1.1,
+          "verification_grounding": 0.0,
+          "novelty_significance": 0.2,
+          "literature_attribution": 1.0,
+          "clarity_exposition": 2.5,
+          "overall": 0.6
+        },
+        "outcome": "after_win",
+        "key_differences": "B replaces A's exceptionally long abstract with a usable account of the conditional program, explicitly distinguishes three-qubit residual tangle from the general monogamy inequality with attribution, and presents a clearer assumption/status table and phase-bridge limitation. Both supplied texts omit the actual reconstruction and composite proofs, so these exposition and calibration improvements warrant a preference without establishing the broad mathematical or physical claims."
+      },
+      {
+        "blind_id": "pair_08",
+        "pair_key": "mathesis_1",
+        "stratum": "Stratum 3: Controlled Review-and-Polish Intervention",
+        "label_desc": "mathesis-papers/a320043-square-values-refutation (pre-polish -> post-rigor-review)",
+        "before": {
+          "correctness_rigor": 7.6,
+          "claim_calibration": 8.2,
+          "verification_grounding": 7.3,
+          "novelty_significance": 5.9,
+          "literature_attribution": 8.7,
+          "clarity_exposition": 7.2,
+          "overall": 7.6
+        },
+        "after": {
+          "correctness_rigor": 8.5,
+          "claim_calibration": 8.6,
+          "verification_grounding": 7.4,
+          "novelty_significance": 5.9,
+          "literature_attribution": 8.7,
+          "clarity_exposition": 7.7,
+          "overall": 8
+        },
+        "delta": {
+          "correctness_rigor": 0.9,
+          "claim_calibration": 0.4,
+          "verification_grounding": 0.1,
+          "novelty_significance": 0.0,
+          "literature_attribution": 0.0,
+          "clarity_exposition": 0.5,
+          "overall": 0.4
+        },
+        "outcome": "after_win",
+        "key_differences": "B explicitly assumes both p>2 and a square value a(p-1) before concluding p=x_(2^h); A's corresponding corollary states the conclusion for p>2 without that necessary condition. The underlying counterexample, Lucas certificate, Pell descent and divisor formula are shared, but B makes their inference steps and the division between written and claimed Lean proofs clearer; both appropriately credit the previously known Pell primes and restrict the minimality claim to prime successors."
+      },
+      {
+        "blind_id": "pair_09",
+        "pair_key": "mathesis_2",
+        "stratum": "Stratum 3: Controlled Review-and-Polish Intervention",
+        "label_desc": "mathesis-papers/a374338-circle-vertices (pre-polish -> post-rigor-review)",
+        "before": {
+          "correctness_rigor": 8.4,
+          "claim_calibration": 8.7,
+          "verification_grounding": 7.7,
+          "novelty_significance": 7.4,
+          "literature_attribution": 8.4,
+          "clarity_exposition": 8,
+          "overall": 8.2
+        },
+        "after": {
+          "correctness_rigor": 8.7,
+          "claim_calibration": 8.6,
+          "verification_grounding": 7.8,
+          "novelty_significance": 7.5,
+          "literature_attribution": 8.4,
+          "clarity_exposition": 7.7,
+          "overall": 8.3
+        },
+        "delta": {
+          "correctness_rigor": 0.3,
+          "claim_calibration": -0.1,
+          "verification_grounding": 0.1,
+          "novelty_significance": 0.1,
+          "literature_attribution": 0.0,
+          "clarity_exposition": -0.3,
+          "overall": 0.1
+        },
+        "outcome": "after_win",
+        "key_differences": "Both prove the same circle-to-lattice reduction and strip-clipped hexagon theorem with the sharp stabilization threshold, and both carefully restrict their claimed Lean coverage and petal interpretation. A gives fuller boundary-witness and strip-preservation inequalities and an explicit arbitrary-seed quasi-polynomial, making the all-parameter proof and counting consequences easier to audit; B is more concise, so the preference is narrow."
+      },
+      {
+        "blind_id": "pair_10",
+        "pair_key": "mathesis_3",
+        "stratum": "Stratum 3: Controlled Review-and-Polish Intervention",
+        "label_desc": "mathesis-papers/abbott-2019-sequential-weak-pointer-bound (pre-polish -> post-rigor-review)",
+        "before": {
+          "correctness_rigor": 8.6,
+          "claim_calibration": 8.8,
+          "verification_grounding": 7.9,
+          "novelty_significance": 7.8,
+          "literature_attribution": 8.7,
+          "clarity_exposition": 8.5,
+          "overall": 8.5
+        },
+        "after": {
+          "correctness_rigor": 8.6,
+          "claim_calibration": 8.6,
+          "verification_grounding": 7.9,
+          "novelty_significance": 7.8,
+          "literature_attribution": 8.5,
+          "clarity_exposition": 7.8,
+          "overall": 8.3
+        },
+        "delta": {
+          "correctness_rigor": 0.0,
+          "claim_calibration": -0.2,
+          "verification_grounding": 0.0,
+          "novelty_significance": 0.0,
+          "literature_attribution": -0.2,
+          "clarity_exposition": -0.7,
+          "overall": -0.2
+        },
+        "outcome": "before_win",
+        "key_differences": "Both give the same rational -1/6 witness, sharp finite-length Jordan bound, explicit codimension-one extremizers, asymptotic limit, and finite-strength Gaussian envelope with appropriate nonattainment qualifications. B preserves the complete proof in a substantially more economical presentation and more directly separates the prior Sun-Luo-Ye recurrence and rate from the new attainment and pointer-measurement application; A adds detail without changing the established results or verification scope."
+      }
+    ],
+    "wins": 7,
+    "ties": 2,
+    "losses": 1,
+    "sign_p": 0.0703125,
+    "axis_stats": {
+      "correctness_rigor": {
+        "before_mean": 6.06,
+        "before_sd": 2.51,
+        "after_mean": 7.03,
+        "after_sd": 2.3,
+        "delta_mean": 0.97,
+        "delta_sd": 1.6
+      },
+      "claim_calibration": {
+        "before_mean": 6.88,
+        "before_sd": 1.87,
+        "after_mean": 7.77,
+        "after_sd": 1.07,
+        "delta_mean": 0.89,
+        "delta_sd": 1.56
+      },
+      "verification_grounding": {
+        "before_mean": 5.77,
+        "before_sd": 2.15,
+        "after_mean": 6.27,
+        "after_sd": 2.15,
+        "delta_mean": 0.5,
+        "delta_sd": 0.98
+      },
+      "novelty_significance": {
+        "before_mean": 6.41,
+        "before_sd": 1.49,
+        "after_mean": 6.99,
+        "after_sd": 1.53,
+        "delta_mean": 0.58,
+        "delta_sd": 0.9
+      },
+      "literature_attribution": {
+        "before_mean": 7.3,
+        "before_sd": 1.1,
+        "after_mean": 7.78,
+        "after_sd": 0.71,
+        "delta_mean": 0.48,
+        "delta_sd": 0.79
+      },
+      "clarity_exposition": {
+        "before_mean": 6.23,
+        "before_sd": 1.94,
+        "after_mean": 7.01,
+        "after_sd": 1.32,
+        "delta_mean": 0.78,
+        "delta_sd": 1.06
+      },
+      "overall": {
+        "before_mean": 6.24,
+        "before_sd": 2.11,
+        "after_mean": 7.07,
+        "after_sd": 1.75,
+        "delta_mean": 0.83,
+        "delta_sd": 1.29
+      }
+    }
+  },
+  "second_family": {
+    "rows": [
+      {
+        "blind_id": "pair_01",
+        "pair_key": "arxiv_fidelity",
+        "stratum": "Stratum 1: Public arXiv Collaborative Revisions",
+        "label_desc": "arXiv:2609.09753 (v1 -> v3)",
+        "before": {
+          "correctness_rigor": 5.4,
+          "claim_calibration": 6.5,
+          "verification_grounding": 4.5,
+          "novelty_significance": 6.0,
+          "literature_attribution": 4.8,
+          "clarity_exposition": 6.0,
+          "overall": 5.6
+        },
+        "after": {
+          "correctness_rigor": 8.6,
+          "claim_calibration": 8.7,
+          "verification_grounding": 8.4,
+          "novelty_significance": 8.3,
+          "literature_attribution": 8.7,
+          "clarity_exposition": 8.3,
+          "overall": 8.5
+        },
+        "delta": {
+          "correctness_rigor": 3.2,
+          "claim_calibration": 2.2,
+          "verification_grounding": 3.9,
+          "novelty_significance": 2.3,
+          "literature_attribution": 3.9,
+          "clarity_exposition": 2.3,
+          "overall": 2.9
+        },
+        "outcome": "after_win",
+        "key_differences": "B settles both open problems of Afham–Ferrie across all dimensions n>=2 (adding an explicit unital qubit DPI counterexample, convexity refutations for both B_R and b_R in all n>=2 with positive definite witnesses, a universal b_R obstruction, and Corollary 7 subsuming Corollaries 5–6), whereas A leaves n=2 DPI open and omits convexity entirely. B also repairs multiple gaps and slips in A (explicitly constructing the n>3 scaled block C_n in Theorem 2, proving the PSD metric extension, eliminating the spurious phase in Theorem 1 via [X,Y]=0, fixing Corollary 3 from 'coplanar' to linearly dependent, handling P=0/Q=0 and M=0, fixing Lemma 3/4 proofs and attribution, and backing all examples with 80-digit verification scripts)."
+      },
+      {
+        "blind_id": "pair_02",
+        "pair_key": "arxiv_subquorum",
+        "stratum": "Stratum 1: Public arXiv Collaborative Revisions",
+        "label_desc": "arXiv:2609.25128 (v1 -> v4)",
+        "before": {
+          "correctness_rigor": 5.8,
+          "claim_calibration": 6.8,
+          "verification_grounding": 7.8,
+          "novelty_significance": 6.2,
+          "literature_attribution": 6.5,
+          "clarity_exposition": 6.6,
+          "overall": 6.4
+        },
+        "after": {
+          "correctness_rigor": 8.6,
+          "claim_calibration": 8.5,
+          "verification_grounding": 7.5,
+          "novelty_significance": 8.5,
+          "literature_attribution": 8.2,
+          "clarity_exposition": 8.6,
+          "overall": 8.5
+        },
+        "delta": {
+          "correctness_rigor": 2.8,
+          "claim_calibration": 1.7,
+          "verification_grounding": -0.3,
+          "novelty_significance": 2.3,
+          "literature_attribution": 1.7,
+          "clarity_exposition": 2.0,
+          "overall": 2.1
+        },
+        "outcome": "after_win",
+        "key_differences": "A delivers a much broader and completely airtight suite of structural and algorithmic theorems—including the general degree bound, subcubic matching characterization, cubic stability identity, linear-time tree DP via the unit-state lemma, complete corona and join proofs, and a rigorous direct Omega-proof for ladder grids—while correctly attributing the exact grid dissociation formula beta_2(G_{m,n})=F(m,n) to prior 3-path vertex-cover results. By contrast, B omits its promised corona and join section altogether, gives a flawed local-deletion induction proof for ladder grids (where deleting colored vertices in columns 1–2 can break quorum support in adjacent columns), treats the already-proved beta_2(G_{m,n})=F(m,n) identity as conjectural, and leaves psi_sq(Q_n) open beyond n<=6."
+      },
+      {
+        "blind_id": "pair_03",
+        "pair_key": "arxiv_gaussian",
+        "stratum": "Stratum 1: Public arXiv Collaborative Revisions",
+        "label_desc": "arXiv:2610.05623 (v1 -> v2)",
+        "before": {
+          "correctness_rigor": 3.8,
+          "claim_calibration": 4.6,
+          "verification_grounding": 5.2,
+          "novelty_significance": 5.0,
+          "literature_attribution": 6.5,
+          "clarity_exposition": 5.5,
+          "overall": 4.7
+        },
+        "after": {
+          "correctness_rigor": 9.0,
+          "claim_calibration": 9.1,
+          "verification_grounding": 8.9,
+          "novelty_significance": 8.8,
+          "literature_attribution": 8.6,
+          "clarity_exposition": 8.6,
+          "overall": 8.9
+        },
+        "delta": {
+          "correctness_rigor": 5.2,
+          "claim_calibration": 4.5,
+          "verification_grounding": 3.7,
+          "novelty_significance": 3.8,
+          "literature_attribution": 2.1,
+          "clarity_exposition": 3.1,
+          "overall": 4.2
+        },
+        "outcome": "after_win",
+        "key_differences": "B repairs three concrete factor-of-2/normalization errors in A (the missing factor of 2 in Wigner inversion eq. 7, the 1/(2*pi) vs 1/h coherent-state identity, and the 1/h^2 vs 1/(2h^2) prefactor in eq. 34 that contradicted A's own Theorem 1 on the ground state and was masked only by cancelling eq. 7's error) and replaces A's single-precision copy-paste Fortran code (which had an uninitialized DPurity bug) with 192-bit Arb enclosures and rational certificates. Mathematically, B elevates the paper from a single Gaussian integral plus conjectured positivity into a rigorous theory proving full positivity and spectral inertia for all odd d>=3 (Theorem 1), exponential trace-norm and fidelity convergence via a covariance-independent isometry (Theorem 2), and exponential rescaled position/momentum basis-coherence limits (Theorem 4)."
+      },
+      {
+        "blind_id": "pair_04",
+        "pair_key": "arxiv_eof",
+        "stratum": "Stratum 1: Public arXiv Collaborative Revisions",
+        "label_desc": "arXiv:2610.18816 (v1 -> v2)",
+        "before": {
+          "correctness_rigor": 9.0,
+          "claim_calibration": 8.8,
+          "verification_grounding": 7.5,
+          "novelty_significance": 9.0,
+          "literature_attribution": 8.4,
+          "clarity_exposition": 8.6,
+          "overall": 8.7
+        },
+        "after": {
+          "correctness_rigor": 8.6,
+          "claim_calibration": 8.9,
+          "verification_grounding": 7.3,
+          "novelty_significance": 9.0,
+          "literature_attribution": 8.6,
+          "clarity_exposition": 8.4,
+          "overall": 8.5
+        },
+        "delta": {
+          "correctness_rigor": -0.4,
+          "claim_calibration": 0.1,
+          "verification_grounding": -0.2,
+          "novelty_significance": 0.0,
+          "literature_attribution": 0.2,
+          "clarity_exposition": -0.2,
+          "overall": -0.2
+        },
+        "outcome": "before_win",
+        "key_differences": "Both versions present the same landmark functional-analytic proof that E_F^d = E_F^c for all bipartite states, but A is strictly more self-contained and rigorous in Lemma 5 by proving Jensen's inequality for J directly via Hahn–Banach separation on the real Hilbert space S_2(H_B, H_A) rather than deferring to an external appendix proposition [5, Prop. A-2]. A also retains the norm-1 boundedness check needed for Bochner integrability in Section 3.4.1 and keeps the accurate operator chain |y_i><y_i| <= R_i <= R <= rho in the Range Remark (which B muddles to R_n <= R while introducing minor wording typos, only partially offset by B's helpful Footnotes 2 and 6 and explicit domain notation)."
+      },
+      {
+        "blind_id": "pair_05",
+        "pair_key": "arxiv_insertion",
+        "stratum": "Stratum 1: Public arXiv Collaborative Revisions",
+        "label_desc": "arXiv:2610.39941 (v1 -> v2)",
+        "before": {
+          "correctness_rigor": 8.3,
+          "claim_calibration": 8.7,
+          "verification_grounding": 7.7,
+          "novelty_significance": 7.6,
+          "literature_attribution": 8.5,
+          "clarity_exposition": 8.2,
+          "overall": 8.0
+        },
+        "after": {
+          "correctness_rigor": 8.3,
+          "claim_calibration": 8.7,
+          "verification_grounding": 7.7,
+          "novelty_significance": 7.6,
+          "literature_attribution": 8.5,
+          "clarity_exposition": 8.4,
+          "overall": 8.1
+        },
+        "delta": {
+          "correctness_rigor": 0.0,
+          "claim_calibration": 0.0,
+          "verification_grounding": 0.0,
+          "novelty_significance": 0.0,
+          "literature_attribution": 0.0,
+          "clarity_exposition": 0.2,
+          "overall": 0.1
+        },
+        "outcome": "after_win",
+        "key_differences": "Within the evaluated text, both manuscripts share the exact same strong proofs of the commuting-projection obstruction theorem, source-grid DP, unary exact-exchange theorem, and minimal counterexamples (Propositions 5–8) verbatim. A earns a narrow edge strictly on exposition because its opening Abstract sentence defines 'Singleton No-Gap' before use, whereas B omits that sentence and leaves the term undefined when closing its Abstract."
+      },
+      {
+        "blind_id": "pair_06",
+        "pair_key": "axiom_math",
+        "stratum": "Stratum 2: Pre- vs. Post-Multi-Gate Referee Monographs",
+        "label_desc": "mathesis-papers/ternions-and-minimal-arcs (d094941 -> 2525bd3)",
+        "before": {
+          "correctness_rigor": 6.5,
+          "claim_calibration": 6.6,
+          "verification_grounding": 6.7,
+          "novelty_significance": 7.2,
+          "literature_attribution": 7.4,
+          "clarity_exposition": 6.3,
+          "overall": 6.8
+        },
+        "after": {
+          "correctness_rigor": 7.8,
+          "claim_calibration": 8.4,
+          "verification_grounding": 7.4,
+          "novelty_significance": 8.2,
+          "literature_attribution": 8.5,
+          "clarity_exposition": 7.4,
+          "overall": 7.9
+        },
+        "delta": {
+          "correctness_rigor": 1.3,
+          "claim_calibration": 1.8,
+          "verification_grounding": 0.7,
+          "novelty_significance": 1.0,
+          "literature_attribution": 1.1,
+          "clarity_exposition": 1.1,
+          "overall": 1.1
+        },
+        "outcome": "after_win",
+        "key_differences": "A repairs several concrete missing hypotheses and overbroad claims in B's Abstract and Roadmap (restoring the noncommutative and globally analytic hypotheses for 3D indefinite heaps and noting the abelian R^3 solution, narrowing the self-reference rank criterion to necessary-only for general targets, stating the exact random rotation dispersion condition instead of an uncalibrated sagitta-sum claim, and restoring Theorem C's Abstract hypotheses) and adds dedicated environments for library-only results and refuted claims. A also cuts the bloated 47-line Abstract down to a crisp 20 lines, adds structured Results summaries for Parts 0 and II, incorporates written proofs of two published conjectures (weighted Bottcher–Wenzel and bridge-graph tensor ranks) plus sparse Gram/Pfaffian/grid-gauge modules, and adds verified primary bibliography attributions."
+      },
+      {
+        "blind_id": "pair_07",
+        "pair_key": "axiom_phys",
+        "stratum": "Stratum 2: Pre- vs. Post-Multi-Gate Referee Monographs",
+        "label_desc": "mathesis-papers/axiom-omega-origin-of-quantum-mechanics (440090b -> 4b4baa5)",
+        "before": {
+          "correctness_rigor": 6.9,
+          "claim_calibration": 7.5,
+          "verification_grounding": 6.4,
+          "novelty_significance": 7.0,
+          "literature_attribution": 7.2,
+          "clarity_exposition": 5.6,
+          "overall": 6.8
+        },
+        "after": {
+          "correctness_rigor": 7.7,
+          "claim_calibration": 8.8,
+          "verification_grounding": 7.2,
+          "novelty_significance": 7.5,
+          "literature_attribution": 8.4,
+          "clarity_exposition": 8.0,
+          "overall": 8.0
+        },
+        "delta": {
+          "correctness_rigor": 0.8,
+          "claim_calibration": 1.3,
+          "verification_grounding": 0.8,
+          "novelty_significance": 0.5,
+          "literature_attribution": 1.2,
+          "clarity_exposition": 2.4,
+          "overall": 1.2
+        },
+        "outcome": "after_win",
+        "key_differences": "B substantially improves structure, calibration, and precision over A: it replaces A's 88-line wall-of-text Abstract and 100-line uncontextualized dump of 50+ assumptions with a crisp 21-line Part-by-Part Abstract, a programmatically generated Part-I assumption list backed by an audit inventory and minimal independence witness models, and upfront 'Answers' and 'What is not claimed' sections. B also fixes A's conflation of three-tangle with the general n-qubit monogamy deficit (explicitly crediting Coffman–Kundu–Wootters, Osborne–Verstraete, and Jacobson), reframes [Cl] under [Ph] honestly as equivalence to a bridge clause rather than a derivation, adds expected alongside observed composite-Higgs bounds and new memory/circuit/cell-cost results, and resolves A's '% UNVERIFIED' citations in the visible bibliography."
+      },
+      {
+        "blind_id": "pair_08",
+        "pair_key": "mathesis_1",
+        "stratum": "Stratum 3: Controlled Review-and-Polish Intervention",
+        "label_desc": "mathesis-papers/a320043-square-values-refutation (pre-polish -> post-rigor-review)",
+        "before": {
+          "correctness_rigor": 7.6,
+          "claim_calibration": 8.3,
+          "verification_grounding": 8.6,
+          "novelty_significance": 5.8,
+          "literature_attribution": 8.4,
+          "clarity_exposition": 6.8,
+          "overall": 7.4
+        },
+        "after": {
+          "correctness_rigor": 8.8,
+          "claim_calibration": 8.8,
+          "verification_grounding": 8.8,
+          "novelty_significance": 6.0,
+          "literature_attribution": 8.8,
+          "clarity_exposition": 8.7,
+          "overall": 8.3
+        },
+        "delta": {
+          "correctness_rigor": 1.2,
+          "claim_calibration": 0.5,
+          "verification_grounding": 0.2,
+          "novelty_significance": 0.2,
+          "literature_attribution": 0.4,
+          "clarity_exposition": 1.9,
+          "overall": 0.9
+        },
+        "outcome": "after_win",
+        "key_differences": "Both notes share the same Lean-formalized A320043 refutation and verify.py checks, but B tightens every written proof to full completeness: it integrates the Lucas primality proof directly into Theorem 1 (adding the r∤5 and proper-divisor checks), justifies Y=2y in X^2-3Y^2=1, proves base-case/recurrence/monotonicity in the Pell descent and Corollary 3, proves the doubling identity eq. (4), and supplies explicit bijections and the U(m)/m^3 Dirichlet convolution in Propositions 5–6. B also upgrades exposition markedly with a scholarly title, proper Proposition vs. Corollary labels, historical attributions cleanly separated from proof bodies, and a crisp 3-column Verification Scope and Attribution table in place of A's QA-checklist layout."
+      },
+      {
+        "blind_id": "pair_09",
+        "pair_key": "mathesis_2",
+        "stratum": "Stratum 3: Controlled Review-and-Polish Intervention",
+        "label_desc": "mathesis-papers/a374338-circle-vertices (pre-polish -> post-rigor-review)",
+        "before": {
+          "correctness_rigor": 7.9,
+          "claim_calibration": 8.0,
+          "verification_grounding": 8.8,
+          "novelty_significance": 6.9,
+          "literature_attribution": 8.4,
+          "clarity_exposition": 7.3,
+          "overall": 7.8
+        },
+        "after": {
+          "correctness_rigor": 9.0,
+          "claim_calibration": 9.0,
+          "verification_grounding": 8.9,
+          "novelty_significance": 7.2,
+          "literature_attribution": 8.9,
+          "clarity_exposition": 8.9,
+          "overall": 8.8
+        },
+        "delta": {
+          "correctness_rigor": 1.1,
+          "claim_calibration": 1.0,
+          "verification_grounding": 0.1,
+          "novelty_significance": 0.3,
+          "literature_attribution": 0.5,
+          "clarity_exposition": 1.6,
+          "overall": 1.0
+        },
+        "outcome": "after_win",
+        "key_differences": "A significantly strengthens both rigor and presentation over B while retaining the same three pinned Lean files and verify.py backing: it derives the explicit general closed-form formula (7) for 3*s_m(n) via 6*C(n) and 3*Q_L, writes out the missing step-1 derivation, (x,y) hexagon inequalities, explicit strip-margin bounds (0 < n <= v'-u' <= 3n), and threshold witness (0,3n+3) in Theorem 4, and completes the boundary and generating-function derivations in Lemma 2, Lemma 3, and Corollaries 5–8. A also fixes B's C(n)/C(z) notation clash (renaming the petal series to G(z)), replaces undefined N with Z_{>=0}, defines 'neighbors' and 'mod 3' before use, repairs escaped '\\&' URL bugs in three citations, and replaces B's defensive 13-row coverage checklist with a crisp 5-row verification table and scholarly open-problem discussion."
+      },
+      {
+        "blind_id": "pair_10",
+        "pair_key": "mathesis_3",
+        "stratum": "Stratum 3: Controlled Review-and-Polish Intervention",
+        "label_desc": "mathesis-papers/abbott-2019-sequential-weak-pointer-bound (pre-polish -> post-rigor-review)",
+        "before": {
+          "correctness_rigor": 8.3,
+          "claim_calibration": 8.2,
+          "verification_grounding": 8.8,
+          "novelty_significance": 7.6,
+          "literature_attribution": 8.5,
+          "clarity_exposition": 7.5,
+          "overall": 8.1
+        },
+        "after": {
+          "correctness_rigor": 9.2,
+          "claim_calibration": 9.2,
+          "verification_grounding": 8.9,
+          "novelty_significance": 7.8,
+          "literature_attribution": 9.0,
+          "clarity_exposition": 9.1,
+          "overall": 9.0
+        },
+        "delta": {
+          "correctness_rigor": 0.9,
+          "claim_calibration": 1.0,
+          "verification_grounding": 0.1,
+          "novelty_significance": 0.2,
+          "literature_attribution": 0.5,
+          "clarity_exposition": 1.6,
+          "overall": 0.9
+        },
+        "outcome": "after_win",
+        "key_differences": "A brings an already solid note to publication-grade polish: it defines mu_n(A_1,...,A_n; rho) for general Hermitian observables upfront (fixing B's gap where Corollaries 2 and 4 invoked eq. 1 beyond projections), introduces p_j, ||.||, and Loewner order before use, fixes B's 0-vs-1 basis-indexing clash (e_3 vs e_0..e_{n-1}) and t in (0,1] imprecision, derives the exact self-adjoint finite-strength moment map T_{P,t} cleanly in Section 1, proves d>=n attainment and m_n=mu_n for commuting projections explicitly, and writes out the Cesaro telescoping sum in Theorem 1. A also eliminates B's defensive QA-checklist table and boilerplate remarks in favor of concise, well-calibrated Open Problems and Verification prose."
+      }
+    ],
+    "wins": 9,
+    "ties": 0,
+    "losses": 1,
+    "sign_p": 0.021484375,
+    "axis_stats": {
+      "correctness_rigor": {
+        "before_mean": 6.95,
+        "before_sd": 1.6,
+        "after_mean": 8.56,
+        "after_sd": 0.5,
+        "delta_mean": 1.61,
+        "delta_sd": 1.67
+      },
+      "claim_calibration": {
+        "before_mean": 7.4,
+        "before_sd": 1.3,
+        "after_mean": 8.81,
+        "after_sd": 0.25,
+        "delta_mean": 1.41,
+        "delta_sd": 1.3
+      },
+      "verification_grounding": {
+        "before_mean": 7.2,
+        "before_sd": 1.49,
+        "after_mean": 8.1,
+        "after_sd": 0.74,
+        "delta_mean": 0.9,
+        "delta_sd": 1.57
+      },
+      "novelty_significance": {
+        "before_mean": 6.83,
+        "before_sd": 1.13,
+        "after_mean": 7.89,
+        "after_sd": 0.88,
+        "delta_mean": 1.06,
+        "delta_sd": 1.3
+      },
+      "literature_attribution": {
+        "before_mean": 7.46,
+        "before_sd": 1.24,
+        "after_mean": 8.62,
+        "after_sd": 0.24,
+        "delta_mean": 1.16,
+        "delta_sd": 1.17
+      },
+      "clarity_exposition": {
+        "before_mean": 6.84,
+        "before_sd": 1.05,
+        "after_mean": 8.44,
+        "after_sd": 0.48,
+        "delta_mean": 1.6,
+        "delta_sd": 1.0
+      },
+      "overall": {
+        "before_mean": 7.03,
+        "before_sd": 1.23,
+        "after_mean": 8.45,
+        "after_sd": 0.38,
+        "delta_mean": 1.42,
+        "delta_sd": 1.32
+      }
+    }
+  },
+  "agreement": {
+    "pairwise_agree": 7,
+    "total_pairs": 10,
+    "spearman_overall_20": 0.713,
+    "spearman_delta_10": 0.915
+  }
+}

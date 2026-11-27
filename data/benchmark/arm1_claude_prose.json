@@ -1,0 +1,122 @@
+{
+  "ab_01": {
+    "verdict": "FLAWED",
+    "confidence": 0.95,
+    "objection": "\u8bc1\u660e\u628a\u53ef\u5206\u6027\u7684\u4e24\u4e2a\u5fc5\u8981\u6761\u4ef6\u5f53\u6210\u4e86\u4e92\u76f8\u8574\u542b:\u90e8\u5206\u8f6c\u7f6e\u4e3a\u6b63(PPT)\u63a8\u4e0d\u51fa\u91cd\u6392(CCNR)\u754c,\u970d\u7f57\u5fb7\u8328\u57fa\u6001\u6b63\u662f\u91cd\u6392\u5224\u636e\u80fd\u68c0\u51fa\u7684 PPT \u7ea0\u7f20\u6001\u3002\u76f4\u63a5\u8ba1\u7b97:R(M(a)) \u6709\u56db\u4e2a\u5947\u5f02\u503c\u90fd\u7b49\u4e8e a,\u53e6\u6709\u4e00\u4e2a 5\u00d75 \u5757,\u5b83\u7684 Gram \u77e9\u9635\u7ea6\u5316\u540e\u518d\u7ed9\u51fa\u4e00\u4e2a\u5947\u5f02\u503c a \u548c\u4e00\u4e2a 3\u00d73 \u77e9\u9635 [[6a\u00b2, \u221a2a(1+2a), 0], [\u221a2a(1+2a), 1+a+a\u00b2, \u221a2ab], [0, \u221a2ab, a\u00b2]](b=\u221a(1\u2212a\u00b2)/2)\u3002\u53d6 a=0.2 \u5f97 ||R(M)||_1 \u2248 1.0+1.6079=2.6079,\u6240\u4ee5 ||R(\u03c1_a)||_1 \u2248 2.6079/2.6 \u2248 1.003>1,\u547d\u9898\u4e0d\u6210\u7acb;\u5df2\u77e5\u7ed3\u679c(Chen\u2013Wu,Rudolph)\u8868\u660e,\u5bf9\u6240\u6709 a\u2208(0,1),\u91cd\u6392\u5224\u636e\u90fd\u80fd\u68c0\u51fa\u8be5\u6001\u3002",
+    "_model": "claude-opus-5-5"
+  },
+  "ab_04": {
+    "verdict": "VALID",
+    "confidence": 0.96,
+    "objection": "With P = R, R^{1/2} R R^{1/2} = R^2, whose unique positive square root is R; hence sqrt(R^2) R^{-1} = I and F_R(R, Q) = Tr(sqrt(R^{1/2} Q R^{1/2})), which is exactly the root Uhlmann fidelity.",
+    "_model": "claude-opus-5-5"
+  },
+  "ab_03": {
+    "verdict": "FLAWED",
+    "confidence": 0.97,
+    "objection": "Counterexample: C_4 = Cay(Z_4, {\u00b11}) is well-covered, because its only maximal independent sets are {0,2} and {1,3}. Its Cartesian square C_4 \u25a1 C_4 is the 4-dimensional hypercube Q_4, which has independence number 8. However, {0000, 0111, 1011, 1100} is a maximal independent set of size 4: it is independent, since every pair is at Hamming distance 2 or 3, and every vertex of Q_4 is in this set or adjacent to it. The proof is also unsound, because vertex-transitivity does not make all maximal independent sets the same size; Q_3 is vertex-transitive but is not well-covered.",
+    "_model": "claude-opus-5-5"
+  },
+  "ab_05": {
+    "verdict": "FLAWED",
+    "confidence": 0.95,
+    "objection": "The statement is false at n = 7. Since 2\u00b73 = 6 \u2261 \u22121 (mod 7), P(7,3) is isomorphic to P(7,2). In P(7,2), the 6-vertex set {u0, u1, v0, v1, v2, v6} forces the whole graph: u0\u2192u6, u1\u2192u2, v0\u2192v5, v1\u2192v3, v2\u2192v4, then u2\u2192u3, u6\u2192u5, u3\u2192u4. So Z(P(7,3)) \u2264 6 < 8. The 'proof' is also not an argument: the 'symmetry-breaking' claim gives no lower bound and no construction.",
+    "_model": "claude-opus-5-5"
+  },
+  "ab_08": {
+    "verdict": "VALID",
+    "confidence": 0.97,
+    "objection": "Every step is correct: 1 + r + r^2 > 0 makes U_r positive, 1/3 - U_r = (r - 1)^2 / (3(1 + r + r^2)) is nonnegative and equals zero exactly when r = 1, and U_{1/r} simplifies to r/(r^2 + r + 1) = U_r.",
+    "_model": "claude-opus-5-5"
+  },
+  "ab_02": {
+    "verdict": "FLAWED",
+    "confidence": 0.62,
+    "objection": "Two steps in the proof are correct: Hirschberg\u2013Regnier makes the number of supersequences independent of y, and the total multiplicity 4\u00b7C(L+2,2) is also independent of y (choose the two deleted positions, then fill them freely). For L=2 the claim also checks out: y=01 gives entropy about 3.32 bits against about 3.15 bits for y=00. The decisive step, that the alternating word's multiplicity vector is strictly majorized by that of every non-alternating word, is only asserted ('grouping masks by runs'). Majorization does not in general follow from equal support size and equal total. Numerical studies of this channel (Atashpendar et al.), recalled from memory and not re-checked here, report that for two deletions and larger L the entropy maximizer departs from the alternating word, so the claim that alternating words are the unique maximizers for every L \u2265 1 is unsupported and, as far as recalled, false.",
+    "_model": "claude-opus-5-5"
+  },
+  "ab_09": {
+    "verdict": "FLAWED",
+    "confidence": 0.95,
+    "objection": "Counterexample: the path P6 = 1-2-3-4-5-6. Its square is non-complete, and every maximal independent set of P6^2 (equivalently, every maximal 2-packing of P6, such as {1,4}, {1,5}, {1,6}, {2,5}, {2,6} and {3,6}) has size 2, because no vertex is within distance 2 of all others and three vertices pairwise at distance at least 3 do not fit in six positions. Yet P6 is not well-covered, since {2,5} and {1,3,5} are both maximal independent sets, of sizes 2 and 3. The proof's step that uniform packing sizes 'propagate' to all maximal independent sets of G is unjustified.",
+    "_model": "claude-opus-5-5"
+  },
+  "ab_11": {
+    "verdict": "FLAWED",
+    "confidence": 0.97,
+    "objection": "The uniqueness claim fails for small L. For L=3, every non-constant word, such as 001, has the subsequences 0 and 1, so N_2=2, the same as 010 and 101. For L=4, the word 0110 contains all four length-2 words 00, 01, 10 and 11, so it ties with 0101. The proof also assumes without justification that N_2 is strictly monotone in the run count and that distinct pairs of run boundaries give distinct subsequences, and neither claim holds in general.",
+    "_model": "claude-opus-5-5"
+  },
+  "ab_07": {
+    "verdict": "FLAWED",
+    "confidence": 0.8,
+    "objection": "The proof's central step does not work. Applying subadditivity to a purification of rho_ABC only yields Araki-Lieb-type and weak-monotonicity-type inequalities. It does not yield strong subadditivity, which needs genuinely stronger tools (Lieb concavity or operator convexity) even for von Neumann entropy. For subentropy, which is not additive on tensor products and is not a relative-entropy-type quantity, no such tool is available. Concavity, unitary invariance and the bound Q <= S together do not imply strong subadditivity, and the literature does not establish strong subadditivity for Q, so the proposition as stated is unsupported.",
+    "_model": "claude-opus-5-5"
+  },
+  "ab_13": {
+    "verdict": "VALID",
+    "confidence": 0.97,
+    "objection": "Since a_n = sum_{j=0}^{n-1} binom(2j,j), and (1-z)^{-1}(1-4z)^{-1/2} has the partial sums as its coefficients, shifting by z gives exactly A(z) = z/((1-z)sqrt(1-4z)) for |z|<1/4 (check: a_1=1, a_2=3, a_3=9 match the expansion).",
+    "_model": "claude-opus-5-5"
+  },
+  "ab_15": {
+    "verdict": "VALID",
+    "confidence": 0.97,
+    "objection": "\u56e0\u4e3a -1 \u5c5e\u4e8e H,\u966a\u96c6 cH \u5728\u53d6\u8d1f\u4e0b\u5c01\u95ed;m \u4e3a\u5947\u6570,\u6240\u4ee5\u6620\u5c04 x \u21a6 m - x \u5728 cH \u7684\u4ee3\u8868\u5143 {1, ..., m-1} \u4e0a\u6ca1\u6709\u4e0d\u52a8\u70b9,\u628a cH \u5206\u6210 |H|/2 \u5bf9,\u6bcf\u5bf9\u4e4b\u548c\u4e3a m,\u6240\u4ee5 S_m(cH) = m|H|/2 \u6210\u7acb\u3002",
+    "_model": "claude-opus-5-5"
+  },
+  "ab_16": {
+    "verdict": "VALID",
+    "confidence": 0.97,
+    "objection": "With rho(q+y,q-y) = (pi sigma^2)^(-1/2) exp(-(q^2+y^2)/sigma^2) and the Gaussian integral of exp(-y^2/sigma^2 - 2ipy) over y equal to sqrt(pi) sigma exp(-sigma^2 p^2), one gets W(q,p) = (1/pi) exp(-q^2/sigma^2 - sigma^2 p^2), whose integral over R^2 is (1/pi)(sqrt(pi) sigma)(sqrt(pi)/sigma) = 1, exactly as stated.",
+    "_model": "claude-opus-5-5"
+  },
+  "ab_12": {
+    "verdict": "VALID",
+    "confidence": 0.6,
+    "objection": "The lower bound is correct: coloring one bipartition class with distinct colors works, because each colored vertex's closed neighborhood contains only itself as a colored vertex. The upper bound also appears to hold: a singleton class allows at most one colored neighbor, and by Huang's sensitivity theorem any induced subgraph of Q_n on more than 2^{n-1} vertices has a vertex of degree at least 2. A class of size s\u22652 yields at most one color per two vertices. Small cases (n=2,3) confirm 2^{n-1}. The 'discharging' step in the proof is only sketched, but the claimed value is plausibly correct.",
+    "_model": "claude-opus-5-5"
+  },
+  "ab_17": {
+    "verdict": "FLAWED",
+    "confidence": 0.97,
+    "objection": "The Fourier identity used in the proof is off by a factor of 2: (1/(2\u03c0))\u222bexp(-2ipy)dp = \u03b4(2y) = \u03b4(y)/2, not \u03b4(y). With the stated prefactor 1/(2\u03c0) and the kernel \u03c1(q+y, q\u2212y), the double integral equals (1/2)\u222b(\u03c0\u03c3\u00b2)^(-1/2)exp(-q\u00b2/\u03c3\u00b2)dq = 1/2, not 1. The correctly normalized Wigner function in this convention needs the prefactor 1/\u03c0 (equivalently 1/(2\u03c0) with \u03c1(q+y/2, q\u2212y/2) and exp(-ipy)).",
+    "_model": "claude-opus-5-5"
+  },
+  "ab_10": {
+    "verdict": "FLAWED",
+    "confidence": 0.6,
+    "objection": "The proof gives no valid reason for the conclusion: multiplying by c does not preserve the least positive residues, so S_m(H)=mk/2 says nothing directly about S_m(cH). Writing S_m(cH)-mk/2 as a character sum, the deviation is (k/\u03c6(m))\u00b7\u03a3 conj(\u03c7(c))\u00b7m\u00b7B_{1,\u03c7}, taken over odd characters \u03c7 that are trivial on H. Centering H forces only the c=1 sum to vanish. For m=pq, imprimitive characters let nonzero terms cancel in that one sum without each term being zero, and then cosets of index at least 3 can be off-centre. The statement holds automatically when -1 lies in H or when the index is 2, but the general claim and its symmetry argument are not justified.",
+    "_model": "claude-opus-5-5"
+  },
+  "ab_06": {
+    "verdict": "FLAWED",
+    "confidence": 0.55,
+    "objection": "The proof does not work. In the Haar-average representation, Q(rho) equals the average Shannon entropy of the measurement outcomes minus a constant that depends on dimension (a harmonic-number offset), not the Shannon entropy alone. Haar-random rank-1 measurements on the joint space AB also are not product measurements on A and B, so classical subadditivity and unitary invariance do not combine as the sketch claims. The 'positive pinching' step does not repair this, and subentropy is not additive even on product states (for example, Q(I/4) differs from 2Q(I/2)). Subadditivity therefore lacks a valid argument and is not a known property of subentropy.",
+    "_model": "claude-opus-5-5"
+  },
+  "ab_19": {
+    "verdict": "VALID",
+    "confidence": 0.97,
+    "objection": "Every independent set in K_m \u25a1 K_m is a non-attacking rook placement of size at most m, and one of size k < m leaves at least one empty row and one empty column, whose shared cell extends it. So every maximal independent set has exactly m vertices, and the graph is well-covered.",
+    "_model": "claude-opus-5-5"
+  },
+  "ab_14": {
+    "verdict": "VALID",
+    "confidence": 0.8,
+    "objection": "Both bounds hold. Lower bound: a dissociation set (one inducing maximum degree at most 1) can be colored with one color per vertex. By Lov\u00e1sz's 1966 partition theorem, every graph of maximum degree 3 splits into two such sets, so one of them has at least n/2 vertices. Upper bound: let S be the vertices whose same-colored neighbor is not adjacent, U the uncolored vertices, and P the remaining colored vertices. Each vertex in S has at least 2 uncolored neighbors, so 2|S| <= 3|U|. Every color with no vertex in S uses at least 2 vertices of P. Hence #colors <= |S| + (n - |S| - |U|)/2 <= n/2 + |S|/6 <= 3n/5, since |S| <= 3n/5. The stated lower-bound argument is garbled: it derives only 2n/5 and gestures at an unspecified refinement. The proposition itself is correct.",
+    "_model": "claude-opus-5-5"
+  },
+  "ab_18": {
+    "verdict": "FLAWED",
+    "confidence": 0.93,
+    "objection": "A counterexample is the double star made of two adjacent centers u and v, each with two leaves. Color u and v with color A and give each of the four leaves its own new color. Then u sees 2 of its 4 colored closed neighbors in color A, which is exactly half, and each leaf sees 1 of 2 in its own color. That is a valid sub-quorum coloring with 5 colors. The dissociation number is only 4, because any dissociation set contains at most 2 vertices from each center together with its two leaves. The proof also fails: a representative can have degree 4 with two neighbors of its own color, so three representatives can form a path of three vertices.",
+    "_model": "claude-opus-5-5"
+  },
+  "ab_20": {
+    "verdict": "FLAWED",
+    "confidence": 0.9,
+    "objection": "\u4ee4 A_R(P)=R^{-1/2}(R^{1/2}PR^{1/2})^{1/2},\u5219 B_R(P,Q)=||A_R(P)-A_R(Q)||_F^2\u3002\u8fd9\u662f\u4ee5 R \u4e3a\u53c2\u8003\u70b9\u7684\u7ebf\u6027\u5316\u6700\u4f18\u8f93\u8fd0\u8ddd\u79bb,\u5b83\u4e0d\u5c0f\u4e8e Bures \u8ddd\u79bb\u7684\u5e73\u65b9,\u800c\u4e14\u5728\u8f93\u51fa\u53c2\u8003\u70b9 \u03a6(R) \u6539\u53d8\u65f6\u4e0d\u670d\u4ece\u5355\u8c03\u6027;\u8bc1\u660e\u4e2d\u7684\u8bba\u8bc1\u53ea\u662f\u542f\u53d1\u5f0f\u8bf4\u6cd5,\u5bf9\u8fd9\u4e2a\u4f9d\u8d56 R \u7684\u91cf\u6ca1\u6709\u6210\u7acb\u7684\u4f9d\u636e\u3002\u53cd\u4f8b:\u5728 C^3 \u4e0a\u53d6 P=|0><0|,Q=diag(1/2,1/2,0),R=I/3,\u4e09\u8005\u5bf9\u6613,\u6240\u4ee5\u8f93\u5165 B_R=2-\u221a2;\u518d\u53d6\u6d4b\u91cf-\u5236\u5907\u4fe1\u9053 \u03a6(X)=X_00|0><0|+X_11|1><1|+X_22|+><+|,\u5b83\u4fdd\u6301 P \u548c Q \u4e0d\u53d8,\u5374\u628a R \u53d8\u6210 R'=(|0><0|+|1><1|+|+><+|)/3\u3002\u7531\u4e8e Q'=I/2,\u53ef\u5f97 F_{R'}=<0|R'^{1/2}|0>/(\u221a2\u00b7<0|R'|0>^{1/2})<1/\u221a2(Jensen \u4e0d\u7b49\u5f0f\u53d6\u4e25\u683c\u53f7,\u56e0\u4e3a |0> \u4e0d\u662f R' \u7684\u7279\u5f81\u5411\u91cf),\u6240\u4ee5 B_{\u03a6(R)}(\u03a6(P),\u03a6(Q))>B_R(P,Q)\u3002",
+    "_model": "claude-opus-5-5"
+  }
+}

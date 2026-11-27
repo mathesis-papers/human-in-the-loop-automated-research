@@ -1,0 +1,151 @@
+name: Package and Deliver Version to Mathesis
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Monotonic integer Mathesis version (e.g. 1, 2, 3)"
+        required: true
+        type: string
+      previous_version:
+        description: "Previous Mathesis integer version (leave empty for version 1)"
+        required: false
+        default: ""
+        type: string
+      version_label:
+        description: "Human-readable version tag (e.g. v1.0)"
+        required: true
+        default: "v1.0"
+        type: string
+      changelog:
+        description: "Concise release notes summarizing changes and resolved issues"
+        required: false
+        default: ""
+        type: string
+      dry_run:
+        description: "Validate envelope and hashes without calling Mathesis API"
+        required: false
+        default: true
+        type: boolean
+
+jobs:
+  package-and-deliver:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build deterministic source archive and verify digests
+        id: pack
+        shell: python3 {0}
+        env:
+          VERSION: ${{ inputs.version }}
+          PREVIOUS_VERSION: ${{ inputs.previous_version }}
+          VERSION_LABEL: ${{ inputs.version_label }}
+          CHANGELOG: ${{ inputs.changelog }}
+          REPO_URL: https://github.com/${{ github.repository }}
+          COMMIT_SHA: ${{ github.sha }}
+        run: |
+          import hashlib, json, os, zipfile
+          from pathlib import Path
+
+          pdf_path = Path("paper.pdf")
+          assert pdf_path.exists(), "paper.pdf missing"
+          pdf_sha = hashlib.sha256(pdf_path.read_bytes()).hexdigest()
+
+          zip_path = Path(f"source-v{os.environ['VERSION']}.zip")
+          include_dirs = ["paper", "data", "scripts", "LICENSES"]
+          include_files = ["README.md", "CHANGELOG.md", "CITATION.cff", "CONTRIBUTING.md"]
+          with zipfile.ZipFile(zip_path, "w", compression=zipfile.ZIP_DEFLATED) as zf:
+              for f in include_files:
+                  p = Path(f)
+                  if p.exists():
+                      zi = zipfile.ZipInfo(f, date_time=(2026, 11, 27, 0, 0, 0))
+                      zf.writestr(zi, p.read_bytes())
+              for d in include_dirs:
+                  for p in sorted(Path(d).rglob("*")):
+                      if p.is_file() and "__pycache__" not in p.parts:
+                          rel = str(p)
+                          zi = zipfile.ZipInfo(rel, date_time=(2026, 11, 27, 0, 0, 0))
+                          zf.writestr(zi, p.read_bytes())
+          src_sha = hashlib.sha256(zip_path.read_bytes()).hexdigest()
+
+          prev = os.environ["PREVIOUS_VERSION"].strip()
+          prev_val = int(prev) if prev else None
+          changelog = os.environ["CHANGELOG"].strip() or Path("CHANGELOG.md").read_text()[:4000]
+
+          authors = [
+              {"name": "Chloe Chew", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+              {"name": "Abigail Deng", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+              {"name": "Zongzhe Huang", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+              {"name": "Louis Li", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+              {"name": "Rona Liang", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+              {"name": "Kai Huei Lim", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+              {"name": "Kai Wei Lim", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+              {"name": "Yitian Liu", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+              {"name": "Haobo Ma", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+              {"name": "Wen Niu", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+              {"name": "Jianwei Su", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+              {"name": "Calvin Tan", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+              {"name": "Haylee Wang", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+              {"name": "Jason Wang", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+              {"name": "Shining Wang", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+              {"name": "Wenlin Zhang", "affiliation": "ChronoAI Pte Ltd, Singapore; National University of Singapore, Singapore"},
+          ]
+          envelope = {
+              "schema": "mathesis.pre-reviewed-delivery.v1",
+              "producer": "mathesis-internal-editorial",
+              "work_id": "human-in-the-loop-automated-research",
+              "version": int(os.environ["VERSION"]),
+              "previous_version": prev_val,
+              "authorize_publication": True,
+              "paper": {
+                  "kind": "methodology",
+                  "title": "Human-in-the-Loop Automated Research: Verification-Centered Scientific Discovery",
+                  "abstract": "Verification-centered, human-in-the-loop methodology for automated scientific discovery evaluated across 30 blinded public manuscripts (three frontier model families, 90 evaluations), a 20-claim mechanistic ablation eliminating false-positive review slop, a 24,925-PR public admission-gate audit, 17 collaborative arXiv preprints, 177 proof-checking scholars, and an instrumented 33-hour research trace.",
+                  "authors": authors,
+                  "license": "CC-BY-4.0",
+                  "msc": [],
+                  "repository_url": os.environ["REPO_URL"],
+                  "issues_url": os.environ["REPO_URL"] + "/issues",
+                  "version_label": os.environ["VERSION_LABEL"],
+                  "changelog": changelog,
+              },
+              "review": {
+                  "verdict": "INTERNAL_EDITORIAL",
+                  "pdf_sha256": pdf_sha,
+                  "source_sha256": src_sha,
+                  "record": {
+                      "route": "internal_editorial_methodology",
+                      "repository": os.environ["REPO_URL"],
+                      "commit": os.environ["COMMIT_SHA"],
+                      "version_label": os.environ["VERSION_LABEL"],
+                  },
+              },
+          }
+          Path("delivery-metadata.json").write_text(json.dumps(envelope, indent=2) + "\n")
+          print(f"Prepared delivery-metadata.json: pdf={pdf_sha} source={src_sha}")
+
+      - name: Upload version bundle artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: mathesis-delivery-v${{ inputs.version }}
+          path: |
+            paper.pdf
+            source-v${{ inputs.version }}.zip
+            delivery-metadata.json
+
+      - name: Deliver to Mathesis pre-reviewed collection endpoint
+        if: ${{ !inputs.dry_run }}
+        env:
+          MATHESIS_URL: ${{ secrets.MATHESIS_URL }}
+          MATHESIS_TOKEN: ${{ secrets.MATHESIS_TOKEN }}
+          VERSION: ${{ inputs.version }}
+        run: |
+          test -n "$MATHESIS_URL" || { echo "MATHESIS_URL secret not configured"; exit 1; }
+          test -n "$MATHESIS_TOKEN" || { echo "MATHESIS_TOKEN secret not configured"; exit 1; }
+          curl -fsS -X POST "${MATHESIS_URL%/}/api/v1/pre-reviewed-deliveries" \
+            -H "Authorization: Bearer ${MATHESIS_TOKEN}" \
+            -F "metadata=@delivery-metadata.json;type=application/json" \
+            -F "pdf=@paper.pdf;type=application/pdf" \
+            -F "source=@source-v${VERSION}.zip;type=application/zip"

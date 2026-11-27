@@ -1,0 +1,122 @@
+{
+  "ab_01": {
+    "verdict": "FLAWED",
+    "confidence": 0.99,
+    "objection": "The proof incorrectly infers the realignment criterion from positivity of the partial transpose: these are distinct necessary conditions for separability, and PPT does not imply the realignment bound. Indeed, the stated Horodecki family violates the realignment bound; for example, at a = 1/2 its realignment trace norm is approximately 1.00233 > 1 despite its positive partial transpose.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_02": {
+    "verdict": "FLAWED",
+    "confidence": 0.9,
+    "objection": "The essential majorization claim is false: for L = 6, the alternating word 010101 has a supersequence 01010101 of multiplicity 7, whereas every length-8 supersequence of the nonalternating word 010010 has multiplicity at most 6. Thus the alternating multiplicity vector is not majorized by the latter vector, already violating the largest-coordinate inequality; the stated proof therefore does not establish the entropy-maximization assertion.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_03": {
+    "verdict": "FLAWED",
+    "confidence": 1.0,
+    "objection": "Take G = Cay(Z/4Z, {\u00b11}) = C4, which is connected and well-covered with independence number 2. In G \u25a1 G, the set {(0,0),(0,2),(2,1),(2,3)} is independent and dominates every vertex, hence is maximal of size 4, whereas the checkerboard set {(i,j): i+j is even} is maximal independent of size 8. Thus the Cartesian square is not well-covered; vertex-transitivity does not force maximal independent sets to have equal cardinality.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_04": {
+    "verdict": "VALID",
+    "confidence": 1.0,
+    "objection": "For positive definite R, the positive square root of R\u00b2 is R, so substitution of P = R cancels the adjacent factors R and R\u207b\u00b9 and yields exactly the stated root Uhlmann fidelity for every positive semidefinite Q.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_05": {
+    "verdict": "FLAWED",
+    "confidence": 1.0,
+    "objection": "For n=7, take all seven outer vertices u_0,...,u_6 initially blue. Each u_i then has exactly one white neighbor, v_i, so these vertices force all seven inner vertices blue, proving Z(P(7,3)) \u2264 7 < 8 and contradicting the proposition.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_06": {
+    "verdict": "FLAWED",
+    "confidence": 0.93,
+    "objection": "The claimed integral representation omits a dimension-dependent term: in dimension d, Q(\u03c1)=E_U[H(diag(U\u03c1U\u2020))]\u2212(H_d\u22121), where H_d is the dth harmonic number; a pure state already disproves the uncorrected representation. Moreover, classical subadditivity applies to measurements in product bases, whereas the subentropy of \u03c1_AB involves Haar averaging over all joint bases, and these averages are different. The asserted pinching step supplies no inequality connecting them, so the proposed argument does not establish the proposition.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_07": {
+    "verdict": "FLAWED",
+    "confidence": 1.0,
+    "objection": "Take three qubits with rho_ABC = |Phi+><Phi+|_AB tensor I_C/2, where |Phi+> is a maximally entangled Bell state. Then Q(rho_ABC) = Q(rho_B) = ln(2) - 1/2, Q(rho_AB) = 0, and Q(rho_BC) = ln(4) - 13/12, so the proposed inequality is violated by exactly 1/12. Concavity and subadditivity do not imply strong subadditivity through purification.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_08": {
+    "verdict": "VALID",
+    "confidence": 1.0,
+    "objection": "The denominator is positive for every r > 0, the stated difference identity establishes the sharp upper bound and its equality case, and direct simplification verifies invariance under r \u21a6 1/r.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_09": {
+    "verdict": "FLAWED",
+    "confidence": 1.0,
+    "objection": "Take G=P_6, with vertices 1 through 6 in path order. Its square is noncomplete and well-covered: it has no universal vertex, so no singleton independent set is maximal, and three pairwise nonadjacent vertices would require consecutive index gaps of at least 3, which is impossible on six vertices; hence every maximal independent set has size 2. However, G has maximal independent sets {2,5} and {1,3,5}, of sizes 2 and 3 respectively.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_10": {
+    "verdict": "FLAWED",
+    "confidence": 1.0,
+    "objection": "Take m = 35 and H = \u27e813\u27e9 = {1, 13, 29, 27}, a cyclic subgroup of order k = 4 with S_35(H) = 70 = mk/2. However, the unit c = 3 gives 3H = {3, 4, 17, 11}, whose least positive residues sum to 35, not 70; equality of the subgroup\u2019s mean residue to m/2 does not imply symmetry or preservation of that mean under multiplication by units.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_11": {
+    "verdict": "FLAWED",
+    "confidence": 1.0,
+    "objection": "For L=3, N_2(y) counts the distinct single symbols occurring in y, so N_2(001)=2=N_2(010), the largest possible value. Thus a nonalternating word attains the maximum, disproving uniqueness and the claimed strict monotonicity in run count.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_12": {
+    "verdict": "FLAWED",
+    "confidence": 0.98,
+    "objection": "The claimed singleton-class restriction is false: two adjacent vertices given distinct singleton colors, with every other vertex uncolored, satisfy the rule because each sees exactly one vertex of its own color among two colored vertices in its closed neighborhood. A singleton may therefore have one colored neighbor, and the unspecified discharging argument does not establish the upper bound; this identifies an essential gap in the proof, rather than a counterexample to the numerical equality itself.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_13": {
+    "verdict": "VALID",
+    "confidence": 1.0,
+    "objection": "The Cauchy product with 1/(1-z) gives the stated partial sums, and multiplication by z produces the required indexing, with convergence valid for |z|<1/4.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_14": {
+    "verdict": "VALID",
+    "confidence": 0.99,
+    "objection": "The bounds hold: a maximum cut supplies an induced subgraph of maximum degree at most one on at least n/2 vertices, which may all receive distinct colors, while counting edges from singleton color classes to uncolored vertices gives the upper bound 3n/5, although the sketch\u2019s component-coloring justification for the lower bound needs this correction.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_15": {
+    "verdict": "VALID",
+    "confidence": 1.0,
+    "objection": "Because -1 belongs to H, negation preserves each coset cH and, for odd m, partitions its least positive representatives into |H|/2 disjoint pairs each summing to m.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_16": {
+    "verdict": "VALID",
+    "confidence": 1.0,
+    "objection": "The density-kernel substitution, Fourier Gaussian integral, and resulting prefactor are correct for every sigma > 0, and the stated Wigner function integrates to 1.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_17": {
+    "verdict": "FLAWED",
+    "confidence": 1.0,
+    "objection": "The Fourier identity used in the proof is missing a factor: (1/(2\u03c0))\u222b exp(-2ipy) dp = \u03b4(2y) = (1/2)\u03b4(y). Consequently the stated W integrates to 1/2, not 1; with this choice of integration variable and phase, the normalization prefactor must be 1/\u03c0.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_18": {
+    "verdict": "FLAWED",
+    "confidence": 1.0,
+    "objection": "Let T consist of two adjacent vertices, each with two pendant leaves; color the two central vertices with one common color and the four leaves with four distinct additional colors. This is a sub-quorum coloring: each center has two of its four colored closed-neighborhood vertices in its own color, and each leaf has one of two, so psi_sq(T) >= 5. However, diss(T) = 4, since the four leaves form a dissociation set and every five-vertex subset contains a vertex of induced degree at least 2.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_19": {
+    "verdict": "VALID",
+    "confidence": 1.0,
+    "objection": "An independent set occupies distinct rows and columns, and any such set of size less than m can be extended at the intersection of an unused row and an unused column, so every maximal independent set has exactly m vertices.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_20": {
+    "verdict": "FLAWED",
+    "confidence": 1.0,
+    "objection": "Take n=3, P=|e\u2081\u27e9\u27e8e\u2081|, Q=|e\u2082\u27e9\u27e8e\u2082|, R=diag(\u03b5,\u03b5,1\u22122\u03b5) with 0<\u03b5<1/14, and the CPTP measure-and-prepare channel \u03a6(X)=X\u2081\u2081|p\u27e9\u27e8p|+X\u2082\u2082|q\u27e9\u27e8q|+X\u2083\u2083|r\u27e9\u27e8r|, where p=e\u2081, q=(e\u2081+e\u2082)/\u221a2 and r=(e\u2081\u22122e\u2082+e\u2083)/\u221a6. The vectors p,q,r are linearly independent, so S=\u03a6(R)>0, but the rank-one square-root formula gives F_S(\u03a6(P),\u03a6(Q))=Tr(S|p\u27e9\u27e8p|q\u27e9\u27e8q|)/\u221a(\u27e8p|S|p\u27e9\u27e8q|S|q\u27e9), whose numerator is (14\u03b5\u22121)/12<0. Consequently B_S(\u03a6(P),\u03a6(Q))>2=B_R(P,Q), contradicting the proposed inequality.",
+    "_model": "gpt-6.1-sol"
+  }
+}

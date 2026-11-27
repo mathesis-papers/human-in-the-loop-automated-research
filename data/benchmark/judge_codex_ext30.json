@@ -1,0 +1,317 @@
+{
+  "ext_01": {
+    "correctness_rigor": 8.7,
+    "claim_calibration": 9.1,
+    "verification_grounding": 8.3,
+    "novelty_significance": 8.4,
+    "literature_attribution": 9.2,
+    "clarity_exposition": 8.5,
+    "overall": 8.6,
+    "rationale": "The split-prime CM hypotheses, period normalizations, norm compatibility and measure-moment congruences are developed carefully, giving substantial analytical grounding for the proposed reciprocity formula. The two-variable extension is significant and explicitly acknowledges the cyclotomic-line precedent and an independent overlapping result; verification relies heavily on imported, normalization-sensitive Coleman and de Shalit identities."
+  },
+  "ext_02": {
+    "correctness_rigor": 4.1,
+    "claim_calibration": 4.2,
+    "verification_grounding": 5.4,
+    "novelty_significance": 5.0,
+    "literature_attribution": 6.3,
+    "clarity_exposition": 6.6,
+    "overall": 4.4,
+    "rationale": "The coordinate transformation, local oscillatory asymptotics and special exact solutions provide useful, checkable calculations, supplemented by shooting computations with specified step sizes. However, varying an unspecified boundary condition does not establish a continuous bound-state spectrum for a single self-adjoint Hamiltonian, and normalizability alone does not establish physical admissibility. The reported finite-coupling disappearance of hard-core inverse-square binding also lacks the analysis needed to distinguish a true threshold from numerical resolution."
+  },
+  "ext_03": {
+    "correctness_rigor": 9.2,
+    "claim_calibration": 9.3,
+    "verification_grounding": 8.9,
+    "novelty_significance": 8.2,
+    "literature_attribution": 8.1,
+    "clarity_exposition": 9.1,
+    "overall": 8.8,
+    "rationale": "The total edge-dominating forest construction and witness-counting proof of 2-degeneracy give a convincing, explicit derivation of the 3\u03c7\u2032 bound, including parallel edges and small components. Palette arguments substantiate the complete-graph obstructions and the displayed matching construction, with exceptional orders treated explicitly. The contribution is substantial within this specialized coloring problem, although the gap between asymptotic constants 2 and 3 remains."
+  },
+  "ext_04": {
+    "correctness_rigor": 9.4,
+    "claim_calibration": 9.5,
+    "verification_grounding": 9.4,
+    "novelty_significance": 7.3,
+    "literature_attribution": 8.3,
+    "clarity_exposition": 9.2,
+    "overall": 8.5,
+    "rationale": "The orbit-stabilizer analysis, collapse factorizations and merger criterion form a complete structural proof, and the cardinalities and maximal-submonoid argument follow transparently. Exact enumeration is supported by a logically sufficient independent certificate checker and precisely scoped reported Lean verification, with shortest-word distributions explicitly excluded from the formal claims. The main limitation is significance: this is a detailed solution for one small finite action, while a structural characterization of the lazy-only monoid remains open."
+  },
+  "ext_05": {
+    "correctness_rigor": 9.2,
+    "claim_calibration": 9.5,
+    "verification_grounding": 9.2,
+    "novelty_significance": 8.5,
+    "literature_attribution": 8.6,
+    "clarity_exposition": 8.4,
+    "overall": 9.0,
+    "rationale": "The Poisson-summation kernel identity, parity-based inertia argument and common-purification tail estimates supply a coherent proof of positivity and exponential trace-norm approximation, including the pure-state boundary. The text carefully distinguishes fixed dimensionless covariance, rescaled basis coherence and numerical changing-frame comparisons, and provides explicit certified error bounds. The covariance-independent embedding and full inertia classification are meaningful advances over the cited qualitative limits, though extensive frame preliminaries dilute the presentation and the numerical package is available only on request."
+  },
+  "ext_06": {
+    "correctness_rigor": 8.6,
+    "claim_calibration": 8.4,
+    "verification_grounding": 8.1,
+    "novelty_significance": 7.4,
+    "literature_attribution": 9.0,
+    "clarity_exposition": 8.7,
+    "overall": 8.2,
+    "rationale": "Defensive mixture weights, predictable adaptation and monotone betting-test inversion give a sound route to the stated time-uniform guarantees, and the study reports failed gain cases and uncompetitive upper bounds explicitly. Enumeration, ablations and thousands of coverage replications provide unusually concrete empirical grounding, although the 'exact' probabilities are floating-point sums rather than certified arithmetic. The main advance is an application and evaluation of established importance-weighted confidence-sequence tools, with evidence limited to short top-k GPT-2 continuations and token-format events."
+  },
+  "ext_07": {
+    "correctness_rigor": 8.9,
+    "claim_calibration": 9.6,
+    "verification_grounding": 8.2,
+    "novelty_significance": 4.5,
+    "literature_attribution": 4.9,
+    "clarity_exposition": 8.1,
+    "overall": 6.6,
+    "rationale": "The repaired budgets, independent tuning/evaluation streams, paired estimands and Hoeffding\u2013Bonferroni bounds support the reported reversal, with zero-variance cases and tuning-conditional uncertainty handled explicitly. Scientific significance is limited to correcting a narrow homogeneous Gaussian simulation, and attribution offers only one substantive external best-arm reference alongside two cohort studies. Reproducibility is described carefully, but the repeated scope qualifications occupy considerable space and neither broader algorithm comparisons nor mechanism-isolating ablations are supplied."
+  },
+  "ext_08": {
+    "correctness_rigor": 9.3,
+    "claim_calibration": 9.6,
+    "verification_grounding": 9.3,
+    "novelty_significance": 8.2,
+    "literature_attribution": 9.3,
+    "clarity_exposition": 9.0,
+    "overall": 9.0,
+    "rationale": "The first-forcing-sources lemma, boundary counting and buffered-column deletion give explicit infinite-to-finite reductions, with small cases and sharpness addressed separately. Finite predicates, SAT semantics, independent DRAT checks and precisely delimited archived Lean coverage provide strong complementary verification without conflating their scopes. Resolving the k=3 conjecture and the k=4 threshold is a substantive specialized contribution, although the latter lower bound remains dependent on a sizeable finite certificate package rather than a structural classification."
+  },
+  "ext_09": {
+    "correctness_rigor": 9.3,
+    "claim_calibration": 9.6,
+    "verification_grounding": 9.1,
+    "novelty_significance": 8.6,
+    "literature_attribution": 9.3,
+    "clarity_exposition": 9.1,
+    "overall": 9.1,
+    "rationale": "The posterior normalization, exact run recurrence and strict convexity estimates form a detailed proof of the two-error extrema, with the insertion exceptions explicitly computed. Integer-product entropy comparisons and all-radius alternating-word histograms give independently checkable exact evidence, while the three-error optimality claims remain correctly labeled finite results and conjectures. Attribution distinguishes inherited embedding formulas from the new extremal comparisons; the reported Lean companion is less precisely documented than the self-contained analytical and enumeration arguments."
+  },
+  "ext_10": {
+    "correctness_rigor": 7.3,
+    "claim_calibration": 7.7,
+    "verification_grounding": 8.2,
+    "novelty_significance": 8.4,
+    "literature_attribution": 8.8,
+    "clarity_exposition": 8.6,
+    "overall": 7.9,
+    "rationale": "The clipped-loss gradient is derived correctly, and the identical-prompt control plus objective/context factorial experiment gives persuasive evidence of an implementation-induced failure. However, decreasing an excluded token's logit does not establish the claimed irreversible probability-support ratchet under softmax coupling, and negative coordinate KL terms are bounded for a fixed teacher. Missing seeds, four-pair bootstrap inference and unmet preregistered criteria limit the broad causal headline, despite unusually candid reporting of recovery and the unresolved paired-context contrast."
+  },
+  "ext_11": {
+    "correctness_rigor": 7.5,
+    "claim_calibration": 7.8,
+    "verification_grounding": 7.9,
+    "novelty_significance": 8.0,
+    "literature_attribution": 8.5,
+    "clarity_exposition": 8.5,
+    "overall": 7.8,
+    "rationale": "The tangent-space least-squares formulation and parameterized CG/SVD implementation are explicit and technically useful, with quantitative recovery statements and numerical comparisons. However, Appendix A drops the Hankel residual before using a lower bound that needs the combined residual, and Theorem 7.2's noisy convergence conclusion lacks the small-noise/invariance condition required by its displayed recurrence. Quadratic convergence is proved for exact inner solves, while the fixed-tolerance implementation and broad efficiency claims need a corresponding inexact-solve analysis."
+  },
+  "ext_12": {
+    "correctness_rigor": 9.0,
+    "claim_calibration": 9.4,
+    "verification_grounding": 8.7,
+    "novelty_significance": 7.9,
+    "literature_attribution": 9.5,
+    "clarity_exposition": 8.5,
+    "overall": 8.5,
+    "rationale": "The character normalization, CRT linkage and prime-lifting formulas are proved explicitly, and the imprimitive quartic classification includes a justified relative-density calculation and concrete coset checks. Attribution carefully separates standard Bernoulli/class-number machinery and known index-two balance from the new subgroup-specific cancellation results. The remaining primitive quartic cases are largely arithmetic tests rather than a complete classification, and the stated formal verification covers only the counterexample and lifted prime identity."
+  },
+  "ext_13": {
+    "correctness_rigor": 8.6,
+    "claim_calibration": 9.6,
+    "verification_grounding": 7.8,
+    "novelty_significance": 6.6,
+    "literature_attribution": 8.2,
+    "clarity_exposition": 8.2,
+    "overall": 7.3,
+    "rationale": "The matched-community design, distinct topic/idea endpoints, seed-cluster analysis and worst-case missingness bounds are specified carefully, and the failed preregistered completeness gate is honored. Treatment-linked attrition and instrument agreement without expert ground truth prevent the retained trajectories from establishing the planned population effect, despite multiple reconstruction audits. The protocol contributes useful descriptive evidence on peer exposure, but its confirmatory result remains inconclusive and neither scientific quality nor specific social mechanisms are measured."
+  },
+  "ext_14": {
+    "correctness_rigor": 9.3,
+    "claim_calibration": 9.4,
+    "verification_grounding": 8.9,
+    "novelty_significance": 8.3,
+    "literature_attribution": 8.9,
+    "clarity_exposition": 8.6,
+    "overall": 8.8,
+    "rationale": "The characteristic-subgroup extension, finite-field counting argument and Vandermonde obstruction give a complete and persuasive chain from existence to sharpness, with the homocyclic boundary case proved separately. The Latin-square constructions are checked explicitly, and the text appropriately acknowledges that its subgroup-transversal application follows already from earlier work. The simultaneous mapping theorem is a meaningful extension, although the broader noncyclic abelian classification remains open and minor typographical errors and lengthy routine calculations reduce polish."
+  },
+  "ext_15": {
+    "correctness_rigor": 8.5,
+    "claim_calibration": 9.2,
+    "verification_grounding": 7.9,
+    "novelty_significance": 5.9,
+    "literature_attribution": 8.8,
+    "clarity_exposition": 8.4,
+    "overall": 7.2,
+    "rationale": "Matched hyperparameter searches, seed-level comparisons, exact-simulator cross-checks and shuffled-target controls make the negative result credible for the declared environment. The manuscript appropriately retracts robust equivalence when more bootstrap draws move an endpoint across its chosen margin and labels dose-response findings exploratory. Significance remains limited by one small simulator, a selected auxiliary weight with negligible shared-parameter gradients, and borderline transfer intervals; the full transition specification and runnable evidence are delegated to an unspecified package."
+  },
+  "ext_16": {
+    "correctness_rigor": 8.1,
+    "claim_calibration": 9.0,
+    "verification_grounding": 7.0,
+    "novelty_significance": 8.5,
+    "literature_attribution": 8.5,
+    "clarity_exposition": 8.2,
+    "overall": 8.1,
+    "rationale": "The worked four-state conversions provide explicit transition schemes, stable-configuration correspondences, counter invariants, and consistent symbol counts, although the determinism and reversibility checks remain somewhat schematic. Claims are carefully scoped through finite-input assumptions, explicit halting conventions, and the distinction between strict and weak universality, with precise attribution to Morita and relevant small-machine literature. The improved size bounds and proposed two-state decidability result have substantial potential significance, but the supplied portion supports the worked conversions more directly than the announced lower bounds and Lean verification, whose proofs and artifacts are not available here for assessment.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ext_17": {
+    "correctness_rigor": 6.3,
+    "claim_calibration": 6.0,
+    "verification_grounding": 6.6,
+    "novelty_significance": 4.3,
+    "literature_attribution": 6.3,
+    "clarity_exposition": 7.7,
+    "overall": 5.5,
+    "rationale": "The preregistered protocol, transparent exclusion deviation, internally consistent paired counts, exact McNemar tests, and described code and response caches support a clearly presented, reproducible empirical audit. However, the accuracy interval [-1.7, 2.7] does not establish equivalence within \u00b12 percentage points, the pooled position tests lack correction for acknowledged within-item dependence, and the absence of same-order resampling prevents isolating order effects from sampling variability. Relevant external literature is cited, but the contribution remains an incremental single-model benchmark study, and the cross-benchmark verifier comparison provides limited evidence of comparative utility.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ext_18": {
+    "correctness_rigor": 8.8,
+    "claim_calibration": 8.6,
+    "verification_grounding": 8.1,
+    "novelty_significance": 8.0,
+    "literature_attribution": 8.0,
+    "clarity_exposition": 8.4,
+    "overall": 8.3,
+    "rationale": "The complete-factor lifting lemma and the Brooks/Cayley independence-number comparison are convincing, and the iterated construction directly resolves the cited diameter question. The visible proofs carefully justify maximality, distance formulas, and the chordal induction, while explicitly attributing the main imported results. The finite examples rely on reported exhaustive enumeration whose implementation is not independently inspectable in the supplied text, and the introduction\u2019s broad product-classification wording is less precise than the abstract\u2019s distinction between sufficient conditions and partial converses.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ext_19": {
+    "correctness_rigor": 8.5,
+    "claim_calibration": 9.1,
+    "verification_grounding": 8.0,
+    "novelty_significance": 6.4,
+    "literature_attribution": 8.0,
+    "clarity_exposition": 8.4,
+    "overall": 7.5,
+    "rationale": "The transport/commutation criterion follows rigorously from free-monoid cancellation and the explicit run-count bound; the unary-source results and worked counterexamples also receive concrete analytical proofs. The manuscript carefully distinguishes its proved local statements from the open global conjectures and explains its relationship to bounded insertion, shuffle trajectories, and classical word commutation. Its main limitation is the depth and reach of the established contribution: the obstruction characterization and special cases clarify representation ambiguity, but leave general descent and Singleton No-Gap unresolved, limiting the demonstrated case for top-tier significance.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ext_20": {
+    "correctness_rigor": 7.2,
+    "claim_calibration": 8.2,
+    "verification_grounding": 6.8,
+    "novelty_significance": 5.8,
+    "literature_attribution": 7.7,
+    "clarity_exposition": 8.1,
+    "overall": 6.7,
+    "rationale": "The matched-call baseline, shared initial samples, isolated-revision control, and item-stratified bootstrap provide a sound comparative design, and the manuscript appropriately treats its primary results as unresolved at the preregistered 2 pp margin. However, 56 screened items and one model limit generalizability, while functional-form selection from very short, correlated accuracy curves provides weak scaling evidence; the reported IND(1)\u2013IND(2) discrepancy reflects estimation noise despite their exact equality under uniform tie breaking, and odd-sized multiclass votes can still tie. The external literature is well contextualized and the reporting is unusually transparent, but numerical-ledger consistency does not independently validate experimental execution, and the substantive contribution is an incremental, underpowered extension of existing matched-budget debate studies.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ext_21": {
+    "correctness_rigor": 8.3,
+    "claim_calibration": 9.0,
+    "verification_grounding": 8.1,
+    "novelty_significance": 4.7,
+    "literature_attribution": 6.7,
+    "clarity_exposition": 8.5,
+    "overall": 6.7,
+    "rationale": "The manuscript precisely defines its paired estimand, separates transformation fitting from evaluation, and reports internally consistent results supported by detailed source authentication, independent numerical reconstruction, and reproducibility checks. Its equivalence conclusion remains dependent on a Student approximation from only three training seeds, conditional on one panel, split, and direction bank; these limitations and the substantial variance mismatch between principal-component and random removals are explicitly acknowledged. The principal weakness for a top-tier journal is significance: this is a carefully executed but narrow robustness audit of an inherited cohort comparison, with limited structural explanation, modest engagement with external literature, and no demonstrated generalization beyond the selected intervention and endpoint.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ext_22": {
+    "correctness_rigor": 8.2,
+    "claim_calibration": 8.4,
+    "verification_grounding": 7.5,
+    "novelty_significance": 7.7,
+    "literature_attribution": 7.4,
+    "clarity_exposition": 6.7,
+    "overall": 7.5,
+    "rationale": "The displayed Choi reformulation, dimension-normalization cancellation, and CPTP restriction/extension argument are explicit and appear sound, preserving optimization over arbitrary finite auxiliary dimensions and joint channels. The advertised exact endpoint value and additivity address a substantial question with carefully stated scope, although their decisive upper bounds and perturbation estimates are not available in the supplied excerpt and therefore remain unassessed. Attribution identifies relevant research directions but needs a sharper comparison with the precise results of [7], while extensive repetition and frequent grammatical errors weaken otherwise understandable exposition.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ext_23": {
+    "correctness_rigor": 7.7,
+    "claim_calibration": 8.4,
+    "verification_grounding": 7.9,
+    "novelty_significance": 7.5,
+    "literature_attribution": 8.0,
+    "clarity_exposition": 7.8,
+    "overall": 7.7,
+    "rationale": "Explicit legal-site recurrences, coefficientwise polynomial identities, uniqueness arguments, and convergence estimates for the formal orbit sums provide substantial analytical grounding for these focused enumeration contributions, with specific attribution to the classification and kernel-method literature. However, the B-tree exhaustion proof incorrectly identifies L,M,L as pattern 101 rather than 010, leaving its equality case unjustified as written; this appears locally repairable but requires an explicit argument. Claims are generally precise about total-count versus refined identities, while an unresolved supplementary cross-reference reduces the exposition's finish and reproducibility.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ext_24": {
+    "correctness_rigor": 3.0,
+    "claim_calibration": 3.5,
+    "verification_grounding": 2.5,
+    "novelty_significance": 4.0,
+    "literature_attribution": 6.0,
+    "clarity_exposition": 5.5,
+    "overall": 3.0,
+    "rationale": "The Boolean-lattice proof that K\u00b2=id is sound, and the manuscript provides useful connections to the numerical-integration and incidence-Hopf-algebra literature. However, Theorem 4 is false for the explicitly defined graph Hopf algebra: a single edge e has S(e)=\u2212e+2v\u00b2, where v is a single vertex, whereas (21) gives \u2212e+v\u00b2; the assertion that a tree has only one acyclic orientation is incorrect. Equation (18) also reverses the required set difference, and the central antipode identification consequently lacks a valid proof or independent verification, substantially undermining the claimed structural contribution.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ext_25": {
+    "correctness_rigor": 8.2,
+    "claim_calibration": 8.9,
+    "verification_grounding": 6.5,
+    "novelty_significance": 7.8,
+    "literature_attribution": 8.6,
+    "clarity_exposition": 8.4,
+    "overall": 7.8,
+    "rationale": "The interlacing and integrality arguments and the two-dimensional Seidel-switching reduction are convincing, while the explicit non-transmission-regular examples and restricted uniqueness theorem provide a substantive, well-attributed contribution. However, the c=3 classification depends on an exhaustive enumeration whose code is supplied only on request and whose floating-point rejection step lacks a certified error bound; exact testing of surviving candidates does not establish that no admissible candidates were discarded. The claims are otherwise carefully scoped and the exposition is clear, but reproducible computational materials and a rigorous completeness certificate are needed to substantiate the full classification.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ext_26": {
+    "correctness_rigor": 7.7,
+    "claim_calibration": 7.9,
+    "verification_grounding": 6.8,
+    "novelty_significance": 7.2,
+    "literature_attribution": 7.6,
+    "clarity_exposition": 8.3,
+    "overall": 7.4,
+    "rationale": "The explicit lattice Hamiltonian, consistent canonical site\u2013mode transformation, and vacuum-subtracted observables provide a sound analytical foundation, while the introduction acknowledges closely related Yukawa simulations and hybrid architectures. The proposed blue-sideband phonon-addition procedure needs heralding and occupation-dependent error conditions specified for an interacting initial state, and incoherent occupation requires corroboration to distinguish resonant production from other fluctuations. The architecture-specific study and reported beyond-one-loop effects are promising, but the supplied text establishes the encoding and measurement framework more firmly than the quantitative accuracy or significance of those effects; the detailed perturbative and convergence evidence cannot be assessed within this excerpt.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ext_27": {
+    "correctness_rigor": 8.1,
+    "claim_calibration": 9.3,
+    "verification_grounding": 6.7,
+    "novelty_significance": 4.8,
+    "literature_attribution": 4.5,
+    "clarity_exposition": 8.5,
+    "overall": 6.5,
+    "rationale": "The coupled count control, explicit Adam skip semantics, and correctly calculated seed-level interval support the narrow selection-effect claim; the manuscript carefully distinguishes acquisition gains from retention and avoids claiming superiority to ordinary training. Verification rests on reported audits of saved outputs rather than demonstrated independent training reproduction, while four inherited parents on one small synthetic task provide limited evidence of robustness or broader relevance. The contribution is a useful methodological control with modest novelty, and placeholder references, inaccessible provenance sources, and limited engagement with the broader curriculum-learning and continual-learning literature reduce publication readiness.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ext_28": {
+    "correctness_rigor": 7.8,
+    "claim_calibration": 7.5,
+    "verification_grounding": 8.2,
+    "novelty_significance": 6.8,
+    "literature_attribution": 8.3,
+    "clarity_exposition": 7.8,
+    "overall": 7.3,
+    "rationale": "The explicit partial-transpose spectrum, finite product decomposition, realignment formula, and fixed local projection provide strong analytical certificates for the classification and distillability results, with clear attribution of the underlying static classification. However, the twirl in (17), as written with D\u2297D, preserves swap coherences and does not fix H0; the claimed local realization requires conjugating the second factor, while the abstract misleadingly describes entanglement as vanishing when a bound-entangled tail persists. The dynamical synthesis is useful and well grounded, but its contribution beyond the acknowledged static results is relatively incremental, and the broad historical priority assertions are insufficiently substantiated in the supplied text.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ext_29": {
+    "correctness_rigor": 7.6,
+    "claim_calibration": 9.0,
+    "verification_grounding": 7.3,
+    "novelty_significance": 6.0,
+    "literature_attribution": 7.0,
+    "clarity_exposition": 8.5,
+    "overall": 7.0,
+    "rationale": "The explicit token-matched protocol, paired comparisons, held-back evaluation, and careful separation of preregistered and exploratory findings support the inconclusive primary verdict and the observed pass@1\u2013pass@16 tradeoff under the specified sampling regime. However, three training seeds provide fragile grounds for hierarchical-bootstrap inference, the single-seed AC arm cannot establish stable factor effects, and comparing a seed-level interval width with a sampling-only minimum detectable effect does not establish that training variance dominates. The exposition and diagnostic measurements are strong, but the single-model, single-benchmark scope and incremental advance over existing coverage-collapse findings limit top-tier significance.",
+    "_model": "gpt-6.1-sol"
+  },
+  "ext_30": {
+    "correctness_rigor": 7.6,
+    "claim_calibration": 7.4,
+    "verification_grounding": 6.9,
+    "novelty_significance": 8.7,
+    "literature_attribution": 6.5,
+    "clarity_exposition": 8.2,
+    "overall": 7.6,
+    "rationale": "The manuscript presents a coherent common-ambient-dimension framework for the Nichols\u2013Wootters entropies, with exact spectral, simplex, compression, and Bregman representations, together with clearly stated sharp equality and coefficient claims; the problem and roadmap are unusually well organized. The central subadditivity, strong-subadditivity, quantitative, and operational-capacity conclusions are supported in the supplied text mainly by forward references to later proofs and appendices, so boundary-case arguments, certificate reproducibility, and comparison with the broader modern literature remain insufficiently auditable for top-tier acceptance.",
+    "_model": "gpt-6.1-sol"
+  }
+}

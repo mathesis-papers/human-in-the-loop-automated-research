@@ -1,0 +1,182 @@
+{
+  "ab_01": {
+    "verdict": "FLAWED",
+    "gate_status": "COUNTEREXAMPLE_VERIFIED",
+    "returncode": 0,
+    "script_path": "data/benchmark/arm4_scripts/verify_ab_01.py",
+    "stdout_tail": " -4644745075000000/25000000089522939]\n  [0, 0, 0, 25000000000000000/25000000089522939, 0, 0, 0, 0, 0]\n  [-7909898275000000/25000000089522939, 0, -943288475000000/8333333363174313, 0, 5316072650000000/8333333363174313, 0, -943288475000000/8333333363174313, 0, 5696700575000000/8333333363174313]\n  [0, 0, 0, 0, 0, 25000000000000000/25000000089522939, 0, 0, 0]\n  [-4644745075000000/25000000089522939, 0, -1831683925000000/25000000089522939, 0, 6459624700000000/25000000089522939, 0, 7722772025000000/8333333363174313, 0, -4644745075000000/25000000089522939]\n  [0, 0, 0, 0, 0, 0, 0, 25000000000000000/25000000089522939, 0]\n  [1674848875000000/2777777787724771, 0, 8298059275000000/25000000089522939, 0, -440918800000000/1923076929963303, 0, 8298059275000000/25000000089522939, 0, 1674848875000000/2777777787724771]\nExact upper bound for ||W||_op^2: 25000000000000000/25000000089522939\nExact lower bound for ||R(rho)||_1: 726365947750000000/725000002596165231\nExact certified excess above 1: 1365945153834769/725000002596165231\nCertified lower bound (decimal): 1.001884062274\nNumerical singular-value sum: 1.001884065718\nThe certified excess is strictly greater than 1e-6.\nVERDICT: COUNTEREXAMPLE_VERIFIED",
+    "stderr_tail": "",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_02": {
+    "verdict": "VALID",
+    "gate_status": "NO_COUNTEREXAMPLE",
+    "returncode": 0,
+    "script_path": "data/benchmark/arm4_scripts/verify_ab_02.py",
+    "stdout_tail": "Systematic exact two-deletion entropy comparison completed.\nFully exhausted lengths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]\nTotal concrete output words checked: 104352\nAlso checked an initial portion of length 16\nEvery tested posterior had exact total multiplicity 4*C(L+2,2).\nEntropy ordering was compared using arbitrary-precision integers.\nNo counterexample was found in the tested instances.\nThese finite checks do not prove the claim for all lengths.\nVERDICT: CONSISTENT_NO_COUNTEREXAMPLE",
+    "stderr_tail": "",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_03": {
+    "verdict": "FLAWED",
+    "gate_status": "COUNTEREXAMPLE_VERIFIED",
+    "returncode": 0,
+    "script_path": "data/benchmark/arm4_scripts/verify_ab_03.py",
+    "stdout_tail": "aph structure, and connectedness.\nG is the cycle C4.\nExhaustively checked all 16 subsets of G.\nAll maximal independent sets of G: [[0, 2], [1, 3]]\nTheir common cardinality: 2\nVerified the Cartesian-square adjacency definition exactly.\nSquare subsets examined: 1291\nMaximal independent set A: [(0, 0), (0, 2), (1, 1), (1, 3), (2, 0), (2, 2), (3, 1), (3, 3)]\n|A| = 8\nMaximal independent set B: [(0, 1), (0, 3), (2, 0), (2, 2)]\n|B| = 4\nBoth sets were checked to contain no adjacent pair.\nMaximality certificates below give, for every excluded\nvertex, an adjacent vertex belonging to the indicated set.\nCertificate for A (excluded vertex, neighbor in A): [((0, 1), (0, 0)), ((0, 3), (0, 0)), ((1, 0), (0, 0)), ((1, 2), (0, 2)), ((2, 1), (1, 1)), ((2, 3), (1, 3)), ((3, 0), (0, 0)), ((3, 2), (0, 2))]\nCertificate for B (excluded vertex, neighbor in B): [((0, 0), (0, 1)), ((0, 2), (0, 1)), ((1, 0), (2, 0)), ((1, 1), (0, 1)), ((1, 2), (2, 2)), ((1, 3), (0, 3)), ((2, 1), (2, 0)), ((2, 3), (2, 0)), ((3, 0), (2, 0)), ((3, 1), (0, 1)), ((3, 2), (2, 2)), ((3, 3), (0, 3))]\nEvery stated hypothesis holds, but the square has maximal\nindependent sets of different cardinalities.\nVERDICT: COUNTEREXAMPLE_VERIFIED",
+    "stderr_tail": "",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_04": {
+    "verdict": "VALID",
+    "gate_status": "NO_COUNTEREXAMPLE",
+    "returncode": 0,
+    "script_path": "data/benchmark/arm4_scripts/verify_ab_04.py",
+    "stdout_tail": "All hypothesis checks and square-root certificates used exact rationals.\nChecked 527 instances in dimensions 1, 2, and 3.\nExhaustive 2x2 grid: 25 reference roots x 19 PSD roots.\nNoncommuting R,Q cases: 300\nSingular Q cases: 253\nZero Q cases: 41\nBoth fidelities were exactly equal in every tested instance.\nVERDICT: CONSISTENT_NO_COUNTEREXAMPLE",
+    "stderr_tail": "",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_05": {
+    "verdict": "FLAWED",
+    "gate_status": "COUNTEREXAMPLE_VERIFIED",
+    "returncode": 0,
+    "script_path": "data/benchmark/arm4_scripts/verify_ab_05.py",
+    "stdout_tail": "Counterexample graph: P(7,3)\nVerified integer n = 7 >= 7.\nVerified all 14 vertices and all 21 prescribed edges.\nVerified simplicity, undirected adjacency, cubic degrees, and connectedness.\nAll checks use exact integers and finite sets; no numerical tolerances.\nEdges:\n  u_0 -- u_1\n  u_0 -- u_6\n  u_0 -- v_0\n  u_1 -- u_2\n  u_1 -- v_1\n  u_2 -- u_3\n  u_2 -- v_2\n  u_3 -- u_4\n  u_3 -- v_3\n  u_4 -- u_5\n  u_4 -- v_4\n  u_5 -- u_6\n  u_5 -- v_5\n  u_6 -- v_6\n  v_0 -- v_3\n  v_0 -- v_4\n  v_1 -- v_4\n  v_1 -- v_5\n  v_2 -- v_5\n  v_2 -- v_6\n  v_3 -- v_6\nInitial blue set: {u_0, u_1, u_2, u_3, u_4, u_5}\nInitial blue set size: 6 < 8\nIndependently verified forcing sequence:\n  1: u_1 -> v_1\n  2: u_2 -> v_2\n  3: u_3 -> v_3\n  4: u_4 -> v_4\n  5: v_1 -> v_5\n  6: u_5 -> u_6\n  7: u_0 -> v_0\n  8: u_6 -> v_6\nEvery force has a blue source with exactly one white neighbor.\nAll 14 vertices become blue.\nSets tested in increasing cardinality: 3474\nThus Z(P(7,3)) <= 6 < 8, contradicting the proposition.\nVERDICT: COUNTEREXAMPLE_VERIFIED",
+    "stderr_tail": "",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_06": {
+    "verdict": "VALID",
+    "gate_status": "NO_COUNTEREXAMPLE",
+    "returncode": 0,
+    "script_path": "data/benchmark/arm4_scripts/verify_ab_06.py",
+    "stdout_tail": "Subentropy evaluator passed pure-state and maximally-mixed checks.\nDensity matrices checked: 9882\nChecks by family: {'exact product states': 64, 'pure-marginal boundary': 4, 'systematic 2x2 tables': 7314, 'seeded diagonal-state search': 2500}\nFully enumerated 2x2 integer-table totals: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]\nEvery tested state and both partial traces verified exactly.\nSubentropy evaluated at 80 decimal digits with multiplicities.\nRequired violation margin: 0.000001\nLargest observed Q(AB)-Q(A)-Q(B): 0E-80\nScope: diagonal bipartite states; this search is not a general proof.\nVERDICT: CONSISTENT_NO_COUNTEREXAMPLE",
+    "stderr_tail": "",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_07": {
+    "verdict": "FLAWED",
+    "gate_status": "COUNTEREXAMPLE_VERIFIED",
+    "returncode": 0,
+    "script_path": "data/benchmark/arm4_scripts/verify_ab_07.py",
+    "stdout_tail": "Witness: rho_ABC = (I_2/2)_A tensor |Phi+><Phi+|_BC.\nSubsystem dimensions: A = B = C = 2.\nBasis order: |000>, |001>, ..., |111>.\nExact rho_ABC:\n  [1/4, 0, 0, 1/4, 0, 0, 0, 0]\n  [0, 0, 0, 0, 0, 0, 0, 0]\n  [0, 0, 0, 0, 0, 0, 0, 0]\n  [1/4, 0, 0, 1/4, 0, 0, 0, 0]\n  [0, 0, 0, 0, 1/4, 0, 0, 1/4]\n  [0, 0, 0, 0, 0, 0, 0, 0]\n  [0, 0, 0, 0, 0, 0, 0, 0]\n  [0, 0, 0, 0, 1/4, 0, 0, 1/4]\nVerified exactly: Hermiticity, trace 1, positive semidefiniteness,\ntensor dimensions, all required partial traces, and all spectra.\nSpectrum(ABC) = [1/2, 1/2, 0, 0, 0, 0, 0, 0]\nQ(ABC) = 0.193147180559945309417232121458\nSpectrum(B) = [1/2, 1/2]\nQ(B) = 0.193147180559945309417232121458\nSpectrum(AB) = [1/4, 1/4, 1/4, 1/4]\nQ(AB) = 0.302961027786557285501130909583\nSpectrum(BC) = [1, 0, 0, 0]\nQ(BC) = 0.000000000000000000000000000000\nSSA left side  = 0.386294361119890618834464242916\nSSA right side = 0.302961027786557285501130909583\nExact left-minus-right defect = 1/12 > 0.\nVERDICT: COUNTEREXAMPLE_VERIFIED",
+    "stderr_tail": "",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_08": {
+    "verdict": "VALID",
+    "gate_status": "NO_COUNTEREXAMPLE",
+    "returncode": 0,
+    "script_path": "data/benchmark/arm4_scripts/verify_ab_08.py",
+    "stdout_tail": "Checked 6985 distinct positive rational instances exactly.\nExhausted all r = p/q with 1 <= p,q <= 96.\nAlso checked extreme scales and perturbations around r = 1.\nVerified positivity, the upper bound, both directions of the\nequality characterization, and reciprocal symmetry on every instance.\nExact polynomial certificates also establish the real-domain claims:\nD - 3r = (r - 1)^2 and r^2 D(1/r) = D(r).\nFor real r > 0, D > 0; the square vanishes exactly at r = 1.\nVERDICT: CONSISTENT_NO_COUNTEREXAMPLE",
+    "stderr_tail": "",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_09": {
+    "verdict": "FLAWED",
+    "gate_status": "COUNTEREXAMPLE_VERIFIED",
+    "returncode": 0,
+    "script_path": "data/benchmark/arm4_scripts/verify_ab_09.py",
+    "stdout_tail": "Explicit counterexample: cycle graph C6\nVertex set: (0, 1, 2, 3, 4, 5)\nG edges: [(0, 1), (0, 5), (1, 2), (2, 3), (3, 4), (4, 5)]\nG^2 edges: [(0, 1), (0, 2), (0, 4), (0, 5), (1, 2), (1, 3), (1, 5), (2, 3), (2, 4), (3, 4), (3, 5), (4, 5)]\nAll verification uses exact integer arithmetic.\nFinite, simple, undirected graph: verified.\nConnected: verified by all-pairs BFS.\nDistance-2 square definition: verified for every pair.\nG^2 is not complete; missing edge: (0, 3)\nAll maximal independent sets of G^2:\n  (0, 3) size = 2\n  (1, 4) size = 2\n  (2, 5) size = 2\nG^2 is well-covered; common size: 2\nAll maximal independent sets of G:\n  (0, 3) size = 2\n  (1, 4) size = 2\n  (0, 2, 4) size = 3\n  (2, 5) size = 2\n  (1, 3, 5) size = 3\nTwo maximal independent sets violating well-coveredness:\n  (0, 3) size = 2\n  (0, 2, 4) size = 3\nMaximality and independence were verified by exhaustive enumeration of every vertex subset.\nVERDICT: COUNTEREXAMPLE_VERIFIED",
+    "stderr_tail": "",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_10": {
+    "verdict": "FLAWED",
+    "gate_status": "COUNTEREXAMPLE_VERIFIED",
+    "returncode": 0,
+    "script_path": "data/benchmark/arm4_scripts/verify_ab_10.py",
+    "stdout_tail": "Exact counterexample; every hypothesis verified.\nDistinct odd primes: p=5, q=7; m=p*q=35\nUnit generator a=13; gcd(a,m)=1\nH=<a>=[1, 13, 27, 29]\nExact order k=4, which is even\nS_m(H)=70 = m*k/2=70\nUnit c=3; gcd(c,m)=1\ncH=[3, 4, 11, 17]\nS_m(cH)=35\nExact nonzero deviation: -35\nVERDICT: COUNTEREXAMPLE_VERIFIED",
+    "stderr_tail": "",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_11": {
+    "verdict": "FLAWED",
+    "gate_status": "COUNTEREXAMPLE_VERIFIED",
+    "returncode": 0,
+    "script_path": "data/benchmark/arm4_scripts/verify_ab_11.py",
+    "stdout_tail": "Exact exhaustive counterexample to unique maximization.\nL = 3\nNonalternating witness y = '001'\nDistinct length-(L-2) subsequences = ['0', '1']\nN_2(y) = 2\nGlobal maximum over all 2^L binary words = 2\nAll maximizers = ['001', '010', '011', '100', '101', '110']\nAlternating-word counts = {'010': 2, '101': 2}\nEvery hypothesis and every count was verified exactly; a nonalternating word attains the global maximum.\nVERDICT: COUNTEREXAMPLE_VERIFIED",
+    "stderr_tail": "",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_12": {
+    "verdict": "VALID",
+    "gate_status": "NO_COUNTEREXAMPLE",
+    "returncode": 0,
+    "script_path": "data/benchmark/arm4_scripts/verify_ab_12.py",
+    "stdout_tail": "All coloring inequalities were tested with exact integer arithmetic.\nExhaustively enumerated every partial coloring up to color relabeling of Q_2 and Q_3: 21199 instances.\nExhaustively tested uniquely colored subsets of Q_4: 65536 instances.\nRandomized repair search on Q_4 through Q_8: 15190 initial states; 230316 states checked; 164 valid states encountered.\nLargest verified valid color counts: Q_2: 2, Q_3: 4, Q_4: 8, Q_5: 16, Q_6: 32, Q_7: 64, Q_8: 128\nThe searches for n >= 4 do not exhaust all partial colorings.\nElapsed seconds: 11.000\nVERDICT: CONSISTENT_NO_COUNTEREXAMPLE",
+    "stderr_tail": "",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_13": {
+    "verdict": "VALID",
+    "gate_status": "NO_COUNTEREXAMPLE",
+    "returncode": 0,
+    "script_path": "data/benchmark/arm4_scripts/verify_ab_13.py",
+    "stdout_tail": "Exactly matched the first 600 Taylor coefficients, using binomial integers for the definition and an independent differential recurrence for the claimed closed form.\nTested 9 rational points strictly inside |z| < 1/4 with 180-term sums, rigorous geometric tail bounds, and rational square-root enclosures.\nFinite tests found no counterexample; they do not alone prove the identity.\nVERDICT: CONSISTENT_NO_COUNTEREXAMPLE",
+    "stderr_tail": "",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_14": {
+    "verdict": "VALID",
+    "gate_status": "NO_COUNTEREXAMPLE",
+    "returncode": 0,
+    "script_path": "data/benchmark/arm4_scripts/verify_ab_14.py",
+    "stdout_tail": "Exact arithmetic throughout; graph and coloring hypotheses checked.\nCompleted exhaustive partial-coloring searches: 110\nFully examined coloring assignments: 22732105\nExact maxima observed, grouped by vertex count: {4: [2], 6: [3], 8: [4], 10: [5, 6]}\nTime-bounded search stopped early: True\nNo incomplete search was used to certify a lower-bound violation.\nThis finite search does not prove the general proposition.\nVERDICT: CONSISTENT_NO_COUNTEREXAMPLE",
+    "stderr_tail": "",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_15": {
+    "verdict": "VALID",
+    "gate_status": "NO_COUNTEREXAMPLE",
+    "returncode": 0,
+    "script_path": "data/benchmark/arm4_scripts/verify_ab_15.py",
+    "stdout_tail": "All tested instances satisfy the conclusion using exact arithmetic.\nIndependently verified subgroup hypotheses for 277 subgroups; checked 13722 unit multipliers.\nExhaustively checked every eligible subgroup and every unit multiplier for every odd modulus from 3 through 101 (inclusive).\nFinite testing does not establish the claim for untested moduli.\nVERDICT: CONSISTENT_NO_COUNTEREXAMPLE",
+    "stderr_tail": "",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_16": {
+    "verdict": "VALID",
+    "gate_status": "NO_COUNTEREXAMPLE",
+    "returncode": 0,
+    "script_path": "data/benchmark/arm4_scripts/verify_ab_16.py",
+    "stdout_tail": "Exact symbolic checks cover every positive real sigma and real q,p.\nVerified normalized centered pure Gaussian states, Hermitian rank-one positive density kernels, the Fourier prefactor, and total Wigner integral equal to 1.\nAlso checked 175 exact phase-space instances across 7 positive rational widths.\nVERDICT: CONSISTENT_NO_COUNTEREXAMPLE",
+    "stderr_tail": "",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_17": {
+    "verdict": "VALID",
+    "gate_status": "EXEC_ERROR_1",
+    "returncode": 1,
+    "script_path": "data/benchmark/arm4_scripts/verify_ab_17.py",
+    "stdout_tail": "",
+    "stderr_tail": "on of the claimed normalization\")\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"data/benchmark/arm4_scripts/verify_ab_17.py\", line 9, in require\n    raise AssertionError(\"Verification failed: \" + description)\nAssertionError: Verification failed: strict violation of the claimed normalization",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_18": {
+    "verdict": "FLAWED",
+    "gate_status": "COUNTEREXAMPLE_VERIFIED",
+    "returncode": 0,
+    "script_path": "data/benchmark/arm4_scripts/verify_ab_18.py",
+    "stdout_tail": "Explicit counterexample, verified using integer arithmetic.\nVertices: [0, 1, 2, 3, 4, 5]\nEdges: [(0, 1), (0, 2), (0, 3), (1, 4), (1, 5)]\nColoring (-1 = uncolored): [0, 0, 1, 2, 3, 4]\nNumber of distinct colors: 5\nExact dissociation number: 4\nMaximum dissociation subset: [1, 2, 3, 4]\nVerified: finite, simple, undirected, connected, acyclic tree.\nFor each colored vertex: (vertex, same-color count, colored count)\n(0, 2, 4) ; exact condition: 4 >= 4\n(1, 2, 4) ; exact condition: 4 >= 4\n(2, 1, 2) ; exact condition: 2 >= 2\n(3, 1, 2) ; exact condition: 2 >= 2\n(4, 1, 2) ; exact condition: 2 >= 2\n(5, 1, 2) ; exact condition: 2 >= 2\nVERDICT: COUNTEREXAMPLE_VERIFIED",
+    "stderr_tail": "",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_19": {
+    "verdict": "VALID",
+    "gate_status": "NO_COUNTEREXAMPLE",
+    "returncode": 0,
+    "script_path": "data/benchmark/arm4_scripts/verify_ab_19.py",
+    "stdout_tail": "m=2: 7 independent sets exhaustively checked; 2 maximal; maximal cardinalities=[2]\nm=3: 34 independent sets exhaustively checked; 6 maximal; maximal cardinalities=[3]\nm=4: 209 independent sets exhaustively checked; 24 maximal; maximal cardinalities=[4]\nm=5: 1546 independent sets exhaustively checked; 120 maximal; maximal cardinalities=[5]\nm=6: 13327 independent sets exhaustively checked; 720 maximal; maximal cardinalities=[6]\nm=7: 130922 independent sets exhaustively checked; 5040 maximal; maximal cardinalities=[7]\nAll 146045 independent sets for m=2 through 7 were checked exactly. Every maximal independent set tested has cardinality m. This finite exhaustive check does not establish the universal claim.\nVERDICT: CONSISTENT_NO_COUNTEREXAMPLE",
+    "stderr_tail": "",
+    "_model": "gpt-6.1-sol"
+  },
+  "ab_20": {
+    "verdict": "FLAWED",
+    "gate_status": "COUNTEREXAMPLE_VERIFIED",
+    "returncode": 0,
+    "script_path": "data/benchmark/arm4_scripts/verify_ab_20.py",
+    "stdout_tail": "9265, -1014084/2299265],\n  [985116/2299265, -2062863/2299265],\n]\nK_1 = [\n  [48960/459853, -5780/459853],\n  [76032/459853, -8976/459853],\n]\nPhi(P) = [\n  [863030540183/1057323908045, -332807057839/1057323908045],\n  [-332807057839/1057323908045, 194293367862/1057323908045],\n]\nPhi(Q) = [\n  [66753886976878/68726054022925, -4393651573179/68726054022925],\n  [-4393651573179/68726054022925, 1972167046047/68726054022925],\n]\nPhi(R) = [\n  [122109244932169/211464781609000, 26474115433128/5286619540225],\n  [26474115433128/5286619540225, 14257918834043049/211464781609000],\n]\nExact hypothesis verification:\nP and Q are Hermitian PSD and each has trace exactly 1.\nR and Phi(R) are positive definite by exact principal minors.\nThe rational Kraus operators satisfy sum_j K_j^T K_j = I exactly.\nThus Phi is completely positive and trace preserving.\nB_R(P,Q) = 0.4701840523683179702025685649370156343586419295815338783\nB_Phi(R)(Phi(P),Phi(Q)) = 0.6096394052408100821901852631038551379073812605345984599\nOutput distance minus input distance = 0.1394553528724921119876166981668395035487393309530645816\nThe violation exceeds 1e-6 and agrees at 80 and 110 digits.\nTested instances: 920\nVERDICT: COUNTEREXAMPLE_VERIFIED",
+    "stderr_tail": "",
+    "_model": "gpt-6.1-sol"
+  }
+}

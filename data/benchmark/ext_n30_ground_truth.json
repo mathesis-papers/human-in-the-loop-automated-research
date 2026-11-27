@@ -1,0 +1,744 @@
+[
+  {
+    "cohort": "human_only_arxiv",
+    "source_id": "arXiv:2610.21052v1",
+    "arxiv_id": "2610.21052v1",
+    "category": "math.NT",
+    "domain": "Number Theory",
+    "title": "CM Elliptic Analogue of the Coleman--Ihara Formula",
+    "authors": [
+      "Yuki Goto",
+      "Shun Ishii"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.21052v1.pdf",
+    "raw_slug": "human_only_arxiv_08",
+    "pdf_sha256_16": "4f269d09ccd9c1f1",
+    "struct": {
+      "pages": 23,
+      "words": 11232,
+      "formal_statements": 19,
+      "proof_blocks": 13,
+      "counterexample_mentions": 0,
+      "formal_verif_mentions": 0,
+      "references_est": 24
+    },
+    "sanitized_len": 36065,
+    "blind_id": "ext_01"
+  },
+  {
+    "cohort": "human_only_arxiv",
+    "source_id": "arXiv:2610.21044v1",
+    "arxiv_id": "2610.21044v1",
+    "category": "quant-ph",
+    "domain": "Quantum Information",
+    "title": "Singular wave functions and quantum collapse in inverse-power potentials",
+    "authors": [
+      "Hidetsugu Sakaguchi",
+      "Boris Malomed"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.21044v1.pdf",
+    "raw_slug": "human_only_arxiv_06",
+    "pdf_sha256_16": "92056cc3d1a3d356",
+    "struct": {
+      "pages": 19,
+      "words": 7058,
+      "formal_statements": 0,
+      "proof_blocks": 0,
+      "counterexample_mentions": 0,
+      "formal_verif_mentions": 0,
+      "references_est": 33
+    },
+    "sanitized_len": 36065,
+    "blind_id": "ext_02"
+  },
+  {
+    "cohort": "human_only_arxiv",
+    "source_id": "arXiv:2610.21036v1",
+    "arxiv_id": "2610.21036v1",
+    "category": "math.CO",
+    "domain": "Graph Theory & Combinatorics",
+    "title": "Linear bounds for rich-neighbor edge-colorings",
+    "authors": [
+      "Jiangxu Kong"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.21036v1.pdf",
+    "raw_slug": "human_only_arxiv_07",
+    "pdf_sha256_16": "cf89b730a15512be",
+    "struct": {
+      "pages": 18,
+      "words": 9529,
+      "formal_statements": 26,
+      "proof_blocks": 20,
+      "counterexample_mentions": 0,
+      "formal_verif_mentions": 0,
+      "references_est": 11
+    },
+    "sanitized_len": 36065,
+    "blind_id": "ext_03"
+  },
+  {
+    "cohort": "human_in_the_loop",
+    "source_id": "arXiv:2610.20329v1",
+    "arxiv_id": "2610.20329v1",
+    "category": "math.GR",
+    "domain": "Group Theory & Cellular Automata",
+    "title": "Generation by lazy and invertible cellular automata over the Klein four-group",
+    "pdf_url": "https://arxiv.org/pdf/2610.20329v1.pdf",
+    "raw_slug": "human_in_the_loop_15",
+    "pdf_sha256_16": "ec4cc9e1363f4f40",
+    "struct": {
+      "pages": 9,
+      "words": 4735,
+      "formal_statements": 15,
+      "proof_blocks": 13,
+      "counterexample_mentions": 0,
+      "formal_verif_mentions": 19,
+      "references_est": 7
+    },
+    "sanitized_len": 24352,
+    "blind_id": "ext_04"
+  },
+  {
+    "cohort": "human_in_the_loop",
+    "source_id": "arXiv:2610.05623v2",
+    "arxiv_id": "2610.05623v2",
+    "category": "quant-ph",
+    "domain": "Quantum Information",
+    "title": "Approximation of a continuous-variable Gaussian state by discrete-variable quantum states",
+    "pdf_url": "https://arxiv.org/pdf/2610.05623v2.pdf",
+    "raw_slug": "human_in_the_loop_11",
+    "pdf_sha256_16": "c8a76fe3baa56475",
+    "struct": {
+      "pages": 15,
+      "words": 10068,
+      "formal_statements": 4,
+      "proof_blocks": 5,
+      "counterexample_mentions": 0,
+      "formal_verif_mentions": 2,
+      "references_est": 51
+    },
+    "sanitized_len": 36065,
+    "blind_id": "ext_05"
+  },
+  {
+    "cohort": "autonomous_ai",
+    "source_id": "AgentAlphaXiv:01a16e97-244",
+    "project_id": "01a16e97-244f-71a7-9636-21a3850cfcc0",
+    "lab": "Lab 5",
+    "domain": "Autonomous AI (Math/Theory)",
+    "title": "Anytime-Valid Bounds on Rare Language-Model Failures via Adaptive Importance Sampling",
+    "pdf_url": "https://huggingface.co/datasets/alphaXiv/AgentAlphaXiv/resolve/main/papers/01a16e97-244f-71a7-9636-21a3850cfcc0.pdf",
+    "math_term_hits": 4,
+    "versions": 1,
+    "raw_slug": "autonomous_ai_02",
+    "pdf_sha256_16": "3828cb4de0d6ec2b",
+    "struct": {
+      "pages": 19,
+      "words": 10014,
+      "formal_statements": 1,
+      "proof_blocks": 1,
+      "counterexample_mentions": 0,
+      "formal_verif_mentions": 3,
+      "references_est": 46
+    },
+    "sanitized_len": 36065,
+    "blind_id": "ext_06"
+  },
+  {
+    "cohort": "autonomous_ai",
+    "source_id": "AgentAlphaXiv:01a174cd-9eb",
+    "project_id": "01a174cd-9eb6-711d-a025-1ea3a656f06a",
+    "lab": "Lab 8",
+    "domain": "Autonomous AI (Math/Theory)",
+    "title": "Reevaluating screen-and-confirm selection against full-budget adaptive controls",
+    "pdf_url": "https://huggingface.co/datasets/alphaXiv/AgentAlphaXiv/resolve/main/papers/01a174cd-9eb6-711d-a025-1ea3a656f06a.pdf",
+    "math_term_hits": 2,
+    "versions": 1,
+    "raw_slug": "autonomous_ai_04",
+    "pdf_sha256_16": "950d285257732794",
+    "struct": {
+      "pages": 9,
+      "words": 4305,
+      "formal_statements": 0,
+      "proof_blocks": 0,
+      "counterexample_mentions": 0,
+      "formal_verif_mentions": 0,
+      "references_est": 3
+    },
+    "sanitized_len": 27704,
+    "blind_id": "ext_07"
+  },
+  {
+    "cohort": "human_in_the_loop",
+    "source_id": "arXiv:2610.24059v1",
+    "arxiv_id": "2610.24059v1",
+    "category": "math.CO",
+    "domain": "Graph Theory & Combinatorics",
+    "title": "Sharp zero forcing numbers for the generalized Petersen graphs $P(n,3)$ and $P(n,4)$",
+    "pdf_url": "https://arxiv.org/pdf/2610.24059v1.pdf",
+    "raw_slug": "human_in_the_loop_12",
+    "pdf_sha256_16": "f5d20c4bcb480413",
+    "struct": {
+      "pages": 13,
+      "words": 5377,
+      "formal_statements": 6,
+      "proof_blocks": 4,
+      "counterexample_mentions": 4,
+      "formal_verif_mentions": 36,
+      "references_est": 10
+    },
+    "sanitized_len": 28637,
+    "blind_id": "ext_08"
+  },
+  {
+    "cohort": "human_in_the_loop",
+    "source_id": "arXiv:2611.01064v1",
+    "arxiv_id": "2611.01064v1",
+    "category": "cs.IT",
+    "domain": "Information Theory",
+    "title": "Maximal input entropy for binary two-deletion and two-insertion channels",
+    "pdf_url": "https://arxiv.org/pdf/2611.01064v1.pdf",
+    "raw_slug": "human_in_the_loop_14",
+    "pdf_sha256_16": "e36e49b811ab6004",
+    "struct": {
+      "pages": 12,
+      "words": 5104,
+      "formal_statements": 7,
+      "proof_blocks": 6,
+      "counterexample_mentions": 0,
+      "formal_verif_mentions": 4,
+      "references_est": 7
+    },
+    "sanitized_len": 27584,
+    "blind_id": "ext_09"
+  },
+  {
+    "cohort": "autonomous_ai",
+    "source_id": "AgentAlphaXiv:01a097ed-5c1",
+    "project_id": "01a097ed-5c11-7921-ab2b-7702770ac9aa",
+    "lab": "Lab 1",
+    "domain": "Autonomous AI (Math/Theory)",
+    "title": "The Clip, Not the Privilege: Per-Coordinate Clamping of the Forward KL Decides How Extended On-Policy Self-Distillation Breaks Down",
+    "pdf_url": "https://huggingface.co/datasets/alphaXiv/AgentAlphaXiv/resolve/main/papers/01a097ed-5c11-7921-ab2b-7702770ac9aa.pdf",
+    "math_term_hits": 2,
+    "versions": 1,
+    "raw_slug": "autonomous_ai_03",
+    "pdf_sha256_16": "eb55403a7b5c23b1",
+    "struct": {
+      "pages": 12,
+      "words": 6817,
+      "formal_statements": 0,
+      "proof_blocks": 0,
+      "counterexample_mentions": 0,
+      "formal_verif_mentions": 0,
+      "references_est": 25
+    },
+    "sanitized_len": 36065,
+    "blind_id": "ext_10"
+  },
+  {
+    "cohort": "human_only_arxiv",
+    "source_id": "arXiv:2610.21068v1",
+    "arxiv_id": "2610.21068v1",
+    "category": "cs.IT",
+    "domain": "Information Theory",
+    "title": "Superfast Spectral Compressed Sensing with Quadratic Convergence",
+    "authors": [
+      "Xunmeng Wu",
+      "Jian-Feng Cai",
+      "Zongben Xu",
+      "Zai Yang"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.21068v1.pdf",
+    "raw_slug": "human_only_arxiv_09",
+    "pdf_sha256_16": "d039224bcecdfea2",
+    "struct": {
+      "pages": 20,
+      "words": 9132,
+      "formal_statements": 13,
+      "proof_blocks": 10,
+      "counterexample_mentions": 0,
+      "formal_verif_mentions": 0,
+      "references_est": 27
+    },
+    "sanitized_len": 36065,
+    "blind_id": "ext_11"
+  },
+  {
+    "cohort": "human_in_the_loop",
+    "source_id": "arXiv:2610.29608v1",
+    "arxiv_id": "2610.29608v1",
+    "category": "math.NT",
+    "domain": "Number Theory",
+    "title": "Residue Sums Modulo Products of Two Distinct Odd Primes",
+    "pdf_url": "https://arxiv.org/pdf/2610.29608v1.pdf",
+    "raw_slug": "human_in_the_loop_13",
+    "pdf_sha256_16": "049c9580c9eae46c",
+    "struct": {
+      "pages": 27,
+      "words": 12880,
+      "formal_statements": 39,
+      "proof_blocks": 31,
+      "counterexample_mentions": 3,
+      "formal_verif_mentions": 8,
+      "references_est": 16
+    },
+    "sanitized_len": 36065,
+    "blind_id": "ext_12"
+  },
+  {
+    "cohort": "autonomous_ai",
+    "source_id": "AgentAlphaXiv:01a17a7e-3d3",
+    "project_id": "01a17a7e-3d38-713f-b3db-c4495f11f6f9",
+    "lab": "Lab 7",
+    "domain": "Autonomous AI (Math/Theory)",
+    "title": "Peer Exposure and Convergence in Simulated Research Communities",
+    "pdf_url": "https://huggingface.co/datasets/alphaXiv/AgentAlphaXiv/resolve/main/papers/01a17a7e-3d38-713f-b3db-c4495f11f6f9.pdf",
+    "math_term_hits": 2,
+    "versions": 1,
+    "raw_slug": "autonomous_ai_05",
+    "pdf_sha256_16": "e37069db33e6f537",
+    "struct": {
+      "pages": 11,
+      "words": 4603,
+      "formal_statements": 0,
+      "proof_blocks": 0,
+      "counterexample_mentions": 0,
+      "formal_verif_mentions": 0,
+      "references_est": 12
+    },
+    "sanitized_len": 29501,
+    "blind_id": "ext_13"
+  },
+  {
+    "cohort": "human_only_arxiv",
+    "source_id": "arXiv:2610.21600v2",
+    "arxiv_id": "2610.21600v2",
+    "category": "math.GR",
+    "domain": "Group Theory & Cellular Automata",
+    "title": "A simultaneous variant of the Hall-Paige theorem and applications",
+    "authors": [
+      "Maria Loukaki"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.21600v2.pdf",
+    "raw_slug": "human_only_arxiv_10",
+    "pdf_sha256_16": "24692ff88ba84f9f",
+    "struct": {
+      "pages": 15,
+      "words": 6872,
+      "formal_statements": 13,
+      "proof_blocks": 9,
+      "counterexample_mentions": 0,
+      "formal_verif_mentions": 0,
+      "references_est": 13
+    },
+    "sanitized_len": 34495,
+    "blind_id": "ext_14"
+  },
+  {
+    "cohort": "autonomous_ai",
+    "source_id": "AgentAlphaXiv:01a145e3-610",
+    "project_id": "01a145e3-6101-761b-b023-bfbd2e1a232e",
+    "lab": "Lab 2",
+    "domain": "Autonomous AI (Math/Theory)",
+    "title": "A Tuned Recurrent Controller Gains Nothing Measurable From an Auxiliary Transition-Prediction Loss in a Small Partially Observed Control Problem",
+    "pdf_url": "https://huggingface.co/datasets/alphaXiv/AgentAlphaXiv/resolve/main/papers/01a145e3-6101-761b-b023-bfbd2e1a232e.pdf",
+    "math_term_hits": 4,
+    "versions": 1,
+    "raw_slug": "autonomous_ai_01",
+    "pdf_sha256_16": "ab8f4ba64657d70e",
+    "struct": {
+      "pages": 12,
+      "words": 5987,
+      "formal_statements": 0,
+      "proof_blocks": 0,
+      "counterexample_mentions": 0,
+      "formal_verif_mentions": 0,
+      "references_est": 24
+    },
+    "sanitized_len": 33975,
+    "blind_id": "ext_15"
+  },
+  {
+    "cohort": "human_only_arxiv",
+    "source_id": "arXiv:2611.00153v1",
+    "arxiv_id": "2611.00153v1",
+    "category": "cs.FL",
+    "domain": "cs.FL",
+    "title": "On Small Universal Reversible Turing Machines",
+    "authors": [
+      "Yokoyama, T."
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.00153v1.pdf",
+    "blind_id": "ext_16",
+    "raw_slug": "human_only_arxiv_16",
+    "pdf_sha256_16": "85ade6e7f1ed8661",
+    "struct": {
+      "pages": 23,
+      "words": 16517,
+      "formal_statements": 7,
+      "proof_blocks": 3,
+      "formal_verif_mentions": 19,
+      "references_est": 16
+    },
+    "full_sanitized_len": 111850,
+    "sanitized_len": 36052
+  },
+  {
+    "cohort": "autonomous_ai",
+    "source_id": "AgentAlphaXiv:01a18d5c-ae5",
+    "project_id": "01a18d5c-ae59-7102-bb75-2870074b8045",
+    "lab": "Lab 13",
+    "domain": "Autonomous AI (Math/Theory)",
+    "title": "Does the Answer Depend on Where It Is? Option-Order Fragility, Position Preference and Cross-Order Agreement of Claude Opus 5.5 on MMLU-Pro",
+    "pdf_url": "https://huggingface.co/datasets/alphaXiv/AgentAlphaXiv/resolve/main/papers/01a18d5c-ae59-7102-bb75-2870074b8045.pdf",
+    "math_term_hits": 2,
+    "versions": 1,
+    "blind_id": "ext_17",
+    "raw_slug": "autonomous_ai_17",
+    "pdf_sha256_16": "17c932120ff3b193",
+    "struct": {
+      "pages": 11,
+      "words": 5200,
+      "formal_statements": 0,
+      "proof_blocks": 0,
+      "formal_verif_mentions": 0,
+      "references_est": 16
+    },
+    "full_sanitized_len": 37288,
+    "sanitized_len": 36051
+  },
+  {
+    "cohort": "human_in_the_loop",
+    "source_id": "arXiv:2611.03956v1",
+    "arxiv_id": "2611.03956v1",
+    "category": "math.CO",
+    "domain": "math.CO",
+    "title": "Well-Covered Powers: Cartesian Products and Cayley Graphs",
+    "authors": [
+      "Ma, Haobo",
+      "Vu, Thanh",
+      "Zhang, Wenlin"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.03956v1.pdf",
+    "blind_id": "ext_18",
+    "raw_slug": "human_in_the_loop_18",
+    "pdf_sha256_16": "c22d0640d52994e0",
+    "struct": {
+      "pages": 20,
+      "words": 13703,
+      "formal_statements": 37,
+      "proof_blocks": 31,
+      "formal_verif_mentions": 0,
+      "references_est": 11
+    },
+    "full_sanitized_len": 78789,
+    "sanitized_len": 36051
+  },
+  {
+    "cohort": "human_in_the_loop",
+    "source_id": "arXiv:2610.39941v2",
+    "arxiv_id": "2610.39941v2",
+    "category": "cs.FL",
+    "domain": "cs.FL",
+    "title": "Block-exchange descent for insertion: commuting projections and minimum masks",
+    "authors": [
+      "Ma, Haobo",
+      "Zhang, Wenlin",
+      "Hughes, Charles E."
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2610.39941v2.pdf",
+    "blind_id": "ext_19",
+    "raw_slug": "human_in_the_loop_19",
+    "pdf_sha256_16": "d4e8e01f361b33f3",
+    "struct": {
+      "pages": 22,
+      "words": 12088,
+      "formal_statements": 18,
+      "proof_blocks": 12,
+      "formal_verif_mentions": 4,
+      "references_est": 19
+    },
+    "full_sanitized_len": 80539,
+    "sanitized_len": 36051
+  },
+  {
+    "cohort": "autonomous_ai",
+    "source_id": "AgentAlphaXiv:01a1980a-8b3",
+    "project_id": "01a1980a-8b39-78b2-b286-14a46e758c5c",
+    "lab": "Lab 14",
+    "domain": "Autonomous AI (Math/Theory)",
+    "title": "More Agents or More Talk? A Preregistered Matched-Compute Test of Swarm Size and Communication Topology in Claude Haiku Agent Swarms",
+    "pdf_url": "https://huggingface.co/datasets/alphaXiv/AgentAlphaXiv/resolve/main/papers/01a1980a-8b39-78b2-b286-14a46e758c5c.pdf",
+    "math_term_hits": 2,
+    "versions": 1,
+    "blind_id": "ext_20",
+    "raw_slug": "autonomous_ai_20",
+    "pdf_sha256_16": "747b03c9de1968e6",
+    "struct": {
+      "pages": 15,
+      "words": 7451,
+      "formal_statements": 0,
+      "proof_blocks": 0,
+      "formal_verif_mentions": 0,
+      "references_est": 37
+    },
+    "full_sanitized_len": 54819,
+    "sanitized_len": 36051
+  },
+  {
+    "cohort": "autonomous_ai",
+    "source_id": "AgentAlphaXiv:01a18ed0-e4f",
+    "project_id": "01a18ed0-e4f3-7bbd-b078-735e34034022",
+    "lab": "Lab 11",
+    "domain": "Autonomous AI (Math/Theory)",
+    "title": "Does One Text Direction Change the View-Mining Advantage? A Held-Out Geometry Audit of Cross-Modal Neighborhood Agreement",
+    "pdf_url": "https://huggingface.co/datasets/alphaXiv/AgentAlphaXiv/resolve/main/papers/01a18ed0-e4f3-7bbd-b078-735e34034022.pdf",
+    "math_term_hits": 2,
+    "versions": 1,
+    "blind_id": "ext_21",
+    "raw_slug": "autonomous_ai_21",
+    "pdf_sha256_16": "39d70bf319f3081c",
+    "struct": {
+      "pages": 10,
+      "words": 4359,
+      "formal_statements": 0,
+      "proof_blocks": 0,
+      "formal_verif_mentions": 0,
+      "references_est": 7
+    },
+    "full_sanitized_len": 34471,
+    "sanitized_len": 34471
+  },
+  {
+    "cohort": "human_only_arxiv",
+    "source_id": "arXiv:2611.00144v1",
+    "arxiv_id": "2611.00144v1",
+    "category": "quant-ph",
+    "domain": "quant-ph",
+    "title": "R\\&#39;enyi-2 entanglement of purification of the symmetric Werner state",
+    "authors": [
+      "Faraji, Shokoufe"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.00144v1.pdf",
+    "blind_id": "ext_22",
+    "raw_slug": "human_only_arxiv_22",
+    "pdf_sha256_16": "4dae403892303b20",
+    "struct": {
+      "pages": 39,
+      "words": 13308,
+      "formal_statements": 13,
+      "proof_blocks": 13,
+      "formal_verif_mentions": 0,
+      "references_est": 12
+    },
+    "full_sanitized_len": 143079,
+    "sanitized_len": 36052
+  },
+  {
+    "cohort": "human_in_the_loop",
+    "source_id": "arXiv:2611.21657v1",
+    "arxiv_id": "2611.21657v1",
+    "category": "math.CO",
+    "domain": "math.CO",
+    "title": "Counting formulas and refined generating functions for inversion-sequence Classes 152 and 207",
+    "authors": [
+      "Ma, Haobo",
+      "Mansour, Toufik",
+      "Zhang, Wenlin"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.21657v1.pdf",
+    "blind_id": "ext_23",
+    "raw_slug": "human_in_the_loop_23",
+    "pdf_sha256_16": "9d08199e54b187b3",
+    "struct": {
+      "pages": 25,
+      "words": 11858,
+      "formal_statements": 8,
+      "proof_blocks": 7,
+      "formal_verif_mentions": 5,
+      "references_est": 26
+    },
+    "full_sanitized_len": 90032,
+    "sanitized_len": 36051
+  },
+  {
+    "cohort": "human_only_arxiv",
+    "source_id": "arXiv:2611.00145v1",
+    "arxiv_id": "2611.00145v1",
+    "category": "math.CO",
+    "domain": "math.CO",
+    "title": "Hopf Algebra of Graphs for Operator Splitting Methods",
+    "authors": [
+      "de Leon, Gabriel A. Barrios"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.00145v1.pdf",
+    "blind_id": "ext_24",
+    "raw_slug": "human_only_arxiv_24",
+    "pdf_sha256_16": "0b9bb46da7bb308a",
+    "struct": {
+      "pages": 16,
+      "words": 7202,
+      "formal_statements": 18,
+      "proof_blocks": 7,
+      "formal_verif_mentions": 0,
+      "references_est": 30
+    },
+    "full_sanitized_len": 54365,
+    "sanitized_len": 36051
+  },
+  {
+    "cohort": "human_only_arxiv",
+    "source_id": "arXiv:2611.00126v1",
+    "arxiv_id": "2611.00126v1",
+    "category": "math.CO",
+    "domain": "math.CO",
+    "title": "Graphs with three distinct distance eigenvalues, one of which is zero",
+    "authors": [
+      "O, Suil"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.00126v1.pdf",
+    "blind_id": "ext_25",
+    "raw_slug": "human_only_arxiv_25",
+    "pdf_sha256_16": "02df70584567d280",
+    "struct": {
+      "pages": 11,
+      "words": 6577,
+      "formal_statements": 10,
+      "proof_blocks": 9,
+      "formal_verif_mentions": 0,
+      "references_est": 13
+    },
+    "full_sanitized_len": 35323,
+    "sanitized_len": 35323
+  },
+  {
+    "cohort": "human_only_arxiv",
+    "source_id": "arXiv:2611.00201v1",
+    "arxiv_id": "2611.00201v1",
+    "category": "quant-ph",
+    "domain": "quant-ph",
+    "title": "Quantum simulation of real-time Yukawa dynamics with qubits and qumodes",
+    "authors": [
+      "Araz, Jack Y.",
+      "Forshaw, Jeffrey",
+      "Jenkinson, Ross"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.00201v1.pdf",
+    "blind_id": "ext_26",
+    "raw_slug": "human_only_arxiv_26",
+    "pdf_sha256_16": "5b421a3986c2943f",
+    "struct": {
+      "pages": 12,
+      "words": 9874,
+      "formal_statements": 0,
+      "proof_blocks": 0,
+      "formal_verif_mentions": 0,
+      "references_est": 48
+    },
+    "full_sanitized_len": 88466,
+    "sanitized_len": 36051
+  },
+  {
+    "cohort": "autonomous_ai",
+    "source_id": "AgentAlphaXiv:01a18d0f-5a5",
+    "project_id": "01a18d0f-5a51-7706-bdaf-8b23ab86f52b",
+    "lab": "Lab 12",
+    "domain": "Autonomous AI (Math/Theory)",
+    "title": "Correctness-Gated LoRA Writes Under a Coupled Count-Matched Control",
+    "pdf_url": "https://huggingface.co/datasets/alphaXiv/AgentAlphaXiv/resolve/main/papers/01a18d0f-5a51-7706-bdaf-8b23ab86f52b.pdf",
+    "math_term_hits": 2,
+    "versions": 1,
+    "blind_id": "ext_27",
+    "raw_slug": "autonomous_ai_27",
+    "pdf_sha256_16": "4e2421856fc43fe4",
+    "struct": {
+      "pages": 8,
+      "words": 3041,
+      "formal_statements": 0,
+      "proof_blocks": 0,
+      "formal_verif_mentions": 0,
+      "references_est": 8
+    },
+    "full_sanitized_len": 27108,
+    "sanitized_len": 27108
+  },
+  {
+    "cohort": "human_in_the_loop",
+    "source_id": "arXiv:2611.04568v1",
+    "arxiv_id": "2611.04568v1",
+    "category": "quant-ph",
+    "domain": "quant-ph",
+    "title": "Time-invariant negativity and persistent bound entanglement in a cyclic two-qutrit family",
+    "authors": [
+      "Zhang, Wenlin",
+      "Ali, Mazhar",
+      "Ma, Haobo"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.04568v1.pdf",
+    "blind_id": "ext_28",
+    "raw_slug": "human_in_the_loop_28",
+    "pdf_sha256_16": "258dabe8541e3c1b",
+    "struct": {
+      "pages": 14,
+      "words": 7135,
+      "formal_statements": 3,
+      "proof_blocks": 2,
+      "formal_verif_mentions": 1,
+      "references_est": 62
+    },
+    "full_sanitized_len": 55221,
+    "sanitized_len": 36051
+  },
+  {
+    "cohort": "autonomous_ai",
+    "source_id": "AgentAlphaXiv:01a19561-135",
+    "project_id": "01a19561-1351-72fc-845f-f901c280c630",
+    "lab": "Lab 18",
+    "domain": "Autonomous AI (Math/Theory)",
+    "title": "Replace or Accumulate in Iterative STaR? A Preregistered Coverage Test on Qwen3.5-0.8B Is Inconclusive, and Both Recipes Fall Below the Base Model at pass@16",
+    "pdf_url": "https://huggingface.co/datasets/alphaXiv/AgentAlphaXiv/resolve/main/papers/01a19561-1351-72fc-845f-f901c280c630.pdf",
+    "math_term_hits": 2,
+    "versions": 1,
+    "blind_id": "ext_29",
+    "raw_slug": "autonomous_ai_29",
+    "pdf_sha256_16": "2ab04360cad0aa10",
+    "struct": {
+      "pages": 15,
+      "words": 7501,
+      "formal_statements": 0,
+      "proof_blocks": 0,
+      "formal_verif_mentions": 0,
+      "references_est": 36
+    },
+    "full_sanitized_len": 53891,
+    "sanitized_len": 36051
+  },
+  {
+    "cohort": "human_in_the_loop",
+    "source_id": "arXiv:2611.15431v1",
+    "arxiv_id": "2611.15431v1",
+    "category": "quant-ph",
+    "domain": "quant-ph",
+    "title": "Subadditivity and the failure of strong subadditivity in the Nichols--Wootters family of entropies",
+    "authors": [
+      "Zhang, Lin",
+      "Zhang, Wenlin",
+      "Ma, Haobo"
+    ],
+    "pdf_url": "https://arxiv.org/pdf/2611.15431v1.pdf",
+    "blind_id": "ext_30",
+    "raw_slug": "human_in_the_loop_30",
+    "pdf_sha256_16": "8d739aa091e038bc",
+    "struct": {
+      "pages": 110,
+      "words": 49629,
+      "formal_statements": 28,
+      "proof_blocks": 28,
+      "formal_verif_mentions": 1,
+      "references_est": 26
+    },
+    "full_sanitized_len": 384017,
+    "sanitized_len": 36052
+  }
+]

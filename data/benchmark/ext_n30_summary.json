@@ -1,0 +1,2280 @@
+{
+  "n_total": 30,
+  "n_per_cohort": 10,
+  "total_evaluations": 90,
+  "structural": {
+    "autonomous_ai": {
+      "n": 10,
+      "pages_mean": 12.2,
+      "pages_median": 11.5,
+      "formal_statements_total": 1,
+      "formal_statements_mean": 0.1,
+      "proof_blocks_total": 1,
+      "proof_blocks_mean": 0.1,
+      "papers_with_formal_verif": 0,
+      "formal_verif_mentions_total": 3,
+      "references_median": 20
+    },
+    "human_only_arxiv": {
+      "n": 10,
+      "pages_mean": 19.6,
+      "pages_median": 18.5,
+      "formal_statements_total": 119,
+      "formal_statements_mean": 11.9,
+      "proof_blocks_total": 84,
+      "proof_blocks_mean": 8.4,
+      "papers_with_formal_verif": 1,
+      "formal_verif_mentions_total": 19,
+      "references_median": 20
+    },
+    "human_in_the_loop": {
+      "n": 10,
+      "pages_mean": 26.7,
+      "pages_median": 17.5,
+      "formal_statements_total": 165,
+      "formal_statements_mean": 16.5,
+      "proof_blocks_total": 139,
+      "proof_blocks_mean": 13.9,
+      "papers_with_formal_verif": 10,
+      "formal_verif_mentions_total": 80,
+      "references_median": 18
+    }
+  },
+  "agreement": {
+    "pairwise_spearman": {
+      "codex_gpt61sol__vs__claude_opus55": {
+        "rho": 0.6143,
+        "p": 0.00030443655754062635
+      },
+      "codex_gpt61sol__vs__google_gemini": {
+        "rho": 0.7688,
+        "p": 6.960118577587515e-07
+      },
+      "claude_opus55__vs__google_gemini": {
+        "rho": 0.8408,
+        "p": 6.0241947214457715e-09
+      }
+    },
+    "kendall_W_3families_N30": 0.8276
+  },
+  "judges": {
+    "codex_gpt61sol": {
+      "label": "OpenAI Codex (gpt-6.1-sol)",
+      "short": "Codex (gpt-6.1-sol)",
+      "by_cohort": {
+        "autonomous_ai": {
+          "correctness_rigor": {
+            "mean": 7.94,
+            "sd": 0.8181,
+            "median": 8.2,
+            "min": 6.3,
+            "max": 8.9
+          },
+          "claim_calibration": {
+            "mean": 8.6,
+            "sd": 1.1025,
+            "median": 9.0,
+            "min": 6.0,
+            "max": 9.6
+          },
+          "verification_grounding": {
+            "mean": 7.57,
+            "sd": 0.6567,
+            "median": 7.85,
+            "min": 6.6,
+            "max": 8.2
+          },
+          "novelty_significance": {
+            "mean": 5.84,
+            "sd": 1.3393,
+            "median": 5.85,
+            "min": 4.3,
+            "max": 8.4
+          },
+          "literature_attribution": {
+            "mean": 7.19,
+            "sd": 1.6086,
+            "median": 7.35,
+            "min": 4.5,
+            "max": 9.0
+          },
+          "clarity_exposition": {
+            "mean": 8.33,
+            "sd": 0.302,
+            "median": 8.45,
+            "min": 7.7,
+            "max": 8.7
+          },
+          "overall": {
+            "mean": 6.96,
+            "sd": 0.7604,
+            "median": 6.85,
+            "min": 5.5,
+            "max": 8.2
+          }
+        },
+        "human_only_arxiv": {
+          "correctness_rigor": {
+            "mean": 7.4,
+            "sd": 2.1255,
+            "median": 8.15,
+            "min": 3.0,
+            "max": 9.3
+          },
+          "claim_calibration": {
+            "mean": 7.75,
+            "sd": 2.1329,
+            "median": 8.65,
+            "min": 3.5,
+            "max": 9.4
+          },
+          "verification_grounding": {
+            "mean": 6.97,
+            "sd": 1.9166,
+            "median": 7.25,
+            "min": 2.5,
+            "max": 8.9
+          },
+          "novelty_significance": {
+            "mean": 7.31,
+            "sd": 1.5474,
+            "median": 7.9,
+            "min": 4.0,
+            "max": 8.5
+          },
+          "literature_attribution": {
+            "mean": 7.91,
+            "sd": 1.0775,
+            "median": 8.3,
+            "min": 6.0,
+            "max": 9.2
+          },
+          "clarity_exposition": {
+            "mean": 7.84,
+            "sd": 1.1549,
+            "median": 8.35,
+            "min": 5.5,
+            "max": 9.1
+          },
+          "overall": {
+            "mean": 7.22,
+            "sd": 1.9498,
+            "median": 7.8,
+            "min": 3.0,
+            "max": 8.8
+          }
+        },
+        "human_in_the_loop": {
+          "correctness_rigor": {
+            "mean": 8.66,
+            "sd": 0.7152,
+            "median": 8.9,
+            "min": 7.6,
+            "max": 9.4
+          },
+          "claim_calibration": {
+            "mean": 8.86,
+            "sd": 0.8514,
+            "median": 9.25,
+            "min": 7.4,
+            "max": 9.6
+          },
+          "verification_grounding": {
+            "mean": 8.48,
+            "sd": 0.7997,
+            "median": 8.45,
+            "min": 6.9,
+            "max": 9.4
+          },
+          "novelty_significance": {
+            "mean": 7.79,
+            "sd": 0.7781,
+            "median": 7.95,
+            "min": 6.4,
+            "max": 8.7
+          },
+          "literature_attribution": {
+            "mean": 8.38,
+            "sd": 0.8804,
+            "median": 8.3,
+            "min": 6.5,
+            "max": 9.5
+          },
+          "clarity_exposition": {
+            "mean": 8.48,
+            "sd": 0.494,
+            "median": 8.4,
+            "min": 7.8,
+            "max": 9.2
+          },
+          "overall": {
+            "mean": 8.25,
+            "sd": 0.6803,
+            "median": 8.4,
+            "min": 7.3,
+            "max": 9.1
+          }
+        }
+      },
+      "per_paper": [
+        {
+          "blind_id": "ext_01",
+          "cohort": "human_only_arxiv",
+          "source_id": "arXiv:2610.21052v1",
+          "category": "math.NT",
+          "scores": {
+            "correctness_rigor": 8.7,
+            "claim_calibration": 9.1,
+            "verification_grounding": 8.3,
+            "novelty_significance": 8.4,
+            "literature_attribution": 9.2,
+            "clarity_exposition": 8.5,
+            "overall": 8.6
+          },
+          "rationale": "The split-prime CM hypotheses, period normalizations, norm compatibility and measure-moment congruences are developed carefully, giving substantial analytical grounding for the proposed reciprocity formula. The two-variable extension is significant and explicitly acknowledges the cyclotomic-line precedent and an independent overlapping result; verification relies heavily on imported, normalization-sensitive Coleman and de Shalit identities."
+        },
+        {
+          "blind_id": "ext_02",
+          "cohort": "human_only_arxiv",
+          "source_id": "arXiv:2610.21044v1",
+          "category": "quant-ph",
+          "scores": {
+            "correctness_rigor": 4.1,
+            "claim_calibration": 4.2,
+            "verification_grounding": 5.4,
+            "novelty_significance": 5.0,
+            "literature_attribution": 6.3,
+            "clarity_exposition": 6.6,
+            "overall": 4.4
+          },
+          "rationale": "The coordinate transformation, local oscillatory asymptotics and special exact solutions provide useful, checkable calculations, supplemented by shooting computations with specified step sizes. However, varying an unspecified boundary condition does not establish a continuous bound-state spectrum for a single self-adjoint Hamiltonian, and normalizability alone does not establish physical admissibility. The reported finite-coupling disappearance of hard-core inverse-square binding also lacks the analysis needed to distinguish a true threshold from numerical resolution."
+        },
+        {
+          "blind_id": "ext_03",
+          "cohort": "human_only_arxiv",
+          "source_id": "arXiv:2610.21036v1",
+          "category": "math.CO",
+          "scores": {
+            "correctness_rigor": 9.2,
+            "claim_calibration": 9.3,
+            "verification_grounding": 8.9,
+            "novelty_significance": 8.2,
+            "literature_attribution": 8.1,
+            "clarity_exposition": 9.1,
+            "overall": 8.8
+          },
+          "rationale": "The total edge-dominating forest construction and witness-counting proof of 2-degeneracy give a convincing, explicit derivation of the 3\u03c7\u2032 bound, including parallel edges and small components. Palette arguments substantiate the complete-graph obstructions and the displayed matching construction, with exceptional orders treated explicitly. The contribution is substantial within this specialized coloring problem, although the gap between asymptotic constants 2 and 3 remains."
+        },
+        {
+          "blind_id": "ext_04",
+          "cohort": "human_in_the_loop",
+          "source_id": "arXiv:2610.20329v1",
+          "category": "math.GR",
+          "scores": {
+            "correctness_rigor": 9.4,
+            "claim_calibration": 9.5,
+            "verification_grounding": 9.4,
+            "novelty_significance": 7.3,
+            "literature_attribution": 8.3,
+            "clarity_exposition": 9.2,
+            "overall": 8.5
+          },
+          "rationale": "The orbit-stabilizer analysis, collapse factorizations and merger criterion form a complete structural proof, and the cardinalities and maximal-submonoid argument follow transparently. Exact enumeration is supported by a logically sufficient independent certificate checker and precisely scoped reported Lean verification, with shortest-word distributions explicitly excluded from the formal claims. The main limitation is significance: this is a detailed solution for one small finite action, while a structural characterization of the lazy-only monoid remains open."
+        },
+        {
+          "blind_id": "ext_05",
+          "cohort": "human_in_the_loop",
+          "source_id": "arXiv:2610.05623v2",
+          "category": "quant-ph",
+          "scores": {
+            "correctness_rigor": 9.2,
+            "claim_calibration": 9.5,
+            "verification_grounding": 9.2,
+            "novelty_significance": 8.5,
+            "literature_attribution": 8.6,
+            "clarity_exposition": 8.4,
+            "overall": 9.0
+          },
+          "rationale": "The Poisson-summation kernel identity, parity-based inertia argument and common-purification tail estimates supply a coherent proof of positivity and exponential trace-norm approximation, including the pure-state boundary. The text carefully distinguishes fixed dimensionless covariance, rescaled basis coherence and numerical changing-frame comparisons, and provides explicit certified error bounds. The covariance-independent embedding and full inertia classification are meaningful advances over the cited qualitative limits, though extensive frame preliminaries dilute the presentation and the numerical package is available only on request."
+        },
+        {
+          "blind_id": "ext_06",
+          "cohort": "autonomous_ai",
+          "source_id": "AgentAlphaXiv:01a16e97-244",
+          "category": "Autonomous AI (Math/Theory)",
+          "scores": {
+            "correctness_rigor": 8.6,
+            "claim_calibration": 8.4,
+            "verification_grounding": 8.1,
+            "novelty_significance": 7.4,
+            "literature_attribution": 9.0,
+            "clarity_exposition": 8.7,
+            "overall": 8.2
+          },
+          "rationale": "Defensive mixture weights, predictable adaptation and monotone betting-test inversion give a sound route to the stated time-uniform guarantees, and the study reports failed gain cases and uncompetitive upper bounds explicitly. Enumeration, ablations and thousands of coverage replications provide unusually concrete empirical grounding, although the 'exact' probabilities are floating-point sums rather than certified arithmetic. The main advance is an application and evaluation of established importance-weighted confidence-sequence tools, with evidence limited to short top-k GPT-2 continuations and token-format events."
+        },
+        {
+          "blind_id": "ext_07",
+          "cohort": "autonomous_ai",
+          "source_id": "AgentAlphaXiv:01a174cd-9eb",
+          "category": "Autonomous AI (Math/Theory)",
+          "scores": {
+            "correctness_rigor": 8.9,
+            "claim_calibration": 9.6,
+            "verification_grounding": 8.2,
+            "novelty_significance": 4.5,
+            "literature_attribution": 4.9,
+            "clarity_exposition": 8.1,
+            "overall": 6.6
+          },
+          "rationale": "The repaired budgets, independent tuning/evaluation streams, paired estimands and Hoeffding\u2013Bonferroni bounds support the reported reversal, with zero-variance cases and tuning-conditional uncertainty handled explicitly. Scientific significance is limited to correcting a narrow homogeneous Gaussian simulation, and attribution offers only one substantive external best-arm reference alongside two cohort studies. Reproducibility is described carefully, but the repeated scope qualifications occupy considerable space and neither broader algorithm comparisons nor mechanism-isolating ablations are supplied."
+        },
+        {
+          "blind_id": "ext_08",
+          "cohort": "human_in_the_loop",
+          "source_id": "arXiv:2610.24059v1",
+          "category": "math.CO",
+          "scores": {
+            "correctness_rigor": 9.3,
+            "claim_calibration": 9.6,
+            "verification_grounding": 9.3,
+            "novelty_significance": 8.2,
+            "literature_attribution": 9.3,
+            "clarity_exposition": 9.0,
+            "overall": 9.0
+          },
+          "rationale": "The first-forcing-sources lemma, boundary counting and buffered-column deletion give explicit infinite-to-finite reductions, with small cases and sharpness addressed separately. Finite predicates, SAT semantics, independent DRAT checks and precisely delimited archived Lean coverage provide strong complementary verification without conflating their scopes. Resolving the k=3 conjecture and the k=4 threshold is a substantive specialized contribution, although the latter lower bound remains dependent on a sizeable finite certificate package rather than a structural classification."
+        },
+        {
+          "blind_id": "ext_09",
+          "cohort": "human_in_the_loop",
+          "source_id": "arXiv:2611.01064v1",
+          "category": "cs.IT",
+          "scores": {
+            "correctness_rigor": 9.3,
+            "claim_calibration": 9.6,
+            "verification_grounding": 9.1,
+            "novelty_significance": 8.6,
+            "literature_attribution": 9.3,
+            "clarity_exposition": 9.1,
+            "overall": 9.1
+          },
+          "rationale": "The posterior normalization, exact run recurrence and strict convexity estimates form a detailed proof of the two-error extrema, with the insertion exceptions explicitly computed. Integer-product entropy comparisons and all-radius alternating-word histograms give independently checkable exact evidence, while the three-error optimality claims remain correctly labeled finite results and conjectures. Attribution distinguishes inherited embedding formulas from the new extremal comparisons; the reported Lean companion is less precisely documented than the self-contained analytical and enumeration arguments."
+        },
+        {
+          "blind_id": "ext_10",
+          "cohort": "autonomous_ai",
+          "source_id": "AgentAlphaXiv:01a097ed-5c1",
+          "category": "Autonomous AI (Math/Theory)",
+          "scores": {
+            "correctness_rigor": 7.3,
+            "claim_calibration": 7.7,
+            "verification_grounding": 8.2,
+            "novelty_significance": 8.4,
+            "literature_attribution": 8.8,
+            "clarity_exposition": 8.6,
+            "overall": 7.9
+          },
+          "rationale": "The clipped-loss gradient is derived correctly, and the identical-prompt control plus objective/context factorial experiment gives persuasive evidence of an implementation-induced failure. However, decreasing an excluded token's logit does not establish the claimed irreversible probability-support ratchet under softmax coupling, and negative coordinate KL terms are bounded for a fixed teacher. Missing seeds, four-pair bootstrap inference and unmet preregistered criteria limit the broad causal headline, despite unusually candid reporting of recovery and the unresolved paired-context contrast."
+        },
+        {
+          "blind_id": "ext_11",
+          "cohort": "human_only_arxiv",
+          "source_id": "arXiv:2610.21068v1",
+          "category": "cs.IT",
+          "scores": {
+            "correctness_rigor": 7.5,
+            "claim_calibration": 7.8,
+            "verification_grounding": 7.9,
+            "novelty_significance": 8.0,
+            "literature_attribution": 8.5,
+            "clarity_exposition": 8.5,
+            "overall": 7.8
+          },
+          "rationale": "The tangent-space least-squares formulation and parameterized CG/SVD implementation are explicit and technically useful, with quantitative recovery statements and numerical comparisons. However, Appendix A drops the Hankel residual before using a lower bound that needs the combined residual, and Theorem 7.2's noisy convergence conclusion lacks the small-noise/invariance condition required by its displayed recurrence. Quadratic convergence is proved for exact inner solves, while the fixed-tolerance implementation and broad efficiency claims need a corresponding inexact-solve analysis."
+        },
+        {
+          "blind_id": "ext_12",
+          "cohort": "human_in_the_loop",
+          "source_id": "arXiv:2610.29608v1",
+          "category": "math.NT",
+          "scores": {
+            "correctness_rigor": 9.0,
+            "claim_calibration": 9.4,
+            "verification_grounding": 8.7,
+            "novelty_significance": 7.9,
+            "literature_attribution": 9.5,
+            "clarity_exposition": 8.5,
+            "overall": 8.5
+          },
+          "rationale": "The character normalization, CRT linkage and prime-lifting formulas are proved explicitly, and the imprimitive quartic classification includes a justified relative-density calculation and concrete coset checks. Attribution carefully separates standard Bernoulli/class-number machinery and known index-two balance from the new subgroup-specific cancellation results. The remaining primitive quartic cases are largely arithmetic tests rather than a complete classification, and the stated formal verification covers only the counterexample and lifted prime identity."
+        },
+        {
+          "blind_id": "ext_13",
+          "cohort": "autonomous_ai",
+          "source_id": "AgentAlphaXiv:01a17a7e-3d3",
+          "category": "Autonomous AI (Math/Theory)",
+          "scores": {
+            "correctness_rigor": 8.6,
+            "claim_calibration": 9.6,
+            "verification_grounding": 7.8,
+            "novelty_significance": 6.6,
+            "literature_attribution": 8.2,
+            "clarity_exposition": 8.2,
+            "overall": 7.3
+          },
+          "rationale": "The matched-community design, distinct topic/idea endpoints, seed-cluster analysis and worst-case missingness bounds are specified carefully, and the failed preregistered completeness gate is honored. Treatment-linked attrition and instrument agreement without expert ground truth prevent the retained trajectories from establishing the planned population effect, despite multiple reconstruction audits. The protocol contributes useful descriptive evidence on peer exposure, but its confirmatory result remains inconclusive and neither scientific quality nor specific social mechanisms are measured."
+        },
+        {
+          "blind_id": "ext_14",
+          "cohort": "human_only_arxiv",
+          "source_id": "arXiv:2610.21600v2",
+          "category": "math.GR",
+          "scores": {
+            "correctness_rigor": 9.3,
+            "claim_calibration": 9.4,
+            "verification_grounding": 8.9,
+            "novelty_significance": 8.3,
+            "literature_attribution": 8.9,
+            "clarity_exposition": 8.6,
+            "overall": 8.8
+          },
+          "rationale": "The characteristic-subgroup extension, finite-field counting argument and Vandermonde obstruction give a complete and persuasive chain from existence to sharpness, with the homocyclic boundary case proved separately. The Latin-square constructions are checked explicitly, and the text appropriately acknowledges that its subgroup-transversal application follows already from earlier work. The simultaneous mapping theorem is a meaningful extension, although the broader noncyclic abelian classification remains open and minor typographical errors and lengthy routine calculations reduce polish."
+        },
+        {
+          "blind_id": "ext_15",
+          "cohort": "autonomous_ai",
+          "source_id": "AgentAlphaXiv:01a145e3-610",
+          "category": "Autonomous AI (Math/Theory)",
+          "scores": {
+            "correctness_rigor": 8.5,
+            "claim_calibration": 9.2,
+            "verification_grounding": 7.9,
+            "novelty_significance": 5.9,
+            "literature_attribution": 8.8,
+            "clarity_exposition": 8.4,
+            "overall": 7.2
+          },
+          "rationale": "Matched hyperparameter searches, seed-level comparisons, exact-simulator cross-checks and shuffled-target controls make the negative result credible for the declared environment. The manuscript appropriately retracts robust equivalence when more bootstrap draws move an endpoint across its chosen margin and labels dose-response findings exploratory. Significance remains limited by one small simulator, a selected auxiliary weight with negligible shared-parameter gradients, and borderline transfer intervals; the full transition specification and runnable evidence are delegated to an unspecified package."
+        },
+        {
+          "blind_id": "ext_16",
+          "cohort": "human_only_arxiv",
+          "source_id": "arXiv:2611.00153v1",
+          "category": "cs.FL",
+          "scores": {
+            "correctness_rigor": 8.1,
+            "claim_calibration": 9.0,
+            "verification_grounding": 7.0,
+            "novelty_significance": 8.5,
+            "literature_attribution": 8.5,
+            "clarity_exposition": 8.2,
+            "overall": 8.1
+          },
+          "rationale": "The worked four-state conversions provide explicit transition schemes, stable-configuration correspondences, counter invariants, and consistent symbol counts, although the determinism and reversibility checks remain somewhat schematic. Claims are carefully scoped through finite-input assumptions, explicit halting conventions, and the distinction between strict and weak universality, with precise attribution to Morita and relevant small-machine literature. The improved size bounds and proposed two-state decidability result have substantial potential significance, but the supplied portion supports the worked conversions more directly than the announced lower bounds and Lean verification, whose proofs and artifacts are not available here for assessment."
+        },
+        {
+          "blind_id": "ext_17",
+          "cohort": "autonomous_ai",
+          "source_id": "AgentAlphaXiv:01a18d5c-ae5",
+          "category": "Autonomous AI (Math/Theory)",
+          "scores": {
+            "correctness_rigor": 6.3,
+            "claim_calibration": 6.0,
+            "verification_grounding": 6.6,
+            "novelty_significance": 4.3,
+            "literature_attribution": 6.3,
+            "clarity_exposition": 7.7,
+            "overall": 5.5
+          },
+          "rationale": "The preregistered protocol, transparent exclusion deviation, internally consistent paired counts, exact McNemar tests, and described code and response caches support a clearly presented, reproducible empirical audit. However, the accuracy interval [-1.7, 2.7] does not establish equivalence within \u00b12 percentage points, the pooled position tests lack correction for acknowledged within-item dependence, and the absence of same-order resampling prevents isolating order effects from sampling variability. Relevant external literature is cited, but the contribution remains an incremental single-model benchmark study, and the cross-benchmark verifier comparison provides limited evidence of comparative utility."
+        },
+        {
+          "blind_id": "ext_18",
+          "cohort": "human_in_the_loop",
+          "source_id": "arXiv:2611.03956v1",
+          "category": "math.CO",
+          "scores": {
+            "correctness_rigor": 8.8,
+            "claim_calibration": 8.6,
+            "verification_grounding": 8.1,
+            "novelty_significance": 8.0,
+            "literature_attribution": 8.0,
+            "clarity_exposition": 8.4,
+            "overall": 8.3
+          },
+          "rationale": "The complete-factor lifting lemma and the Brooks/Cayley independence-number comparison are convincing, and the iterated construction directly resolves the cited diameter question. The visible proofs carefully justify maximality, distance formulas, and the chordal induction, while explicitly attributing the main imported results. The finite examples rely on reported exhaustive enumeration whose implementation is not independently inspectable in the supplied text, and the introduction\u2019s broad product-classification wording is less precise than the abstract\u2019s distinction between sufficient conditions and partial converses."
+        },
+        {
+          "blind_id": "ext_19",
+          "cohort": "human_in_the_loop",
+          "source_id": "arXiv:2610.39941v2",
+          "category": "cs.FL",
+          "scores": {
+            "correctness_rigor": 8.5,
+            "claim_calibration": 9.1,
+            "verification_grounding": 8.0,
+            "novelty_significance": 6.4,
+            "literature_attribution": 8.0,
+            "clarity_exposition": 8.4,
+            "overall": 7.5
+          },
+          "rationale": "The transport/commutation criterion follows rigorously from free-monoid cancellation and the explicit run-count bound; the unary-source results and worked counterexamples also receive concrete analytical proofs. The manuscript carefully distinguishes its proved local statements from the open global conjectures and explains its relationship to bounded insertion, shuffle trajectories, and classical word commutation. Its main limitation is the depth and reach of the established contribution: the obstruction characterization and special cases clarify representation ambiguity, but leave general descent and Singleton No-Gap unresolved, limiting the demonstrated case for top-tier significance."
+        },
+        {
+          "blind_id": "ext_20",
+          "cohort": "autonomous_ai",
+          "source_id": "AgentAlphaXiv:01a1980a-8b3",
+          "category": "Autonomous AI (Math/Theory)",
+          "scores": {
+            "correctness_rigor": 7.2,
+            "claim_calibration": 8.2,
+            "verification_grounding": 6.8,
+            "novelty_significance": 5.8,
+            "literature_attribution": 7.7,
+            "clarity_exposition": 8.1,
+            "overall": 6.7
+          },
+          "rationale": "The matched-call baseline, shared initial samples, isolated-revision control, and item-stratified bootstrap provide a sound comparative design, and the manuscript appropriately treats its primary results as unresolved at the preregistered 2 pp margin. However, 56 screened items and one model limit generalizability, while functional-form selection from very short, correlated accuracy curves provides weak scaling evidence; the reported IND(1)\u2013IND(2) discrepancy reflects estimation noise despite their exact equality under uniform tie breaking, and odd-sized multiclass votes can still tie. The external literature is well contextualized and the reporting is unusually transparent, but numerical-ledger consistency does not independently validate experimental execution, and the substantive contribution is an incremental, underpowered extension of existing matched-budget debate studies."
+        },
+        {
+          "blind_id": "ext_21",
+          "cohort": "autonomous_ai",
+          "source_id": "AgentAlphaXiv:01a18ed0-e4f",
+          "category": "Autonomous AI (Math/Theory)",
+          "scores": {
+            "correctness_rigor": 8.3,
+            "claim_calibration": 9.0,
+            "verification_grounding": 8.1,
+            "novelty_significance": 4.7,
+            "literature_attribution": 6.7,
+            "clarity_exposition": 8.5,
+            "overall": 6.7
+          },
+          "rationale": "The manuscript precisely defines its paired estimand, separates transformation fitting from evaluation, and reports internally consistent results supported by detailed source authentication, independent numerical reconstruction, and reproducibility checks. Its equivalence conclusion remains dependent on a Student approximation from only three training seeds, conditional on one panel, split, and direction bank; these limitations and the substantial variance mismatch between principal-component and random removals are explicitly acknowledged. The principal weakness for a top-tier journal is significance: this is a carefully executed but narrow robustness audit of an inherited cohort comparison, with limited structural explanation, modest engagement with external literature, and no demonstrated generalization beyond the selected intervention and endpoint."
+        },
+        {
+          "blind_id": "ext_22",
+          "cohort": "human_only_arxiv",
+          "source_id": "arXiv:2611.00144v1",
+          "category": "quant-ph",
+          "scores": {
+            "correctness_rigor": 8.2,
+            "claim_calibration": 8.4,
+            "verification_grounding": 7.5,
+            "novelty_significance": 7.7,
+            "literature_attribution": 7.4,
+            "clarity_exposition": 6.7,
+            "overall": 7.5
+          },
+          "rationale": "The displayed Choi reformulation, dimension-normalization cancellation, and CPTP restriction/extension argument are explicit and appear sound, preserving optimization over arbitrary finite auxiliary dimensions and joint channels. The advertised exact endpoint value and additivity address a substantial question with carefully stated scope, although their decisive upper bounds and perturbation estimates are not available in the supplied excerpt and therefore remain unassessed. Attribution identifies relevant research directions but needs a sharper comparison with the precise results of [7], while extensive repetition and frequent grammatical errors weaken otherwise understandable exposition."
+        },
+        {
+          "blind_id": "ext_23",
+          "cohort": "human_in_the_loop",
+          "source_id": "arXiv:2611.21657v1",
+          "category": "math.CO",
+          "scores": {
+            "correctness_rigor": 7.7,
+            "claim_calibration": 8.4,
+            "verification_grounding": 7.9,
+            "novelty_significance": 7.5,
+            "literature_attribution": 8.0,
+            "clarity_exposition": 7.8,
+            "overall": 7.7
+          },
+          "rationale": "Explicit legal-site recurrences, coefficientwise polynomial identities, uniqueness arguments, and convergence estimates for the formal orbit sums provide substantial analytical grounding for these focused enumeration contributions, with specific attribution to the classification and kernel-method literature. However, the B-tree exhaustion proof incorrectly identifies L,M,L as pattern 101 rather than 010, leaving its equality case unjustified as written; this appears locally repairable but requires an explicit argument. Claims are generally precise about total-count versus refined identities, while an unresolved supplementary cross-reference reduces the exposition's finish and reproducibility."
+        },
+        {
+          "blind_id": "ext_24",
+          "cohort": "human_only_arxiv",
+          "source_id": "arXiv:2611.00145v1",
+          "category": "math.CO",
+          "scores": {
+            "correctness_rigor": 3.0,
+            "claim_calibration": 3.5,
+            "verification_grounding": 2.5,
+            "novelty_significance": 4.0,
+            "literature_attribution": 6.0,
+            "clarity_exposition": 5.5,
+            "overall": 3.0
+          },
+          "rationale": "The Boolean-lattice proof that K\u00b2=id is sound, and the manuscript provides useful connections to the numerical-integration and incidence-Hopf-algebra literature. However, Theorem 4 is false for the explicitly defined graph Hopf algebra: a single edge e has S(e)=\u2212e+2v\u00b2, where v is a single vertex, whereas (21) gives \u2212e+v\u00b2; the assertion that a tree has only one acyclic orientation is incorrect. Equation (18) also reverses the required set difference, and the central antipode identification consequently lacks a valid proof or independent verification, substantially undermining the claimed structural contribution."
+        },
+        {
+          "blind_id": "ext_25",
+          "cohort": "human_only_arxiv",
+          "source_id": "arXiv:2611.00126v1",
+          "category": "math.CO",
+          "scores": {
+            "correctness_rigor": 8.2,
+            "claim_calibration": 8.9,
+            "verification_grounding": 6.5,
+            "novelty_significance": 7.8,
+            "literature_attribution": 8.6,
+            "clarity_exposition": 8.4,
+            "overall": 7.8
+          },
+          "rationale": "The interlacing and integrality arguments and the two-dimensional Seidel-switching reduction are convincing, while the explicit non-transmission-regular examples and restricted uniqueness theorem provide a substantive, well-attributed contribution. However, the c=3 classification depends on an exhaustive enumeration whose code is supplied only on request and whose floating-point rejection step lacks a certified error bound; exact testing of surviving candidates does not establish that no admissible candidates were discarded. The claims are otherwise carefully scoped and the exposition is clear, but reproducible computational materials and a rigorous completeness certificate are needed to substantiate the full classification."
+        },
+        {
+          "blind_id": "ext_26",
+          "cohort": "human_only_arxiv",
+          "source_id": "arXiv:2611.00201v1",
+          "category": "quant-ph",
+          "scores": {
+            "correctness_rigor": 7.7,
+            "claim_calibration": 7.9,
+            "verification_grounding": 6.8,
+            "novelty_significance": 7.2,
+            "literature_attribution": 7.6,
+            "clarity_exposition": 8.3,
+            "overall": 7.4
+          },
+          "rationale": "The explicit lattice Hamiltonian, consistent canonical site\u2013mode transformation, and vacuum-subtracted observables provide a sound analytical foundation, while the introduction acknowledges closely related Yukawa simulations and hybrid architectures. The proposed blue-sideband phonon-addition procedure needs heralding and occupation-dependent error conditions specified for an interacting initial state, and incoherent occupation requires corroboration to distinguish resonant production from other fluctuations. The architecture-specific study and reported beyond-one-loop effects are promising, but the supplied text establishes the encoding and measurement framework more firmly than the quantitative accuracy or significance of those effects; the detailed perturbative and convergence evidence cannot be assessed within this excerpt."
+        },
+        {
+          "blind_id": "ext_27",
+          "cohort": "autonomous_ai",
+          "source_id": "AgentAlphaXiv:01a18d0f-5a5",
+          "category": "Autonomous AI (Math/Theory)",
+          "scores": {
+            "correctness_rigor": 8.1,
+            "claim_calibration": 9.3,
+            "verification_grounding": 6.7,
+            "novelty_significance": 4.8,
+            "literature_attribution": 4.5,
+            "clarity_exposition": 8.5,
+            "overall": 6.5
+          },
+          "rationale": "The coupled count control, explicit Adam skip semantics, and correctly calculated seed-level interval support the narrow selection-effect claim; the manuscript carefully distinguishes acquisition gains from retention and avoids claiming superiority to ordinary training. Verification rests on reported audits of saved outputs rather than demonstrated independent training reproduction, while four inherited parents on one small synthetic task provide limited evidence of robustness or broader relevance. The contribution is a useful methodological control with modest novelty, and placeholder references, inaccessible provenance sources, and limited engagement with the broader curriculum-learning and continual-learning literature reduce publication readiness."
+        },
+        {
+          "blind_id": "ext_28",
+          "cohort": "human_in_the_loop",
+          "source_id": "arXiv:2611.04568v1",
+          "category": "quant-ph",
+          "scores": {
+            "correctness_rigor": 7.8,
+            "claim_calibration": 7.5,
+            "verification_grounding": 8.2,
+            "novelty_significance": 6.8,
+            "literature_attribution": 8.3,
+            "clarity_exposition": 7.8,
+            "overall": 7.3
+          },
+          "rationale": "The explicit partial-transpose spectrum, finite product decomposition, realignment formula, and fixed local projection provide strong analytical certificates for the classification and distillability results, with clear attribution of the underlying static classification. However, the twirl in (17), as written with D\u2297D, preserves swap coherences and does not fix H0; the claimed local realization requires conjugating the second factor, while the abstract misleadingly describes entanglement as vanishing when a bound-entangled tail persists. The dynamical synthesis is useful and well grounded, but its contribution beyond the acknowledged static results is relatively incremental, and the broad historical priority assertions are insufficiently substantiated in the supplied text."
+        },
+        {
+          "blind_id": "ext_29",
+          "cohort": "autonomous_ai",
+          "source_id": "AgentAlphaXiv:01a19561-135",
+          "category": "Autonomous AI (Math/Theory)",
+          "scores": {
+            "correctness_rigor": 7.6,
+            "claim_calibration": 9.0,
+            "verification_grounding": 7.3,
+            "novelty_significance": 6.0,
+            "literature_attribution": 7.0,
+            "clarity_exposition": 8.5,
+            "overall": 7.0
+          },
+          "rationale": "The explicit token-matched protocol, paired comparisons, held-back evaluation, and careful separation of preregistered and exploratory findings support the inconclusive primary verdict and the observed pass@1\u2013pass@16 tradeoff under the specified sampling regime. However, three training seeds provide fragile grounds for hierarchical-bootstrap inference, the single-seed AC arm cannot establish stable factor effects, and comparing a seed-level interval width with a sampling-only minimum detectable effect does not establish that training variance dominates. The exposition and diagnostic measurements are strong, but the single-model, single-benchmark scope and incremental advance over existing coverage-collapse findings limit top-tier significance."
+        },
+        {
+          "blind_id": "ext_30",
+          "cohort": "human_in_the_loop",
+          "source_id": "arXiv:2611.15431v1",
+          "category": "quant-ph",
+          "scores": {
+            "correctness_rigor": 7.6,
+            "claim_calibration": 7.4,
+            "verification_grounding": 6.9,
+            "novelty_significance": 8.7,
+            "literature_attribution": 6.5,
+            "clarity_exposition": 8.2,
+            "overall": 7.6
+          },
+          "rationale": "The manuscript presents a coherent common-ambient-dimension framework for the Nichols\u2013Wootters entropies, with exact spectral, simplex, compression, and Bregman representations, together with clearly stated sharp equality and coefficient claims; the problem and roadmap are unusually well organized. The central subadditivity, strong-subadditivity, quantitative, and operational-capacity conclusions are supported in the supplied text mainly by forward references to later proofs and appendices, so boundary-case arguments, certificate reproducibility, and comparison with the broader modern literature remain insufficiently auditable for top-tier acceptance."
+        }
+      ],
+      "comparisons": {
+        "hitl_vs_ai": {
+          "mean_diff": 1.29,
+          "wins": 91,
+          "ties": 1,
+          "losses": 8,
+          "total_pairs": 100,
+          "exact_perm_p": 0.001202,
+          "perm_splits": 184756
+        },
+        "hitl_vs_human": {
+          "mean_diff": 1.03,
+          "wins": 64,
+          "ties": 1,
+          "losses": 35,
+          "total_pairs": 100,
+          "exact_perm_p": 0.152504,
+          "perm_splits": 184756,
+          "sd_compression_ratio": 2.87
+        }
+      }
+    },
+    "claude_opus55": {
+      "label": "Anthropic Claude (claude-opus-5-5)",
+      "short": "Claude (opus-5-5)",
+      "by_cohort": {
+        "autonomous_ai": {
+          "correctness_rigor": {
+            "mean": 6.82,
+            "sd": 0.2616,
+            "median": 7.0,
+            "min": 6.3,
+            "max": 7.0
+          },
+          "claim_calibration": {
+            "mean": 8.1,
+            "sd": 0.6896,
+            "median": 8.4,
+            "min": 6.8,
+            "max": 9.0
+          },
+          "verification_grounding": {
+            "mean": 6.65,
+            "sd": 0.4882,
+            "median": 6.5,
+            "min": 6.0,
+            "max": 7.6
+          },
+          "novelty_significance": {
+            "mean": 4.46,
+            "sd": 1.2331,
+            "median": 4.7,
+            "min": 2.5,
+            "max": 6.3
+          },
+          "literature_attribution": {
+            "mean": 5.57,
+            "sd": 1.487,
+            "median": 6.0,
+            "min": 2.5,
+            "max": 7.2
+          },
+          "clarity_exposition": {
+            "mean": 7.22,
+            "sd": 0.3011,
+            "median": 7.05,
+            "min": 7.0,
+            "max": 7.8
+          },
+          "overall": {
+            "mean": 5.69,
+            "sd": 0.9315,
+            "median": 6.25,
+            "min": 4.0,
+            "max": 6.5
+          }
+        },
+        "human_only_arxiv": {
+          "correctness_rigor": {
+            "mean": 6.85,
+            "sd": 1.7329,
+            "median": 7.35,
+            "min": 3.4,
+            "max": 8.6
+          },
+          "claim_calibration": {
+            "mean": 6.82,
+            "sd": 1.9921,
+            "median": 7.5,
+            "min": 3.5,
+            "max": 8.8
+          },
+          "verification_grounding": {
+            "mean": 5.99,
+            "sd": 1.6549,
+            "median": 5.95,
+            "min": 3.3,
+            "max": 9.0
+          },
+          "novelty_significance": {
+            "mean": 5.75,
+            "sd": 1.457,
+            "median": 6.25,
+            "min": 3.0,
+            "max": 7.4
+          },
+          "literature_attribution": {
+            "mean": 6.09,
+            "sd": 1.6114,
+            "median": 6.25,
+            "min": 3.0,
+            "max": 8.0
+          },
+          "clarity_exposition": {
+            "mean": 6.83,
+            "sd": 1.3292,
+            "median": 7.25,
+            "min": 4.4,
+            "max": 8.2
+          },
+          "overall": {
+            "mean": 6.23,
+            "sd": 1.6035,
+            "median": 6.7,
+            "min": 3.5,
+            "max": 8.0
+          }
+        },
+        "human_in_the_loop": {
+          "correctness_rigor": {
+            "mean": 7.8,
+            "sd": 0.5696,
+            "median": 7.6,
+            "min": 7.0,
+            "max": 8.7
+          },
+          "claim_calibration": {
+            "mean": 7.89,
+            "sd": 0.8621,
+            "median": 7.9,
+            "min": 6.4,
+            "max": 9.0
+          },
+          "verification_grounding": {
+            "mean": 7.34,
+            "sd": 1.0585,
+            "median": 6.95,
+            "min": 6.0,
+            "max": 9.1
+          },
+          "novelty_significance": {
+            "mean": 5.79,
+            "sd": 0.948,
+            "median": 5.7,
+            "min": 4.8,
+            "max": 7.6
+          },
+          "literature_attribution": {
+            "mean": 6.9,
+            "sd": 0.6976,
+            "median": 7.0,
+            "min": 5.8,
+            "max": 8.1
+          },
+          "clarity_exposition": {
+            "mean": 6.85,
+            "sd": 0.7863,
+            "median": 7.0,
+            "min": 5.3,
+            "max": 8.2
+          },
+          "overall": {
+            "mean": 6.69,
+            "sd": 0.7062,
+            "median": 6.55,
+            "min": 5.9,
+            "max": 7.6
+          }
+        }
+      },
+      "per_paper": [
+        {
+          "blind_id": "ext_01",
+          "cohort": "human_only_arxiv",
+          "source_id": "arXiv:2610.21052v1",
+          "category": "math.NT",
+          "scores": {
+            "correctness_rigor": 7.5,
+            "claim_calibration": 8.0,
+            "verification_grounding": 6.5,
+            "novelty_significance": 6.5,
+            "literature_attribution": 8.0,
+            "clarity_exposition": 7.5,
+            "overall": 7.2
+          },
+          "rationale": "\u7a3f\u4ef6\u5728\u534a\u5c40\u90e8\u6846\u67b6\u4e0b\u7ed9\u51fa\u4e86\u5b8c\u6574\u7684\u6280\u672f\u51c6\u5907:\u7528\u540c\u6784 \u03b7 \u6bd4\u8f83\u4e24\u4fa7\u7684 Coleman \u5e42\u7ea7\u6570,\u5efa\u7acb Yager \u7684\u4e24\u53d8\u91cf Coates\u2013Wiles \u540c\u6001,\u5f15\u7528 de Shalit \u6d4b\u5ea6\u5e76\u6309 Darmon\u2013Lauder\u2013Rotger \u8ba2\u6b63\u5176 2\u03c0 \u5e42\u6b21\u3002\u4e3b\u5b9a\u7406\u7684\u6210\u7acb\u8303\u56f4 i\u2261j (mod w_K) \u5199\u5f97\u660e\u786e,\u4f5c\u8005\u4e5f\u5982\u5b9e\u8bf4\u660e\u4e86\u672c\u6587\u662f\u5bf9 [IG26] \u5206\u5706\u7ebf\u60c5\u5f62\u7684\u63a8\u5e7f,\u4ee5\u53ca Sano\u2013Venjakob \u72ec\u7acb\u5f97\u5230\u540c\u4e00\u7ed3\u679c\u3002\u4e0d\u8db3\u6709\u4e09\u70b9:\u5f15\u7406 4.10\u30014.11 \u4e2d\u6a21 p^m \u540c\u4f59\u3001\u63d0\u5347\u9009\u53d6\u65e0\u5173\u6027\u548c Galois \u4e0d\u52a8\u6027\u7684\u8bba\u8bc1\u8fc7\u4e8e\u7b80\u7565;\u4e3b\u516c\u5f0f\u7684\u8bc1\u660e\u4f9d\u8d56\u5df2\u6709\u4e92\u53cd\u5f8b\u4e0e\u63d2\u503c\u516c\u5f0f,\u6587\u4e2d\u6ca1\u6709\u72ec\u7acb\u7684\u6570\u503c\u6216\u5f62\u5f0f\u5316\u6838\u9a8c;\u65b9\u6cd5\u6cbf\u7528 Nakamura\u2013Sakugawa\u2013Wojtkowiak \u7684\u5c40\u90e8\u6bd4\u8f83\u6cd5,\u4e14\u5df2\u6709\u4ed6\u4eba\u72ec\u7acb\u5f97\u5230\u540c\u4e00\u7ed3\u679c,\u56e0\u6b64\u65b0\u610f\u6709\u9650\u3002"
+        },
+        {
+          "blind_id": "ext_02",
+          "cohort": "human_only_arxiv",
+          "source_id": "arXiv:2610.21044v1",
+          "category": "quant-ph",
+          "scores": {
+            "correctness_rigor": 4.5,
+            "claim_calibration": 3.5,
+            "verification_grounding": 4.0,
+            "novelty_significance": 3.0,
+            "literature_attribution": 3.0,
+            "clarity_exposition": 5.0,
+            "overall": 3.5
+          },
+          "rationale": "The exact zero-energy solutions check out, for example r cos(1/r) for D=1, n=4 and cos(1/r+chi) for D=3, n=4, and so does the norm-convergence exponent. The rest of the work is WKB/Langer-type asymptotics plus Runge-Kutta shooting with no convergence or error analysis. The 'continuous spectrum of bound states' is presented as counter-intuitive and new, but it is the standard deficiency-index (non-self-adjointness) phenomenon of Case (1950) and the Frank-Land-Spector review: square-integrable solutions at different E are not orthogonal eigenstates of any self-adjoint Hamiltonian. The paper does not engage this framework. Its hard-core claim that E_GS = 0 at U0 = 0.33 contradicts the known geometric tower of K_{i nu} zeros, which gives a finite (if exponentially small) E_GS for every U0 > 1/4, so it is likely a finite-domain artifact. The literature treatment is weak: the core singular-potential and self-adjoint-extension references are missing, and refs [12-17] on Jaynes-Cummings collapse-revival are wrongly cited as fall-to-center phenomenology. There are also equation mis-references and typos."
+        },
+        {
+          "blind_id": "ext_03",
+          "cohort": "human_only_arxiv",
+          "source_id": "arXiv:2610.21036v1",
+          "category": "math.CO",
+          "scores": {
+            "correctness_rigor": 8.5,
+            "claim_calibration": 8.5,
+            "verification_grounding": 7.0,
+            "novelty_significance": 7.0,
+            "literature_attribution": 6.5,
+            "clarity_exposition": 8.0,
+            "overall": 7.6
+          },
+          "rationale": "\u6211\u9010\u6b65\u6838\u5bf9\u4e86\u5b9a\u74061.1\u7684\u8bc1\u660e\uff0c\u6ca1\u6709\u53d1\u73b0\u6f0f\u6d1e\u3002\u8bc1\u660e\u5206\u4e24\u6b65\uff1a\u5148\u7528 Boyer\u2013Goddard \u5f15\u7406\u52a0\u5f52\u7eb3\uff0c\u6784\u9020\u4e00\u4e2a\u5168\u8fb9\u63a7\u5236\u7684\u51e0\u4e4e\u661f\u68ee\u6797\uff1b\u518d\u8ba1\u6570\u8bc1\u660e\u6bcf\u4e2a\u8272\u7c7b\u7684\u51b2\u7a81\u56fe\u662f2-\u9000\u5316\u7684\uff0c\u5173\u952e\u5728\u5f0f(6)\u81f3(9)\u3002\u4f8b2.5\u8bf4\u660e\u51b2\u7a81\u56fe\u786e\u5b9e\u53ef\u80fd\u9700\u8981\u4e09\u8272\u3002\u5176\u4f59\u90e8\u5206\u4e5f\u6838\u5bf9\u65e0\u8bef\uff0c\u5305\u62ec K_{m,n} \u7684\u786e\u5207\u503c\u3001K_n \u7684\u4e0b\u754c 2n\u22123\u3001\u5f15\u74063.2\u7684\u661f\u68ee\u6797\u7ed3\u6784\u3001\u5f15\u74063.3\u5bf9 n\u22610,2 (mod 4) \u7684\u8ba1\u6570\u6392\u9664\u3001\u547d\u98983.5\uff0c\u4ee5\u53ca\u6784\u9020 I \u4e2d\u5404\u989c\u8272\u96c6\u5927\u5c0f\u4e0e\u8c03\u8272\u677f\u4e92\u8865\u5173\u7cfb\u7684\u6838\u7b97\u3002\u4e0d\u8db3\u6709\u56db\u70b9\uff1a\u4e0a\u754c 3\u03c7\u2032 \u4e0e\u4e0b\u754c 2\u0394\u22121 \u4e4b\u95f4\u7684\u5e38\u6570\u5dee\u8ddd\u6ca1\u6709\u8ba8\u8bba\uff1b\u6240\u6709\u9a8c\u8bc1\u90fd\u9760\u624b\u5de5\u8bc1\u660e\u4e0e\u663e\u5f0f\u6784\u9020\uff0c\u6ca1\u6709\u8ba1\u7b97\u673a\u6838\u9a8c\uff1b\u6587\u732e\u53ea\u5f15\u4e86\u8fd9\u4e00\u65b0\u5174\u65b9\u5411\u7684\u5c11\u6570\u5de5\u4f5c\uff0c\u6ca1\u6709\u8054\u7cfb\u5f3a\u8fb9\u7740\u8272\u4e0e\u8fb9\u63a7\u5236\u66f4\u5e7f\u7684\u7814\u7a76\u8109\u7edc\uff1b\u622a\u65ad\u540e\u7684\u6784\u9020 II\u3001III \u4e0e\u5b9a\u74061.4\u7684\u5b8c\u6574\u8bc1\u660e\u65e0\u6cd5\u5ba1\u9605\u3002"
+        },
+        {
+          "blind_id": "ext_04",
+          "cohort": "human_in_the_loop",
+          "source_id": "arXiv:2610.20329v1",
+          "category": "math.GR",
+          "scores": {
+            "correctness_rigor": 8.7,
+            "claim_calibration": 8.4,
+            "verification_grounding": 9.1,
+            "novelty_significance": 5.0,
+            "literature_attribution": 5.8,
+            "clarity_exposition": 8.2,
+            "overall": 6.8
+          },
+          "rationale": "\u6211\u9010\u6761\u6838\u5bf9\u4e86\u4ee5\u4e0b\u5185\u5bb9\uff1a\u8f68\u9053\u5206\u89e3\u4e0e\u5355\u4f4d\u7fa4\u9636 512\uff1b\u5408\u5e76\u4e24\u6761\u81ea\u7531\u8f68\u9053\u7684\u61d2\u81ea\u52a8\u673a\u6070\u4e3a B_s \u4e0e J B_s J \u8fd9\u4e00\u5206\u7c7b\uff1b\u56e0\u5b50\u5206\u89e3 T = R B_s \u03b1 \u4e0e E = N \u222a N\u03b5U\uff1b\u8ba1\u6570 59 712\u30015 824\u30012 368\u300119 360\u300165 024\uff1b\u8868 1 \u4e24\u5217\u4e4b\u548c\u3002\u8bba\u8bc1\u5b8c\u6574\uff0c\u672a\u89c1\u7f3a\u53e3\u3002\u5224\u636e\u4e0e\u4e24\u4e2a\u57fa\u6570\u7531 Lean \u5185\u6838\u68c0\u9a8c\uff0c\u672a\u4f7f\u7528 native_decide\uff1b\u6700\u77ed\u5b57\u957f\u7531\u4e00\u4e2a\u5e26\u8bc1\u4e66\u7684\u72ec\u7acb\u68c0\u67e5\u5668\u6838\u9a8c\u3002\u4f5c\u8005\u5982\u5b9e\u8bf4\u660e\u4e86\u5b57\u957f\u5206\u5e03\u672a\u5f62\u5f0f\u5316\uff0c\u4e5f\u8bf4\u660e D \u7684\u7ed3\u6784\u5224\u636e\u4ecd\u672a\u89e3\u51b3\u3002\u4e3b\u8981\u5f31\u70b9\u662f\u610f\u4e49\u8303\u56f4\u7a84\uff1a\u5168\u6587\u53ea\u5904\u7406 16 \u4e2a\u6784\u5f62\u4e0a\u7684\u5355\u4e00\u6709\u9650\u60c5\u5f62\uff1b\u5bf9 [1, Problem 2] \u7684\u5426\u5b9a\u56de\u7b54\u5df2\u7531 [2] \u7ed9\u51fa\uff0c\u672c\u6587\u662f\u5bf9\u5b83\u7684\u7ec6\u5316\u3002\u53c2\u8003\u6587\u732e\u4ec5 7 \u7bc7\uff0c\u672a\u8ba8\u8bba\u7ec6\u80de\u81ea\u52a8\u673a\u5e7a\u534a\u7fa4\u7684\u79e9\u4e0e\u751f\u6210\u96c6\u65b9\u9762\u66f4\u5e7f\u7684\u6587\u732e\uff1b\u300c\u5e38\u6570\u5206\u79bb\u4e0d\u53d8\u91cf\u300d\u7684\u51fa\u5904\u4e5f\u6ca1\u6709\u660e\u786e\u6807\u6ce8\u3002"
+        },
+        {
+          "blind_id": "ext_05",
+          "cohort": "human_in_the_loop",
+          "source_id": "arXiv:2610.05623v2",
+          "category": "quant-ph",
+          "scores": {
+            "correctness_rigor": 7.2,
+            "claim_calibration": 7.6,
+            "verification_grounding": 6.9,
+            "novelty_significance": 5.4,
+            "literature_attribution": 6.0,
+            "clarity_exposition": 5.3,
+            "overall": 6.2
+          },
+          "rationale": "The core results are mathematically sound on spot-checking: the kernel factorization K = g(x)g(y)*e^{-\u03bb(x-y)^2}, the reflection identity K_\u03c3(x,y) = D^{-1/2}K_{\u03c3/D}(x,-y) that gives the full inertia classification, the closed coherent-frame formula, and the \u221ad-rescaled basis limits all check out against Tables I\u2013II. The \u03c3=2I, d=31 rational-interval certificate is consistent with the stated \u03b5_d. Claims are well calibrated: the paper separates the proved trace-norm, purity and basis-coherence limits from the coherent-frame convergence, which is supported only numerically, and it concedes that plain spectral truncation already gives exponential approximation. The main weaknesses are moderate significance and heavy self-citation. Appendix B's trace-norm proof is very compressed. The paper is a patchwork of the approximation theorem and an ad hoc affine-rescaled \u21131 frame-coherence functional, with revision-artifact phrasing ('we retain the original...'). The verification package is available only on request."
+        },
+        {
+          "blind_id": "ext_06",
+          "cohort": "autonomous_ai",
+          "source_id": "AgentAlphaXiv:01a16e97-244",
+          "category": "Autonomous AI (Math/Theory)",
+          "scores": {
+            "correctness_rigor": 7.0,
+            "claim_calibration": 7.3,
+            "verification_grounding": 7.6,
+            "novelty_significance": 5.6,
+            "literature_attribution": 7.2,
+            "clarity_exposition": 7.1,
+            "overall": 6.5
+          },
+          "rationale": "The validity argument is sound: the defensive mixture bounds the weights by 1/alpha, every proposal depends only on earlier batches, a mixture of non-negative supermartingales with Ville's inequality covers the whole sample path, and the monotonicity argument removes the need for a union bound over the grid. The headline numbers are checked against exact enumeration over up to 2.1M leaves in 9,840 replications under preregistered falsifiers, and the failures are reported openly: the (4,7) tree, no win for IS upper bounds without enumeration, and adaptation being indispensable. There are three weaknesses. Equation (2) leaves out the ln(9) cost of averaging over the nine bet fractions, which probably explains most of the factor of about two that the authors left undecomposed, and a median ratio near 1 is offered as evidence of unbiasedness. The claim that the sampler uses no event-specific information is overstated, because the tilt classes are exactly the token classes that define every event, which likely inflates the gains. Finally, the method combines known tools (defensive-mixture cross-entropy IS and betting confidence sequences), is demonstrated only on GPT-2 small with tiny top-k trees, and needs white-box access, so its significance is mainly a careful ground-truth benchmark rather than a new technique."
+        },
+        {
+          "blind_id": "ext_07",
+          "cohort": "autonomous_ai",
+          "source_id": "AgentAlphaXiv:01a174cd-9eb",
+          "category": "Autonomous AI (Math/Theory)",
+          "scores": {
+            "correctness_rigor": 7.0,
+            "claim_calibration": 8.5,
+            "verification_grounding": 6.5,
+            "novelty_significance": 2.5,
+            "literature_attribution": 2.5,
+            "clarity_exposition": 7.0,
+            "overall": 4.0
+          },
+          "rationale": "The statistics are internally consistent and correctly stated. The bound gives a radius of 0.0605d: for d=2 this is [-0.3656,-0.1236], [0.0226,0.2645] and [0.0792,0.3212]. The resolved-contrast counts (4/2/4), the regret-to-selection-rate identities and all observation tallies check exactly against Table 1. Claims are calibrated with unusual care: the paper separates pilot, fresh and audit evidence, conditions on the tuning selection, keeps unresolved contrasts unresolved, and discloses that development effort is unequal. However, the tuning picked c=0.25, the edge of its grid, and the paper does not flag this. The individual Gaussian observations and the per-run tuning results are not retained. The study is a negative result for an ad hoc fixed-split heuristic against simple baselines in a homogeneous-effect Gaussian toy world, so its significance is slight. Its literature coverage is very thin: one external citation, and it omits classical ranking-and-selection work (Bechhofer, optimal computing budget allocation, knowledge gradient) and fixed-budget best-arm methods such as successive rejects and UGapE."
+        },
+        {
+          "blind_id": "ext_08",
+          "cohort": "human_in_the_loop",
+          "source_id": "arXiv:2610.24059v1",
+          "category": "math.CO",
+          "scores": {
+            "correctness_rigor": 8.6,
+            "claim_calibration": 9.0,
+            "verification_grounding": 8.8,
+            "novelty_significance": 6.0,
+            "literature_attribution": 7.0,
+            "clarity_exposition": 7.4,
+            "overall": 7.4
+          },
+          "rationale": "The core arguments are sound and hold up on spot checks: the first-forcing-sources lemma, the boundary identity |\u2202X|+I+K=2c+10, the buffered column-deletion lemma, the gap-word counts (e.g., 15,550 and 115,939 match exact inclusion-exclusion), the n=19 boundary counterexample, and several witness sequences such as P(9,4). The claims are carefully scoped: Lean covers only the k=3 stabilization, no axiom audit is claimed, and k=4 rests on 89+11 DRAT-certified CNFs with an independent semantic checker. The contribution is narrow, settling one recent conjecture plus one threshold by a largely computational reduction with no structural k=4 argument. The exposition is compressed in the slot-score derivation (Section 4.1) and overloaded with CI and provenance minutiae, and the literature context beyond the immediate P(n,k) and fort papers is thin."
+        },
+        {
+          "blind_id": "ext_09",
+          "cohort": "human_in_the_loop",
+          "source_id": "arXiv:2611.01064v1",
+          "category": "cs.IT",
+          "scores": {
+            "correctness_rigor": 8.3,
+            "claim_calibration": 8.8,
+            "verification_grounding": 8.5,
+            "novelty_significance": 6.6,
+            "literature_attribution": 7.0,
+            "clarity_exposition": 7.2,
+            "overall": 7.6
+          },
+          "rationale": "\u672c\u6587\u5b8c\u6574\u56de\u7b54\u4e86 Singhvi \u7b49\u4eba\u5728 IEEE Trans. Inf. Theory \u8bba\u6587\u7b2c\u4e03\u8282\u5217\u51fa\u7684\u4e8c\u5220\u9664\u4e0e\u4e8c\u63d2\u5165\u6700\u5927\u8f93\u5165\u71b5\u95ee\u9898\u3002\u5220\u9664\u60c5\u5f62\u7531\u9996\u7b26\u53f7\u9012\u63a8\u5f97\u5230\u6e38\u7a0b\u6052\u7b49\u5f0f\uff0c\u518d\u7528\u51f8\u6027\u4f30\u8ba1\u7ed9\u51fa\u4e25\u683c\u4e0b\u754c\u3002\u63d2\u5165\u60c5\u5f62\u7531\u63a9\u7801\u5206\u7ec4\u4e0b\u754c\u8bc1\u660e n\u22659\uff0cn\u22648 \u7528\u6574\u6570\u7cbe\u786e\u7a77\u4e3e\u8865\u8db3\u3002\u6211\u9010\u9879\u6838\u5bf9\u4e86\u5f15\u7406 2.1\u3001\u4e0d\u7b49\u5f0f (10) \u4e0e (14)\u2013(16)\u3001n\u22659 \u7684\u6bd4\u8f83\uff0c\u4ee5\u53ca\u5b9a\u7406 5.1\u30015.3 \u7684\u89c4\u8303\u5316\u6052\u7b49\u5f0f\uff0c\u7ed3\u8bba\u5747\u6210\u7acb\uff0c\u5b9a\u7406 2.2 \u53e6\u6709 Lean \u5f62\u5f0f\u5316\u3002\u4e09\u8bef\u5dee\u90e8\u5206\u7ed9\u51fa\u4ea4\u66ff\u8bcd\u76f4\u65b9\u56fe\u7684\u5b8c\u6574\u516c\u5f0f\uff0c\u6700\u4f18\u6027\u53ea\u58f0\u79f0\u6709\u7a77\u9a8c\u8bc1\u548c\u731c\u60f3\uff0c\u5e76\u5217\u51fa\u5c0f\u957f\u5ea6\u4f8b\u5916\uff0c\u8868\u8ff0\u5206\u5bf8\u6070\u5f53\u3002\u4e0d\u8db3\u6709\u4e09\u70b9\uff1a\u95ee\u9898\u8303\u56f4\u8f83\u7a84\uff0c\u65b9\u6cd5\u9650\u4e8e\u521d\u7b49\u51f8\u6027\u8bba\u8bc1\uff1b\u5f15\u7406 3.1 \u4e2d\u53f3\u7aef\u589e\u91cf\u7684\u6838\u9a8c\u548c 4.1 \u8282\u5206\u91cf\u5408\u5e76\u7684\u8bba\u8bc1\u5199\u5f97\u8fc7\u7b80\uff1b\u53c2\u8003\u6587\u732e\u53ea\u6709\u4e03\u7bc7\uff0c\u672a\u5f15\u7528\u5355\u7b26\u53f7\u8d85\u5e8f\u5217\u8ba1\u6570\u7b49\u7ecf\u5178\u7ed3\u679c\u3002"
+        },
+        {
+          "blind_id": "ext_10",
+          "cohort": "autonomous_ai",
+          "source_id": "AgentAlphaXiv:01a097ed-5c1",
+          "category": "Autonomous AI (Math/Theory)",
+          "scores": {
+            "correctness_rigor": 6.3,
+            "claim_calibration": 6.8,
+            "verification_grounding": 6.0,
+            "novelty_significance": 6.3,
+            "literature_attribution": 6.8,
+            "clarity_exposition": 7.0,
+            "overall": 6.4
+          },
+          "rationale": "\u4f18\u70b9:\u5f0f(3)\u5bf9\u9010\u5750\u6807\u622a\u65ad\u635f\u5931\u7684\u68af\u5ea6\u63a8\u5bfc\u6b63\u786e,\u53ef\u4ee5\u76f4\u63a5\u6838\u9a8c\u3002\u6559\u5e08\u53ea\u770b\u5b66\u751f\u63d0\u793a\u7684\u7a7a\u5bf9\u7167\u4e2d,\u4e09\u4e2a\u79cd\u5b50\u90fd\u572850\u6b65\u5185\u628a MATH-500 \u4ece0.84\u62c9\u4f4e\u5230\u7ea60.30,\u7cbe\u786e\u524d\u5411 KL \u4e0b\u5219\u4fdd\u6301\u5e73\u7a33\u3002\u672a\u6309\u539f\u6587\u8fbe\u6210\u7684 T1\u3001T3 \u5224\u636e\u3001\u672a\u8dd1\u7684\u4e24\u4e2a\u79cd\u5b50\u548c\u672a\u505a\u7684\u6b21\u8981\u8bc4\u4f30,\u6587\u4e2d\u90fd\u5982\u5b9e\u62a5\u544a\u3002\u4e0d\u8db3:\u6587\u4e2d\u79f0\u8d1f\u9879\u201c\u65e0\u754c\u201d\u6709\u8bef,\u6bcf\u9879\u4e0b\u754c\u4e3a t_v log t_v,\u9010\u4f4d\u7f6e\u635f\u5931\u7684\u4e0b\u786e\u754c\u7ea6\u4e3a \u22121/e;\u88ab\u63a8\u51fa\u96c6\u5408 S \u7684\u8bcd\u5143\u65e0\u6cd5\u518d\u56de\u5230 S \u7684\u8bba\u8bc1,\u53ea\u5728\u5355\u4e00\u4f4d\u7f6e\u3001\u5ffd\u7565\u53c2\u6570\u5171\u4eab\u7684\u7406\u60f3\u5316\u6761\u4ef6\u4e0b\u6210\u7acb\u3002T2 \u53ea\u67094\u5bf9\u6837\u672c,\u81ea\u52a9\u533a\u95f4\u53ef\u9760\u6027\u6709\u9650;\u800c\u4e14\u5728\u6240\u7528\u5b66\u4e60\u7387\u4e0b\u7cbe\u786e KL \u51e0\u4e4e\u4e0d\u6539\u53d8\u6a21\u578b,\u201c\u622a\u65ad\u4e0b\u9000\u5316\u800c\u7cbe\u786e KL \u4e0b\u4e0d\u9000\u5316\u201d\u7684\u5bf9\u6bd4\u6709\u4e00\u90e8\u5206\u6765\u81ea\u540e\u8005\u6ca1\u6709\u5b9e\u9645\u8bad\u7ec3;\u914d\u5bf9\u53c2\u8003\u89e3\u60c5\u5f62\u4e0b\u4e24\u79cd\u76ee\u6807\u7684\u5dee\u5f02\u6ca1\u6709\u5206\u8fa8\u51fa\u6765\u3002\u53e6\u6709\u82e5\u5e72\u6570\u503c\u4e0e\u8868\u8ff0\u4e0d\u4e00\u81f4:\u56fe\u4f8b\u6807 n=3 \u800c\u5b9e\u9645\u4e3a\u4e24\u4e2a\u79cd\u5b50,\u6700\u4f18\u68c0\u67e5\u70b9\u5904\u5148\u8bf4\u5341\u4e94\u6b21\u8bc4\u4f30\u3001\u540e\u6309\u516b\u6b21\u62bd\u6837\u4f30\u7b97,\u6807\u51c6\u8bef\u5148\u5199\u7ea60.02\u3001\u5b9e\u6d4b\u4e3a0.005\u3002\u6807\u9898\u548c\u7ed3\u8bba\u4e2d\u201c\u51b3\u5b9a\u201d\u7684\u63aa\u8f9e,\u8d85\u51fa\u4e86\u5355\u4e00\u6a21\u578b\u3001\u5355\u4e00\u5b66\u4e60\u7387\u3001\u81f3\u591a\u4e09\u4e2a\u79cd\u5b50\u6240\u80fd\u652f\u6491\u7684\u8303\u56f4\u3002"
+        },
+        {
+          "blind_id": "ext_11",
+          "cohort": "human_only_arxiv",
+          "source_id": "arXiv:2610.21068v1",
+          "category": "cs.IT",
+          "scores": {
+            "correctness_rigor": 6.0,
+            "claim_calibration": 5.0,
+            "verification_grounding": 5.3,
+            "novelty_significance": 5.8,
+            "literature_attribution": 5.0,
+            "clarity_exposition": 7.0,
+            "overall": 5.9
+          },
+          "rationale": "The paper is well organized. The local analysis is mostly sound: Lemma 7.1 bounds the tangent-space operator by restricted isometry, the quadratic contraction follows the standard curvature bound for the projection onto the normal space, and the parameterized conjugate-gradient and 2r-by-2r SVD derivations are clean. However, Theorem 7.2 assumes the subproblem (3.1) is solved exactly, while the method runs inexact CG with a fixed step cap (Kmax = 10) and there is no inexact-solve analysis. Because each CG step only reduces the error by a constant factor, the 'log log(1/\u03b5)' iteration complexity in Table 1 overstates the gain over FIHT in total work. Further problems: the proof of Theorem 2.3 for the relaxed model is waved through as 'the same argument', although X\u0302 is not Hankel and the step needs a separate argument; minimizer existence is not addressed; there are typos (an undefined operator A in Lemma 7.1, a missing B^H in (5.4)); and the minimax lower bound in Theorem 2.4 (B = I, swapped signal and noise) is close to trivial. The claim of being the 'first' quadratically convergent nonconvex method sits uneasily with prior Riemannian Gauss\u2013Newton and recursive-importance-sketching results for rank-constrained least squares (e.g. Luo\u2013Huang\u2013Li\u2013Zhang), which go unacknowledged. The experiments are small-scale, leave out other nonconvex baselines such as projected gradient descent, and mention no released code."
+        },
+        {
+          "blind_id": "ext_12",
+          "cohort": "human_in_the_loop",
+          "source_id": "arXiv:2610.29608v1",
+          "category": "math.NT",
+          "scores": {
+            "correctness_rigor": 7.6,
+            "claim_calibration": 7.8,
+            "verification_grounding": 6.6,
+            "novelty_significance": 4.8,
+            "literature_attribution": 7.3,
+            "clarity_exposition": 7.0,
+            "overall": 5.9
+          },
+          "rationale": "\u6211\u9010\u9879\u590d\u7b97\u4e86\u6587\u4e2d\u80fd\u6838\u5bf9\u7684\u8bba\u8bc1,\u672a\u53d1\u73b0\u9519\u8bef\u3002\u5177\u4f53\u5305\u62ec:\u5b9a\u7406 3.2 \u7684\u7279\u5f81\u5c55\u5f00\u4e0e\u534a\u533a\u95f4\u5173\u7cfb\u5f0f;\u5b9a\u7406 4.2 \u548c\u547d\u9898 5.1 \u7684\u7c7b\u6570\u7b26\u53f7\u8bba\u8bc1;\u5b9a\u7406 5.5 \u4e2d u\u3001v \u4e3a\u975e\u96f6\u5947\u6570\u7684\u8bc1\u660e,\u4ee5\u53ca\u56db\u4e2a\u56db\u6b21\u7279\u5f81\u503c\u5206\u652f\u7684\u504f\u5dee\u516c\u5f0f;\u63a8\u8bba 5.7 \u7684\u6a21 13 \u65cf;\u6a21 85\u300135\u300139\u300133\u3001689\u3001767 \u7684\u6570\u503c\u4f8b\u3002\u4f5c\u8005\u5982\u5b9e\u4ea4\u4ee3\u4e86\u524d\u4eba\u5de5\u4f5c:\u7279\u5f81\u5c55\u5f00\u5c5e\u6807\u51c6\u5de5\u5177,\u6307\u6807\u4e8c\u5206\u7c7b\u662f Pomerance\u2013Ulmer \u5b9a\u7406 2.1 \u4e0e\u547d\u9898 2.4 \u7684\u7279\u5316,\u6574\u9664\u6027\u89c2\u5bdf\u51fa\u81ea Merca\u3002\u7ed3\u8bba\u4e0e\u8bc1\u660e\u7684\u5206\u91cf\u76f8\u79f0\u3002\u4e3b\u8981\u5f31\u70b9\u662f\u5b9e\u8d28\u65b0\u610f\u6709\u9650:\u6838\u5fc3\u673a\u5236\u662f Pomerance\u2013Ulmer\u3001Girstmair\u3001Pujahari\u2013Saikia \u6846\u67b6\u5728\u5c0f\u6307\u6807\u60c5\u5f62\u7684\u7ec6\u5316,\u65b0\u5185\u5bb9\u96c6\u4e2d\u5728\u975e\u672c\u539f\u56db\u6b21\u6838\u7684\u5206\u7c7b\u3001\u56fa\u5b9a\u5bfc\u5b50\u4e0b\u7684\u6bd4\u4f8b,\u4ee5\u53ca\u300c\u5b50\u7fa4\u5c45\u4e2d\u800c\u966a\u96c6\u5931\u8861\u300d\u7684\u65e0\u7a77\u65cf;\u8bba\u9898\u672c\u8eab\u6e90\u81ea\u4e00\u4e2a\u8f83\u6d45\u7684\u731c\u60f3\u3002Lean \u5f62\u5f0f\u5316\u53ea\u8986\u76d6\u4e00\u4e2a\u5e73\u51e1\u53cd\u4f8b\u548c\u63d0\u5347\u6052\u7b49\u5f0f;\u6307\u6807\u516d\u90e8\u5206\u3001\u547d\u9898 5.14 \u4e0e\u666e\u67e5\u6570\u636e\u5728\u8bc4\u5ba1\u7a97\u53e3\u5185\u65e0\u6cd5\u6838\u9a8c\u3002\u6574\u4f53\u662f\u4e00\u7bc7\u4e25\u8c28\u3001\u6587\u732e\u4ea4\u4ee3\u5145\u5206\u7684\u4e13\u95e8\u6027\u7ed3\u679c,\u9002\u5408\u4e13\u4e1a\u6570\u8bba\u671f\u520a,\u79bb\u9876\u7ea7\u671f\u520a\u7684\u610f\u4e49\u95e8\u69db\u6709\u8ddd\u79bb\u3002"
+        },
+        {
+          "blind_id": "ext_13",
+          "cohort": "autonomous_ai",
+          "source_id": "AgentAlphaXiv:01a17a7e-3d3",
+          "category": "Autonomous AI (Math/Theory)",
+          "scores": {
+            "correctness_rigor": 7.0,
+            "claim_calibration": 9.0,
+            "verification_grounding": 7.0,
+            "novelty_significance": 5.5,
+            "literature_attribution": 6.5,
+            "clarity_exposition": 7.0,
+            "overall": 6.5
+          },
+          "rationale": "The design is careful and the paper is exceptionally honest. Matched isolated and connected pairs share the same initial proposals. Topic entropy and specific-idea overlap are measured separately and validated against same-topic hard negatives. Uncertainty is clustered by seed, Holm-corrected and reported with explicit worst-case missingness bounds. The authors keep their inconclusive preregistered verdict even though 122 of 162 planned pairs falls below the coverage gate, and they do not upgrade a more favourable sensitivity analysis. Pinned weights, an independent reparsing audit and the archived protocol changes give good reproducibility grounding. The main inferential weaknesses are three. Attrition is linked to treatment, since every later format failure occurred in a connected arm. Both outcomes rest on agreement among LLM judges with no expert ground truth. The intervention combines peer influence with the effect of a longer context, and the authors acknowledge this. The scope is narrow: four-agent groups, short proposals, three fixed domains and one-seed cells such as Phi ecology. The contribution relative to recent agent-diversity and social-influence studies is incremental, and the related work leans heavily on 2025\u20132026 preprints and the authors' own organization's publications."
+        },
+        {
+          "blind_id": "ext_14",
+          "cohort": "human_only_arxiv",
+          "source_id": "arXiv:2610.21600v2",
+          "category": "math.GR",
+          "scores": {
+            "correctness_rigor": 7.5,
+            "claim_calibration": 7.5,
+            "verification_grounding": 5.5,
+            "novelty_significance": 5.0,
+            "literature_attribution": 5.0,
+            "clarity_exposition": 6.5,
+            "overall": 5.8
+          },
+          "rationale": "The main proofs check out: Proposition 1 (lifting P_k through characteristic subgroups, in the style of Hall and Paige), Theorem 2 (a union bound over GL_n(F_p)), Proposition 2 (a count of invertible matrices with eigenvalue 1, for noncyclic homocyclic groups), and Lemma 3, Theorem 5 and Proposition 3 (a power-sum and Vandermonde argument against cyclic p-groups). At k=2, Proposition 3 recovers Evans' abelian necessary condition. The methods are elementary and the advance is modest: Theorem A is only new for p >= 5, the authors themselves say Section 4.2 follows from [ALS24], and the GAP claim for Z7\u22caZ3 gives no reproducible details. Theorem A uses Feit\u2013Thompson without citing it, and the paper omits the literature on Latin squares built from groups and orthomorphisms (Johnson\u2013Dulmage\u2013Mendelsohn, Evans' monograph) and on finite-field generalizations of complete mappings; there are also wrong equation references ((2) for (3), (4.2) for (7)) and a garbled [ALS24] entry."
+        },
+        {
+          "blind_id": "ext_15",
+          "cohort": "autonomous_ai",
+          "source_id": "AgentAlphaXiv:01a145e3-610",
+          "category": "Autonomous AI (Math/Theory)",
+          "scores": {
+            "correctness_rigor": 6.6,
+            "claim_calibration": 8.6,
+            "verification_grounding": 6.9,
+            "novelty_significance": 4.4,
+            "literature_attribution": 6.7,
+            "clarity_exposition": 7.6,
+            "overall": 6.2
+          },
+          "rationale": "The study is disciplined. It was preregistered, every arm received the same 16-trial tuning budget, it ran ten seeds with common random numbers, it validated the fast simulator against the exact oracle on 17,443 transitions, it included a shuffled-target control, and it reported honestly that the equivalence verdict is borderline and that the follow-ups were post hoc. There are statistical weaknesses. The 'Bonferroni' framing is muddled: ordinary 95% intervals are described as a one-sided 0.025 adjustment, and the paper itself lists this as a deviation. The intervals are percentile bootstraps over only ten seeds, which tend to be too narrow. The one-unit equivalence margin was set from single-seed development runs and the intervals touch it. Tuning chose the auxiliary weight at the lowest grid value, so the auxiliary loss had almost no effect on the shared parameters, and that weakens the primary negative result. The contribution is a sound but narrow null result on a toy service-control environment with a few thousand reachable states. The tier B and tier C interventions are only weakly novel: contention at magnitude 2 has zero distance to a trained intervention, and tier C changes only the sensor. The standard literature is cited adequately, but part of the discussion rests on unpublished cohort preprints."
+        },
+        {
+          "blind_id": "ext_16",
+          "cohort": "human_only_arxiv",
+          "source_id": "arXiv:2611.00153v1",
+          "category": "cs.FL",
+          "scores": {
+            "correctness_rigor": 8.3,
+            "claim_calibration": 8.6,
+            "verification_grounding": 9.0,
+            "novelty_significance": 7.4,
+            "literature_attribution": 7.6,
+            "clarity_exposition": 7.7,
+            "overall": 8.0
+          },
+          "rationale": "The manuscript gives explicit rule schemes for its conversions. Examples are the disjoint-ranges and reverse-counting four-state conversions, with step counts and the invariant of the summed counters. It also makes Morita's Definition 7.1 precise: computable encodings, decoding of every code, and a proved equivalence to the string-ID form. All theorems are reported as machine-checked in Lean 4/Mathlib, and the formal model is checked against Morita's published test runs, which gives unusually strong grounding. Claims are carefully scoped: minimality is not claimed, nonexistence is stated relative to the formalized universality notion (strong form for the 3x2 case), and the authors explain why the irreversible small-UTM boundaries do not apply. The upper-bound improvements are incremental refinements of known conversions within a niche topic. Their main conceptual weight lies in the two-state decidability result, which settles a question Morita stated as open. Some dense, repetitive exposition, such as figures that restate the same execution, could be tightened."
+        },
+        {
+          "blind_id": "ext_17",
+          "cohort": "autonomous_ai",
+          "source_id": "AgentAlphaXiv:01a18d5c-ae5",
+          "category": "Autonomous AI (Math/Theory)",
+          "scores": {
+            "correctness_rigor": 7.0,
+            "claim_calibration": 7.5,
+            "verification_grounding": 6.5,
+            "novelty_significance": 3.8,
+            "literature_attribution": 4.8,
+            "clarity_exposition": 7.2,
+            "overall": 5.2
+          },
+          "rationale": "The study is a carefully preregistered measurement. The protocol hash is frozen, the decision rules are explicit, and the one exclusion deviation is disclosed. The reported figures check out internally: the paired won/lost counts reproduce the 0.3, -2.0 and 2.4 pp contrasts, and the position counts sum to 83 wrong choices and 879 choices in total. The authors correctly state that, without a same-order resample, every flip rate is only an upper bound on the order effect. The weaknesses are that order effects and sampling noise remain confounded, and that the study covers one model, one effort setting and 293 high-accuracy items, which leaves only 83 errors from 35 items. The reversal result (p = 0.016) is a secondary contrast with no multiplicity correction and 7/0 discordant items, yet it is promoted to a practical recommendation. The agreement AUROC is compared with a verifier measured on a different benchmark, and the literature leans heavily on unreviewed cohort preprints rather than the broader work on selection bias and permutation debiasing, so the contribution is incremental."
+        },
+        {
+          "blind_id": "ext_18",
+          "cohort": "human_in_the_loop",
+          "source_id": "arXiv:2611.03956v1",
+          "category": "math.CO",
+          "scores": {
+            "correctness_rigor": 7.0,
+            "claim_calibration": 6.4,
+            "verification_grounding": 6.0,
+            "novelty_significance": 6.1,
+            "literature_attribution": 6.4,
+            "clarity_exposition": 6.3,
+            "overall": 6.3
+          },
+          "rationale": "The core arguments hold up as written. Lemma 2.12 and Theorem 2.11 correctly give G \u25a1 K_t well-covered powers and so answer the Pham\u2013Vu diameter question negatively. The abelian Cayley-square theorem is a clean proof: the 'diagonal' independent set of Lemma 3.6 is set against the Brooks-based small maximal independent set of Lemma 3.4. The lattice/\u21131-norm treatment of quartic circulants, including the determinant bound in Case 2 of Lemma 4.7, is also sound. Weaknesses: several key facts (Theorem 2.10, and the well-covered powers of the five cubic circulants) rest on exhaustive enumerations held in supplementary sources that are not shown. The chordal-square induction in Theorem 3.2 is compressed and hard to follow, Lemma 4.3 is asserted with little justification, and there are notation slips (the undefined G_L, 'wcpif'). Contribution (5) in the introduction claims a 'classification' for products of complete graphs, while the abstract offers only sufficiency, partial converses and a conjecture, which is a calibration mismatch."
+        },
+        {
+          "blind_id": "ext_19",
+          "cohort": "human_in_the_loop",
+          "source_id": "arXiv:2610.39941v2",
+          "category": "cs.FL",
+          "scores": {
+            "correctness_rigor": 7.5,
+            "claim_calibration": 8.5,
+            "verification_grounding": 7.0,
+            "novelty_significance": 5.0,
+            "literature_attribution": 7.5,
+            "clarity_exposition": 7.0,
+            "overall": 6.0
+          },
+          "rationale": "The visible proofs are correct and complete: the transition-count identity in Lemma 1, the cancellation argument for commuting projections (Lemma 2), the identities c_E(z)=r-1 and d(z)=min{r-1,b_E(z)} in Theorem 3, and the gap counting for unary sources. The explicit counterexamples (Propositions 5-7) come with complete, checkable position arguments, and the paper states plainly that general block-exchange descent and Singleton No-Gap remain open. However, the central structural result is elementary, much of the remaining evidence is bounded computer search whose reproducibility cannot be judged from the visible text, and the main motivating conjecture, which comes from a single source's open question, is not resolved, so the contribution is solid but modest for a top-tier venue."
+        },
+        {
+          "blind_id": "ext_20",
+          "cohort": "autonomous_ai",
+          "source_id": "AgentAlphaXiv:01a1980a-8b3",
+          "category": "Autonomous AI (Math/Theory)",
+          "scores": {
+            "correctness_rigor": 6.8,
+            "claim_calibration": 8.3,
+            "verification_grounding": 7.0,
+            "novelty_significance": 5.0,
+            "literature_attribution": 6.7,
+            "clarity_exposition": 7.8,
+            "overall": 6.3
+          },
+          "rationale": "The design is careful: it is preregistered, every swarm is paired with matched-call independent voting from the same 64-sample pool, and the isolated-revision control separates communication from the extra revision step. The null results are reported candidly and labelled unresolved, and the knee-rule artefact caused by even-sized vote ties is diagnosed. The main weakness is that the 56-item sample produces intervals of about \u00b18 pp, so the preregistered 2 pp margin could not be resolved and no power analysis justifies it; pooling a saturated puzzle family with MMLU-Pro and using mostly one swarm draw per cell further limit inference, and the difficulty-tertile analysis is post hoc and open to regression-to-the-mean effects. The contribution extends the known finding that debate's gains largely reduce to voting, now across size and topology, rather than establishing a substantially new result, and the literature review leans heavily on unpublished cohort reports."
+        },
+        {
+          "blind_id": "ext_21",
+          "cohort": "autonomous_ai",
+          "source_id": "AgentAlphaXiv:01a18ed0-e4f",
+          "category": "Autonomous AI (Math/Theory)",
+          "scores": {
+            "correctness_rigor": 6.5,
+            "claim_calibration": 8.0,
+            "verification_grounding": 6.5,
+            "novelty_significance": 3.0,
+            "literature_attribution": 4.5,
+            "clarity_exposition": 7.0,
+            "overall": 4.5
+          },
+          "rationale": "The design is clean and its internal arithmetic checks out: the calibration and evaluation split is disjoint, PC1 is compared with 32 rank-matched random directions, the comparison is paired by seed, and the numbers agree (Table 1 gaps, a mean of 0.194, and a t(2) interval of about [-0.049, 0.437] from the three seed contrasts). The paper is also careful about its limits, including the variance mismatch, the failure at k=20, and the neighbor changes. However, the 'refuted' verdict rests on a Student interval from only 3 training seeds, and the \u00b11 pp materiality band is not justified relative to the 3.2 pp baseline gap. The verification is computational reproducibility from an independent reimplementation and offline replay that the reader cannot inspect, not a certificate. The question is very narrow: one rank-one postprocessing contrast on one 1,000-image panel. The references are thin, with three of seven being internal cohort documents, and they omit the CKA and similarity-metric literature, equivalence-testing methodology such as TOST, and later work on anisotropy and whitening."
+        },
+        {
+          "blind_id": "ext_22",
+          "cohort": "human_only_arxiv",
+          "source_id": "arXiv:2611.00144v1",
+          "category": "quant-ph",
+          "scores": {
+            "correctness_rigor": 7.0,
+            "claim_calibration": 7.5,
+            "verification_grounding": 5.5,
+            "novelty_significance": 6.0,
+            "literature_attribution": 6.0,
+            "clarity_exposition": 6.0,
+            "overall": 6.4
+          },
+          "rationale": "The visible setup is correct and carefully stated: the normalizations of M_{+,d} and R_{+,d} check out, as do the Choi-state rescaling by D_d/d^2 and the explicit CPTP extension in (60). The claims are well calibrated, with clear disclaimers on the uniqueness and minimal auxiliary dimension of the optimizer. However, the decisive upper bound and the tensor-power multiplicativity argument lie beyond the visible text and cannot be assessed, and there is no independent numerical or formal check (for example, SDP verification of the d=2 value 12/7 or a small-n test). The result answers a specific open question from the constrained-Schatten-norm framework of [7], but it covers only one endpoint of the Werner family. The literature review is brief and thin on related R\u00e9nyi additivity results, and the exposition is verbose, with repeated reduction steps and typos such as 'Finall', 'Therefor' and 'whom introduced'."
+        },
+        {
+          "blind_id": "ext_23",
+          "cohort": "human_in_the_loop",
+          "source_id": "arXiv:2611.21657v1",
+          "category": "math.CO",
+          "scores": {
+            "correctness_rigor": 7.6,
+            "claim_calibration": 8.0,
+            "verification_grounding": 6.6,
+            "novelty_significance": 6.6,
+            "literature_attribution": 8.1,
+            "clarity_exposition": 6.7,
+            "overall": 7.3
+          },
+          "rationale": "The manuscript resolves two open Callan\u2013Mansour quadruple-pattern classes. For 207(2) and 207(3) it gives explicit, carefully justified succession rules, derives catalytic equations with stated coefficient rings and uniqueness arguments, and handles the kernel-orbit convergence with explicit z-order estimates. Identifying the two orbit-sum expressions through a cubic limit of the nonterminating q-Saalsch\u00fctz summation is a genuine structural insight. The results are stated in proportion to what is proved. Verification relies on hand derivations, finite enumeration checks and supplementary code rather than formal or certificate-style checks. Some key steps, including the B-tree pattern-exclusion case analysis and the passage to the formal length series, are compressed. The notation is dense with many overlapping symbols, which makes the paper hard to read even for specialists."
+        },
+        {
+          "blind_id": "ext_24",
+          "cohort": "human_only_arxiv",
+          "source_id": "arXiv:2611.00145v1",
+          "category": "math.CO",
+          "scores": {
+            "correctness_rigor": 3.4,
+            "claim_calibration": 3.8,
+            "verification_grounding": 3.3,
+            "novelty_significance": 3.6,
+            "literature_attribution": 5.0,
+            "clarity_exposition": 4.4,
+            "overall": 3.5
+          },
+          "rationale": "The central result, Theorem 4 (S(t) = (-1)^{|V|} K(t)), does not follow from the cited Humpert\u2013Martin antipode formula, and the counterexample is a single edge. That formula carries a factor a(G/F) that counts acyclic orientations, and every orientation of an undirected forest with m edges is acyclic, so a(G/F) = 2^m rather than the a(t) = 1 asserted in the proof. In Schmitt's graph Hopf algebra, S(P2) = 2\u2022\u2022 \u2212 P2, while (\u22121)^{|V|} K(P2) = \u2022\u2022 \u2212 P2; the theorem also equates unrooted isomorphism classes with the rooted, colored forests on which \u03d5^C is defined. The remaining contributions are mostly standard: the involution property of K, M\u00f6bius inversion on the Boolean edge-deletion lattice, and identities (14)\u2013(15) already known or taken from the authors' prior work. Verification amounts to a few numerical checks with one-line proofs, and the exposition has slips: (18) writes |A\\B| where |B\\A| is meant, t1 \u25c1 t2 is never defined, the proof of Prop. 2 says 'for each vertex' where it means each edge, and there are mislabeled theorem references."
+        },
+        {
+          "blind_id": "ext_25",
+          "cohort": "human_only_arxiv",
+          "source_id": "arXiv:2611.00126v1",
+          "category": "math.CO",
+          "scores": {
+            "correctness_rigor": 8.6,
+            "claim_calibration": 8.8,
+            "verification_grounding": 7.4,
+            "novelty_significance": 6.6,
+            "literature_attribution": 6.8,
+            "clarity_exposition": 8.2,
+            "overall": 7.4
+          },
+          "rationale": "The arguments I checked hold up. Rationality and c \u2265 2 follow from Galois theory and interlacing. The c = 2 case reduces to a rank-one condition on a k\u00d7k matrix. The c = 3 case pairs an exact search up to 19 vertices (integer characteristic polynomials tested with Descartes' rule) with a correct induction on the families F(n), and the subgraph counts are internally consistent (48 = |F(19)|, 3931 in total). The 2\u00d72 reduction in Lemma 3.2 gives verifiable spectra for G36 and G55: determinant (2) vanishes in both cases, and the degree counts match. The case analysis in Theorem 1.3, including the L2(q) and T(m) determinant identities, also checks out. The contribution is narrower than the problem it addresses: it settles only c \u2264 3, and the classification in Theorem 1.3 covers only switches along one part of an equitable two-part partition of a strongly regular graph with smallest eigenvalue \u22122. The search code is available only on request, and the citations of related work on graphs with few distance eigenvalues are sparse."
+        },
+        {
+          "blind_id": "ext_26",
+          "cohort": "human_only_arxiv",
+          "source_id": "arXiv:2611.00201v1",
+          "category": "quant-ph",
+          "scores": {
+            "correctness_rigor": 7.2,
+            "claim_calibration": 7.0,
+            "verification_grounding": 6.4,
+            "novelty_significance": 6.6,
+            "literature_attribution": 8.0,
+            "clarity_exposition": 8.0,
+            "overall": 7.0
+          },
+          "rationale": "The lattice formulation is careful and internally consistent. It uses staggered fermions, open-chain scalar normal modes related to site oscillators by a sine transform plus single-mode squeezing, and a spin-dependent-displacement form of the Yukawa vertex. State preparation removes the vacuum overlap, and the incoherent observables are well motivated. The claimed deviations from Dyson-resummed one-loop theory are modest, and they are checked against NLO widths with an explicit Fock-truncation convergence study. However, all evidence comes from ideal tensor-network emulation, with no noise, error, or resource analysis for a real trapped-ion device. The mapping also passes over practical issues: physical ion-chain motional spectra do not match the lattice dispersion, and each Trotter step needs N^2 individually addressed, mode-resolved conditional displacements. The contribution is mainly a well-executed synthesis of existing hybrid qubit-qumode and trapped-ion Yukawa proposals, not a conceptual advance."
+        },
+        {
+          "blind_id": "ext_27",
+          "cohort": "autonomous_ai",
+          "source_id": "AgentAlphaXiv:01a18d0f-5a5",
+          "category": "Autonomous AI (Math/Theory)",
+          "scores": {
+            "correctness_rigor": 7.0,
+            "claim_calibration": 8.5,
+            "verification_grounding": 6.0,
+            "novelty_significance": 3.5,
+            "literature_attribution": 4.5,
+            "clarity_exposition": 7.0,
+            "overall": 5.0
+          },
+          "rationale": "The coupled count-matched random control is carefully specified: it matches the realized active count and the Adam clock exactly, the endpoint and validity gates are fixed in advance, and the reported statistics are internally consistent (the seed effects average to 14.046, and the t(3) interval follows from SD 1.403). The paper also states its limits honestly, noting that the gain comes from new acquisition rather than retention and that equal scalar weights do not give equal Adam displacement. The contribution is narrow and largely expected, since randomly selected already-correct items carry little gradient signal; the evidence rests on four seeds, a 135M model, synthetic single-token associations, and audits that are not publicly reproducible. The literature review depends heavily on private cohort preprints and omits key work on online batch selection, importance sampling, data pruning, and continual learning."
+        },
+        {
+          "blind_id": "ext_28",
+          "cohort": "human_in_the_loop",
+          "source_id": "arXiv:2611.04568v1",
+          "category": "quant-ph",
+          "scores": {
+            "correctness_rigor": 7.9,
+            "claim_calibration": 6.6,
+            "verification_grounding": 7.0,
+            "novelty_significance": 4.8,
+            "literature_attribution": 6.7,
+            "clarity_exposition": 6.2,
+            "overall": 5.9
+          },
+          "rationale": "The core results check out on direct recomputation: the block forms of the state and its partial transpose, the PPT bounds L_r and U_r, the finite phase-averaged product decomposition (12), the closed realignment norm (14) and its reduction to p > S_r, the witness expectations (16), the AM-GM positivity argument for the cyclic Choi maps, the product-input entanglement determinant (18), the negativity formula (20), and the transition times. Together they give a complete, certified separability/PPT/distillability phase portrait, and the manuscript openly frames it as a specialization of Gulati-Nechita-Singh. Novelty is limited. The time-invariant negativity follows structurally from the negativity living entirely in decoherence-free coherences and stationary populations, so it is close to built in by the choice of family. Several claims also go beyond what is shown: the abstract says 'the entanglement is time-invariant' when only negativity is shown constant, there is an unhedged first-demonstration claim, and the text asserts that all previous distillability-sudden-death studies ended in separability. The introduction is a citation dump with imprecise background (the dimension threshold for PPT entanglement is misstated, and PPT entanglement is conflated with bound entanglement) and numerous typos. The physically valuable observation that the inherited global channel is non-local and entangles product inputs, together with the correlated local random-unitary semigroup that reproduces the same trajectories, partly offsets these weaknesses."
+        },
+        {
+          "blind_id": "ext_29",
+          "cohort": "autonomous_ai",
+          "source_id": "AgentAlphaXiv:01a19561-135",
+          "category": "Autonomous AI (Math/Theory)",
+          "scores": {
+            "correctness_rigor": 7.0,
+            "claim_calibration": 8.5,
+            "verification_grounding": 6.5,
+            "novelty_significance": 5.0,
+            "literature_attribution": 5.5,
+            "clarity_exposition": 7.5,
+            "overall": 6.3
+          },
+          "rationale": ""
+        },
+        {
+          "blind_id": "ext_30",
+          "cohort": "human_in_the_loop",
+          "source_id": "arXiv:2611.15431v1",
+          "category": "quant-ph",
+          "scores": {
+            "correctness_rigor": 7.6,
+            "claim_calibration": 7.8,
+            "verification_grounding": 6.9,
+            "novelty_significance": 7.6,
+            "literature_attribution": 7.2,
+            "clarity_exposition": 7.2,
+            "overall": 7.5
+          },
+          "rationale": "The facts that can be checked in the visible text are internally consistent. These include the common-dimension counterexample (2.3) giving 1 - H_k, the subentropy strong-subadditivity defect of 1/12 for |Omega_2><Omega_2| tensored with the maximally mixed qubit, the k = d case of the positive compression representation (Q = d times the rank-one compressed term, which vanishes on pure states), and the dephasing example log 2 versus log 2 - 1/2. Together these support a sound and original Stiefel-averaging mechanism that plausibly settles the subentropy subadditivity conjecture of Datta, Dorlas, Jozsa and Benatti. The claims are carefully scoped, including the necessary common-ambient-dimension convention and the separate equality cases for k = 1 and k >= 2, and the main ingredients are attributed to Jozsa-Robb-Wootters, Nichols-Wootters and the Datta-Dorlas-Jozsa-Benatti work. Weaknesses: the subadditivity, equality and sharp-coefficient proofs fall outside the evaluation window and rely on long case computations backed only by exact polynomial certificates, with no machine check. The intermediate-k results depend on a padding convention whose physical meaning is weaker than the subentropy endpoint, and the operational-capacity interpretation is constructed. The very long exposition also contains some garbled formulas, for example the coefficient C_{d,k,l}."
+        }
+      ],
+      "comparisons": {
+        "hitl_vs_ai": {
+          "mean_diff": 1.0,
+          "wins": 71,
+          "ties": 3,
+          "losses": 26,
+          "total_pairs": 100,
+          "exact_perm_p": 0.014874,
+          "perm_splits": 184756
+        },
+        "hitl_vs_human": {
+          "mean_diff": 0.46,
+          "wins": 53,
+          "ties": 4,
+          "losses": 43,
+          "total_pairs": 100,
+          "exact_perm_p": 0.432127,
+          "perm_splits": 184756,
+          "sd_compression_ratio": 2.27
+        }
+      }
+    },
+    "google_gemini": {
+      "label": "Google Gemini (blind referee)",
+      "short": "Google Gemini",
+      "by_cohort": {
+        "autonomous_ai": {
+          "correctness_rigor": {
+            "mean": 6.57,
+            "sd": 1.1036,
+            "median": 6.75,
+            "min": 4.8,
+            "max": 8.0
+          },
+          "claim_calibration": {
+            "mean": 8.62,
+            "sd": 0.4541,
+            "median": 8.8,
+            "min": 7.6,
+            "max": 9.0
+          },
+          "verification_grounding": {
+            "mean": 7.23,
+            "sd": 0.6584,
+            "median": 7.3,
+            "min": 6.2,
+            "max": 8.2
+          },
+          "novelty_significance": {
+            "mean": 5.15,
+            "sd": 1.3352,
+            "median": 5.2,
+            "min": 3.5,
+            "max": 7.7
+          },
+          "literature_attribution": {
+            "mean": 6.56,
+            "sd": 1.9138,
+            "median": 7.15,
+            "min": 2.8,
+            "max": 8.6
+          },
+          "clarity_exposition": {
+            "mean": 7.62,
+            "sd": 0.4894,
+            "median": 7.65,
+            "min": 6.8,
+            "max": 8.3
+          },
+          "overall": {
+            "mean": 5.83,
+            "sd": 0.9764,
+            "median": 5.7,
+            "min": 4.8,
+            "max": 7.6
+          }
+        },
+        "human_only_arxiv": {
+          "correctness_rigor": {
+            "mean": 7.41,
+            "sd": 2.492,
+            "median": 8.65,
+            "min": 2.6,
+            "max": 9.4
+          },
+          "claim_calibration": {
+            "mean": 7.57,
+            "sd": 2.3726,
+            "median": 8.75,
+            "min": 3.0,
+            "max": 9.4
+          },
+          "verification_grounding": {
+            "mean": 7.02,
+            "sd": 2.338,
+            "median": 7.95,
+            "min": 2.5,
+            "max": 9.5
+          },
+          "novelty_significance": {
+            "mean": 7.2,
+            "sd": 2.3055,
+            "median": 8.05,
+            "min": 2.8,
+            "max": 9.0
+          },
+          "literature_attribution": {
+            "mean": 7.84,
+            "sd": 1.7734,
+            "median": 8.55,
+            "min": 3.5,
+            "max": 9.2
+          },
+          "clarity_exposition": {
+            "mean": 7.77,
+            "sd": 1.7282,
+            "median": 8.4,
+            "min": 4.6,
+            "max": 9.4
+          },
+          "overall": {
+            "mean": 7.23,
+            "sd": 2.3613,
+            "median": 8.25,
+            "min": 2.8,
+            "max": 9.2
+          }
+        },
+        "human_in_the_loop": {
+          "correctness_rigor": {
+            "mean": 8.93,
+            "sd": 0.5438,
+            "median": 9.0,
+            "min": 7.6,
+            "max": 9.5
+          },
+          "claim_calibration": {
+            "mean": 9.0,
+            "sd": 0.5164,
+            "median": 9.2,
+            "min": 7.8,
+            "max": 9.4
+          },
+          "verification_grounding": {
+            "mean": 8.88,
+            "sd": 0.5138,
+            "median": 8.85,
+            "min": 8.0,
+            "max": 9.7
+          },
+          "novelty_significance": {
+            "mean": 7.82,
+            "sd": 0.7871,
+            "median": 7.8,
+            "min": 6.8,
+            "max": 9.4
+          },
+          "literature_attribution": {
+            "mean": 8.64,
+            "sd": 0.3273,
+            "median": 8.75,
+            "min": 8.0,
+            "max": 9.0
+          },
+          "clarity_exposition": {
+            "mean": 8.49,
+            "sd": 0.7593,
+            "median": 8.8,
+            "min": 6.9,
+            "max": 9.3
+          },
+          "overall": {
+            "mean": 8.32,
+            "sd": 0.5574,
+            "median": 8.25,
+            "min": 7.2,
+            "max": 9.2
+          }
+        }
+      },
+      "per_paper": [
+        {
+          "blind_id": "ext_01",
+          "cohort": "human_only_arxiv",
+          "source_id": "arXiv:2610.21052v1",
+          "category": "math.NT",
+          "scores": {
+            "correctness_rigor": 8.8,
+            "claim_calibration": 8.9,
+            "verification_grounding": 7.8,
+            "novelty_significance": 8.5,
+            "literature_attribution": 9.2,
+            "clarity_exposition": 8.9,
+            "overall": 8.6
+          },
+          "rationale": "Establishes a deep two-variable CM elliptic analogue of the Coleman-Ihara formula with rigorous semilocal Coleman-theoretic machinery, accurate algebraic identities (such as Proposition 3.8 and Lemmas 4.8-4.11), and exemplary scholarly grounding (including noting the Darmon-Lauder-Rotger correction and concurrent work [SV26]). Minor weaknesses are that compatibility across levels m in Definition 4.12 is not explicitly proved (notably when i=1 and 1 - pi^(j-1) pi_bar^(i-1) is not a p-adic unit), and Sections 3-4 rely heavily on imported propositions without independent special-case or computational checks. Overall, this is a strong, well-calibrated research contribution suitable for a high-level number theory journal."
+        },
+        {
+          "blind_id": "ext_02",
+          "cohort": "human_only_arxiv",
+          "source_id": "arXiv:2610.21044v1",
+          "category": "quant-ph",
+          "scores": {
+            "correctness_rigor": 3.5,
+            "claim_calibration": 3.8,
+            "verification_grounding": 3.2,
+            "novelty_significance": 2.8,
+            "literature_attribution": 3.5,
+            "clarity_exposition": 4.6,
+            "overall": 3.2
+          },
+          "rationale": "Investigates attractive inverse-power Schrodinger potentials via the log-coordinate substitution, correctly obtaining two elementary E=0 exact solutions (n = 6 - 2D and n = 2D - 2) and basic WKB asymptotics. However, the manuscript has major mathematical and conceptual flaws: it mistakes eigenvalues of the non-self-adjoint adjoint operator (varying the extension parameter v) for a continuous bound-state spectrum, falsely claims E_GS = 0 for the 3D hard-core n=2 potential at U_0 = 0.33, r_0 = 0.001 due to a numerical cutoff artifact contradicting exact scale invariance, and introduces a spurious +du/dx term in the 2D vortex equation (30). It also conflates unrelated cavity-QED collapse-and-revival papers [12-17], omits foundational singular-potential and Bessel-solution literature (e.g., Case; Frank-Land-Spector), and suffers from numerous typos and mis-referenced equations."
+        },
+        {
+          "blind_id": "ext_03",
+          "cohort": "human_only_arxiv",
+          "source_id": "arXiv:2610.21036v1",
+          "category": "math.CO",
+          "scores": {
+            "correctness_rigor": 9.4,
+            "claim_calibration": 9.2,
+            "verification_grounding": 8.6,
+            "novelty_significance": 8.7,
+            "literature_attribution": 8.6,
+            "clarity_exposition": 9.4,
+            "overall": 9.0
+          },
+          "rationale": "Proves the first linear upper bound chi'_rn(G) <= 3 chi'(G) for all loopless multigraphs via an inventive total edge-dominating almost-star forest and 2-degenerate conflict-graph argument, alongside exact values for K_{m,n} and K_n and the star-forest structure of optimal colorings of K_n. Every proof and construction examined (including parallel-edge multigraph cases, the counting argument in Lemma 2.6, the sporadic obstructions K_{2,2}, K_4, K_6, and Construction I in Lemma 3.10) is airtight, self-contained, and written with exceptional clarity, complemented by the sharp B_1 = K_3 example (Example 2.5). While purely deductive without formal or computational verification artifacts, its structural depth, elegance, and complete rigor make it readily publishable in a top-tier combinatorics journal."
+        },
+        {
+          "blind_id": "ext_04",
+          "cohort": "human_in_the_loop",
+          "source_id": "arXiv:2610.20329v1",
+          "category": "math.GR",
+          "scores": {
+            "correctness_rigor": 9.5,
+            "claim_calibration": 9.4,
+            "verification_grounding": 9.7,
+            "novelty_significance": 7.0,
+            "literature_attribution": 8.0,
+            "clarity_exposition": 9.3,
+            "overall": 7.9
+          },
+          "rationale": "Completely characterizes the submonoid generated by lazy and invertible cellular automata over C_2 x C_2 with binary alphabet, proving exact membership, cardinality (59,712), relative rank 1, and the unique maximal proper submonoid (|Q| = 65,024) via crisp, self-contained algebraic proofs independent of enumeration. Verification and calibration are gold-standard: independent C++ BFS and Python certificate checks prove exactness of |D| = 4,007 and shortest-word lengths, a kernel-checked Lean 4 formalization (no sorry or native_decide) verifies the criterion and cardinalities, and open gaps (a structural criterion for D) are stated transparently. Its primary limitation for a top-tier general journal is its narrow scope\u2014a single order-4 group following the general finite classification already established in [2]\u2014together with a small reference list."
+        },
+        {
+          "blind_id": "ext_05",
+          "cohort": "human_in_the_loop",
+          "source_id": "arXiv:2610.05623v2",
+          "category": "quant-ph",
+          "scores": {
+            "correctness_rigor": 9.0,
+            "claim_calibration": 9.3,
+            "verification_grounding": 9.2,
+            "novelty_significance": 7.8,
+            "literature_attribution": 8.4,
+            "clarity_exposition": 7.6,
+            "overall": 8.2
+          },
+          "rationale": "Proves an exact Poisson-summation identification, full positivity and inertia classification (Theorem 1), covariance-independent exponential trace-norm and fidelity bounds (Theorem 2), and rescaled sqrt(d) basis-coherence limits (Theorem 4) for signed Wigner discrete-variable Gaussian states in all odd dimensions d >= 3. The analytic proofs in Appendices A-D check out accurately and are reinforced by strong independent verification (elementary rational negative-direction bounds, rational interval certification of eps_31 < 1/16000, and 192-bit Arb enclosures), with notably honest calibration distinguishing proved state/basis limits from numerical coherent-frame comparisons. Main weaknesses are uneven exposition\u2014pairing elementary tight-frame background in Sections II and V with highly compressed proofs in Appendices A-C and minor notation shifts (sigma_ij vs a,b,c)\u2014and restriction to centered single-mode states."
+        },
+        {
+          "blind_id": "ext_06",
+          "cohort": "autonomous_ai",
+          "source_id": "AgentAlphaXiv:01a16e97-244",
+          "category": "Autonomous AI (Math/Theory)",
+          "scores": {
+            "correctness_rigor": 8.0,
+            "claim_calibration": 8.8,
+            "verification_grounding": 8.2,
+            "novelty_significance": 6.6,
+            "literature_attribution": 8.6,
+            "clarity_exposition": 8.3,
+            "overall": 7.3
+          },
+          "rationale": "Proposition 1 validly combines defensive-mixture importance sampling with betting supermartingales and Ville's inequality, backed by exact brute-force enumeration and 9,840 replications with preregistered falsifiers and candid reporting of negative outcomes (including failure on the narrow (4,7) tree and uncompetitive unenumerated upper bounds). However, Equation (2) drops the 1/9 bet-grid mixture factor\u2014causing Section 5.5 to misattribute most of the observed ~2x upper-bound threshold gap\u2014and Section 3.4 reuses weight notation loosely. Methodological novelty is incremental and the evaluation is confined to tiny GPT-2 trees (L <= 7, coarse token classes) where gains already degrade at L = 7, limiting significance for realistic LLM safety evaluation."
+        },
+        {
+          "blind_id": "ext_07",
+          "cohort": "autonomous_ai",
+          "source_id": "AgentAlphaXiv:01a174cd-9eb",
+          "category": "Autonomous AI (Math/Theory)",
+          "scores": {
+            "correctness_rigor": 8.0,
+            "claim_calibration": 9.0,
+            "verification_grounding": 7.4,
+            "novelty_significance": 3.8,
+            "literature_attribution": 2.8,
+            "clarity_exposition": 7.2,
+            "overall": 4.8
+          },
+          "rationale": "The paired potential-outcome design, independent pilot/tuning/evaluation namespaces, and finite-sample Hoeffding simultaneous bounds over all 45 contrasts are mathematically accurate and unusually well calibrated in their caveats. However, the study merely audits an uncited earlier toy simulation with blatantly broken baselines in a restrictive homogeneous Gaussian K=33, T=66 setting, offering no new algorithm, no theoretical analysis, and no comparison against standard fixed-budget best-arm identification methods. Literature grounding is severely inadequate\u2014citing only one external paper (Karnin et al., 2013) without implementing it and omitting the vast fixed-budget BAI and ranking-and-selection literatures."
+        },
+        {
+          "blind_id": "ext_08",
+          "cohort": "human_in_the_loop",
+          "source_id": "arXiv:2610.24059v1",
+          "category": "math.CO",
+          "scores": {
+            "correctness_rigor": 9.2,
+            "claim_calibration": 9.4,
+            "verification_grounding": 9.4,
+            "novelty_significance": 7.8,
+            "literature_attribution": 8.8,
+            "clarity_exposition": 8.8,
+            "overall": 8.5
+          },
+          "rationale": "This paper cleanly resolves Krishnan's Conjecture 5 for P(n,3) (n >= 13) and establishes the sharp stabilization threshold Z(P(n,4)) = 10 (n >= 18) plus all smaller values via an airtight forcing-sources boundary lemma, buffered empty-column deletion, and exact slot-score or bounded-circumference reductions. Verification is exemplary\u2014combining a standalone C99 checker, a Lean 4 formalization of the k=3 stabilization theorem with module blob provenance, and 100 freshly replayed DRAT-trim proofs with an independent semantic checker\u2014paired with candid disclosure of the unlogged #print axioms audit and unformalized k=4 case. Significance is bounded primarily by the heavy SAT dependence for k=4 (with no structural proof or general-k extension), though the paper is publication-ready for a top combinatorics journal."
+        },
+        {
+          "blind_id": "ext_09",
+          "cohort": "human_in_the_loop",
+          "source_id": "arXiv:2611.01064v1",
+          "category": "cs.IT",
+          "scores": {
+            "correctness_rigor": 9.4,
+            "claim_calibration": 9.4,
+            "verification_grounding": 9.2,
+            "novelty_significance": 8.4,
+            "literature_attribution": 8.7,
+            "clarity_exposition": 9.2,
+            "overall": 8.9
+          },
+          "rationale": "Completely resolves an explicitly posed open problem from IEEE Transactions on Information Theory (Singhvi et al., 2025) by proving that alternating words uniquely maximize posterior input entropy for two deletions (n >= 1) and two insertions (n >= 5), alongside exact all-radius insertion histograms and the three-deletion histogram for alternating words. The human-checkable proofs\u2014using an exact first-symbol run recurrence, tight strict-convexity estimates, mask-component grouping, and exact arbitrary-precision integer certificates Q(y) without floating-point filtering\u2014are remarkably clean, rigorous, and well calibrated between theorems and radius-3 conjectures. Minor room for improvement includes detailing the provenance and scope of the cited Lean companion in the text, while radius >= 3 optimality remains open."
+        },
+        {
+          "blind_id": "ext_10",
+          "cohort": "autonomous_ai",
+          "source_id": "AgentAlphaXiv:01a097ed-5c1",
+          "category": "Autonomous AI (Math/Theory)",
+          "scores": {
+            "correctness_rigor": 7.6,
+            "claim_calibration": 8.8,
+            "verification_grounding": 7.4,
+            "novelty_significance": 7.7,
+            "literature_attribution": 8.5,
+            "clarity_exposition": 8.3,
+            "overall": 7.6
+          },
+          "rationale": "The exact logit-gradient derivation (Equation 3) and identical-prompt null control compellingly demonstrate that per-coordinate forward-KL clamping at tau = 1e-6 reverses updates on under-covered tokens and drives support collapse without any privileged content, with exemplary honesty about preregistered criteria missed as worded and missing runs. Weaknesses include an incomplete confirmatory grid (16/18 runs, leaving only two seeds in both exact-KL privileged cells and an unresolved paired-context accuracy contrast), evaluation limited to a single 4B non-thinking model at 4k tokens without testing the proposed sign-preserving fix, and minor imprecisions calling the negative KL terms 'unbounded' (they are bounded below by -1/e) and labeling two-seed exact-KL curves as n=3 in figure legends."
+        },
+        {
+          "blind_id": "ext_11",
+          "cohort": "human_only_arxiv",
+          "source_id": "arXiv:2610.21068v1",
+          "category": "cs.IT",
+          "scores": {
+            "correctness_rigor": 6.1,
+            "claim_calibration": 6.3,
+            "verification_grounding": 6.4,
+            "novelty_significance": 7.8,
+            "literature_attribution": 7.7,
+            "clarity_exposition": 7.9,
+            "overall": 6.5
+          },
+          "rationale": "The paper proposes a clever Riemannian tangent-space least-squares algorithm (SIHT) for low-rank Hankel spectral compressed sensing, featuring an exact Krylov parameterization for conjugate gradient and fast 2r x 2r SVD updates that deliver strong empirical speedups. However, the theoretical analysis contains concrete gaps: Theorem 7.2's convergence bound omits a necessary upper bound on the noise norm relative to sigma_min(Gz*), Theorem 4.1(ii) and Section 7.3(ii) lose a factor of r in the noise sample complexity when passing from spectral to Frobenius norm, and Appendix A drops the Hankel penalty term prematurely before invoking LRIP. Furthermore, the theory assumes exact subproblem solves while omitting the inner CG iteration growth needed to sustain quadratic convergence, and experiments test only undamped signals with B = AD^{-1} rather than A Gaussian."
+        },
+        {
+          "blind_id": "ext_12",
+          "cohort": "human_in_the_loop",
+          "source_id": "arXiv:2610.29608v1",
+          "category": "math.NT",
+          "scores": {
+            "correctness_rigor": 8.8,
+            "claim_calibration": 9.1,
+            "verification_grounding": 8.9,
+            "novelty_significance": 7.0,
+            "literature_attribution": 9.0,
+            "clarity_exposition": 8.8,
+            "overall": 8.2
+          },
+          "rationale": "This is a highly rigorous, cleanly written number-theoretic study that classifies sum-balanced cyclic subgroups modulo pq at indices two and four, proving biquadratic exclusion, exact imprimitive quartic moment criteria with limiting proportions 1/4 and 1/2, an infinite conductor-13 family separating sum-balance from Pomerance-Ulmer coset balance, and explicit primitive triangular criteria. Its scholarly grounding, verification (complete analytical proofs, direct numerical witnesses, scoped Lean 4 formalizations, and an exhaustive census up to pq <= 10000), and claim calibration are exemplary. The main limitations are its specialized niche within classical Dirichlet-character methods and a minor expository slip using the term 'eligible' prior to its explanation in Section 5.3."
+        },
+        {
+          "blind_id": "ext_13",
+          "cohort": "autonomous_ai",
+          "source_id": "AgentAlphaXiv:01a17a7e-3d3",
+          "category": "Autonomous AI (Math/Theory)",
+          "scores": {
+            "correctness_rigor": 5.8,
+            "claim_calibration": 9.0,
+            "verification_grounding": 6.2,
+            "novelty_significance": 5.7,
+            "literature_attribution": 7.1,
+            "clarity_exposition": 7.4,
+            "overall": 5.6
+          },
+          "rationale": "The manuscript addresses a timely question by separating broad topic concentration from specific-idea overlap in matched isolated-vs-connected agent communities, and exhibits exemplary honesty by declaring its preregistered primary test inconclusive after missingness bounds span zero rather than substituting an exploratory sensitivity. However, severe execution and statistical flaws undermine the empirical findings: treatment-linked generation attrition (14 connected vs 0 isolated failures) and judge-format failures eliminate 40 of 162 planned pairs, a single surviving Phi/ecology seed distorts the conditioned empty-cell-rejection bootstrap and cell-weighted mean, and cross-model comparisons are confounded by 8x token-ceiling disparities. Additionally, primary outcomes rely entirely on LLM judges with no human ground-truth validation (reporting raw percent agreement rather than kappa/F1 on rare binary matches), and key composition-level numerical tables are omitted from the text."
+        },
+        {
+          "blind_id": "ext_14",
+          "cohort": "human_only_arxiv",
+          "source_id": "arXiv:2610.21600v2",
+          "category": "math.GR",
+          "scores": {
+            "correctness_rigor": 8.6,
+            "claim_calibration": 8.9,
+            "verification_grounding": 8.1,
+            "novelty_significance": 7.6,
+            "literature_attribution": 8.5,
+            "clarity_exposition": 7.8,
+            "overall": 8.0
+          },
+          "rationale": "The paper introduces a natural simultaneous generalization P_k of Hall-Paige complete mappings and proves a sharp existence threshold k < p - 1 for all finite groups, an improvement to k = p - 1 for noncyclic homocyclic p-groups via an elegant GL_n(F_p) double-counting argument, and a crisp cyclic p-group obstruction via a Vandermonde polynomial argument over Z_{p^n}, alongside applications to automorphism-generated Latin squares. All main proofs are complete, logically sound, and well-calibrated, candidly noting that Question 1 remains open and that Theorem 6 is already subsumed by [ALS24]. Minor weaknesses include unpolished copy-editing (typos and misnumbered equation cross-references), an unproved two-line reduction claim for Question 1, and an unverified one-sentence GAP remark for Z_7 semidirect Z_3."
+        },
+        {
+          "blind_id": "ext_15",
+          "cohort": "autonomous_ai",
+          "source_id": "AgentAlphaXiv:01a145e3-610",
+          "category": "Autonomous AI (Math/Theory)",
+          "scores": {
+            "correctness_rigor": 6.7,
+            "claim_calibration": 8.6,
+            "verification_grounding": 7.9,
+            "novelty_significance": 5.2,
+            "literature_attribution": 7.4,
+            "clarity_exposition": 7.7,
+            "overall": 5.9
+          },
+          "rationale": "This study demonstrates strong experimental hygiene, including exact validation of its fast simulator against a rational-arithmetic oracle on 17,443 transitions, matched hyperparameter tuning, a shuffled-target negative control, measured intervention TV distances, and transparent reporting of borderline bootstrap equivalence after a 2M-resample audit. However, its scientific reach is narrow: the bespoke toy service-control simulator has limited generality, the selected auxiliary weight (0.03) makes the confirmatory auxiliary gradient negligible relative to the policy gradient (and even larger next-observation weights remain weak), and the held-out set includes an exact duplicate of a trained intervention (TV = 0) plus sensor tiers where a memoryless MLP outperforms the GRU. Minor issues include slightly imprecise Bonferroni framing for two-sided 95% intervals, unexplained negative held-out capacity probe R^2 (-0.91), and a discussion focused largely on unpublished cohort preprints rather than deeper RL mechanistic analysis."
+        },
+        {
+          "blind_id": "ext_16",
+          "cohort": "human_only_arxiv",
+          "source_id": "arXiv:2611.00153v1",
+          "category": "cs.FL",
+          "scores": {
+            "correctness_rigor": 9.3,
+            "claim_calibration": 9.4,
+            "verification_grounding": 9.5,
+            "novelty_significance": 9.0,
+            "literature_attribution": 9.2,
+            "clarity_exposition": 9.3,
+            "overall": 9.2
+          },
+          "rationale": "Resolves an explicit open problem on two-state universal reversible Turing machines, proves (3, 2) nonexistence, and substantially improves known state-symbol upper bounds (e.g., reducing three-state conversions from O(m^2 n^3) to O(mn^2) and (3, 36654) to (3, 600)) with clean, verified constructions in Section 3.1 (disjoint direction ranges and reverse counting). Rigor and calibration are exemplary: subtle universality conventions (IsUTMStrict vs. IsUTM and trailing-blank decoding) are handled carefully, minimality is explicitly disclaimed, and all results are reported as formalized in Lean 4/Mathlib with standard axioms and cross-checked against published step counts. Minor scope caveats are transparently noted, including that the Section 3.1 conversions assume zero-shifts occur only into halting states and that Theorem 12 uses the stronger universality predicate."
+        },
+        {
+          "blind_id": "ext_17",
+          "cohort": "autonomous_ai",
+          "source_id": "AgentAlphaXiv:01a18d5c-ae5",
+          "category": "Autonomous AI (Math/Theory)",
+          "scores": {
+            "correctness_rigor": 4.8,
+            "claim_calibration": 7.6,
+            "verification_grounding": 6.8,
+            "novelty_significance": 4.4,
+            "literature_attribution": 7.2,
+            "clarity_exposition": 7.7,
+            "overall": 5.0
+          },
+          "rationale": "This preregistered empirical audit is cleanly written and unusually transparent about its exclusion deviation, frozen verdicts, and limitations, with consistent arithmetic across Tables 1-5. However, omitting a same-order resampling control leaves both the 4.1% flip rate and the cross-order agreement detector (AUROC 0.695) fundamentally confounded with stochastic sampling noise, and the comparison to a self-verifier spans two different benchmarks. Furthermore, the narrow single-model scope (293 items, three orders), underpowered position test (83 pooled errors from 35 items with non-independent chi-square tests), and unexamined item-level cause of the reversed-order dip limit its scientific significance."
+        },
+        {
+          "blind_id": "ext_18",
+          "cohort": "human_in_the_loop",
+          "source_id": "arXiv:2611.03956v1",
+          "category": "math.CO",
+          "scores": {
+            "correctness_rigor": 8.6,
+            "claim_calibration": 8.5,
+            "verification_grounding": 8.3,
+            "novelty_significance": 8.1,
+            "literature_attribution": 8.4,
+            "clarity_exposition": 8.0,
+            "overall": 8.3
+          },
+          "rationale": "Presents a strong, rigorous set of graph-theoretic results, including a clean Cartesian-product construction (Theorem 2.11) refuting a diameter-at-most-3 question, complete Cartesian-square characterizations for connected chordal and abelian Cayley graphs (Theorems 3.2 and 3.7), and an inventive lattice-determinant bound (Lemma 4.7) toward classifying quartic circulants with well-covered powers. The proofs inspected are mathematically sound and well situated in the literature. Minor weaknesses include delegating small finite verifications (such as the 12-vertex graph in Theorem 2.10 and five cubic circulants) to external scripts rather than short inline checks, omitting an explicit nonzero-determinant note in Lemma 4.7 Case 2, an unclear abstract reference to 'the final conjecture', and recurring macro spacing typos."
+        },
+        {
+          "blind_id": "ext_19",
+          "cohort": "human_in_the_loop",
+          "source_id": "arXiv:2610.39941v2",
+          "category": "cs.FL",
+          "scores": {
+            "correctness_rigor": 8.9,
+            "claim_calibration": 9.0,
+            "verification_grounding": 8.7,
+            "novelty_significance": 7.6,
+            "literature_attribution": 8.8,
+            "clarity_exposition": 8.8,
+            "overall": 8.1
+          },
+          "rationale": "Develops a crisp, fully verified structural obstruction theory for block-exchange descent via commuting source projections (Lemma 1, Theorem 3, and exact source-grid DP formula (3)), proves exactness for unary sources (Theorem 4), and constructs sharp counterexamples (Propositions 5-7 and Table 2) ruling out arbitrary, lexicographically extreme, and greedy-separator mask rules. Exposition, literature contextualization, and claim calibration are all high, with open status of general block-exchange descent and Singleton No-Gap clearly stated. Overall impact is moderated by the specialized scope of the problem and the fact that its central motivating conjecture remains open."
+        },
+        {
+          "blind_id": "ext_20",
+          "cohort": "autonomous_ai",
+          "source_id": "AgentAlphaXiv:01a1980a-8b3",
+          "category": "Autonomous AI (Math/Theory)",
+          "scores": {
+            "correctness_rigor": 5.4,
+            "claim_calibration": 8.1,
+            "verification_grounding": 7.2,
+            "novelty_significance": 5.6,
+            "literature_attribution": 7.8,
+            "clarity_exposition": 7.6,
+            "overall": 5.8
+          },
+          "rationale": "Features a well-designed paired experimental framework that separates communication topology from extra samples (IND(2N)) and isolated revision, paired with exemplary preregistration discipline, automated claim-ledger checks, and informative exploratory evidence that communication lowers entropy and raises individual accuracy without improving plurality accuracy. However, the study is severely underpowered for its 2 pp preregistered margin (only 56 items, including 16 puzzles near 90-100% ceiling, yielding roughly +/-8 pp intervals that leave H1 and H2 unresolved even after three draws), and tests only one low-effort model over a single revision round. Crucially, the Table 5 AICc comparison is statistically flawed\u2014combining binomial likelihoods across correlated item-size pairs with an AICc penalty based on n = 5 to 7 grid points (imposing a +20 penalty against 3-parameter models at n = 5)\u2014and the preregistered H4 knee rule fails trivially due to even-vote ties."
+        },
+        {
+          "blind_id": "ext_21",
+          "cohort": "autonomous_ai",
+          "source_id": "AgentAlphaXiv:01a18ed0-e4f",
+          "category": "Autonomous AI (Math/Theory)",
+          "scores": {
+            "correctness_rigor": 6.8,
+            "claim_calibration": 8.8,
+            "verification_grounding": 7.8,
+            "novelty_significance": 3.8,
+            "literature_attribution": 5.4,
+            "clarity_exposition": 7.2,
+            "overall": 5.3
+          },
+          "rationale": "This audit is unusually disciplined in claim calibration and computational verification, pairing seed-level contrasts on a held-out 200/800 calibration-evaluation split, reproducing full-panel float64 scores to zero discrepancy, and checking exact neighbor identities via an independent eigendecomposition verifier. However, its scientific contribution is far too narrow for a top-tier journal: it removes only a single leading PC from saved embeddings of three seeds on 1,000 Flickr30k examples, compares against a rank-1 random control removing just 0.27% variance (versus 14.1% for PC1, making it nearly indistinguishable from centering), leaves the +/-1 pp materiality band (~31% of the 3.19 pp raw gap) unmotivated, and omits the declared eigengap diagnostic from the reported tables. Relying on three inaccessible private cohort manuscripts out of seven total references further limits scholarly self-containment and significance."
+        },
+        {
+          "blind_id": "ext_22",
+          "cohort": "human_only_arxiv",
+          "source_id": "arXiv:2611.00144v1",
+          "category": "quant-ph",
+          "scores": {
+            "correctness_rigor": 8.0,
+            "claim_calibration": 8.4,
+            "verification_grounding": 7.6,
+            "novelty_significance": 8.0,
+            "literature_attribution": 7.8,
+            "clarity_exposition": 6.4,
+            "overall": 7.7
+          },
+          "rationale": "The manuscript addresses a genuinely significant problem in quantum information theory\u2014exact Renyi-2 entanglement of purification, full tensor-power and heterogeneous-product additivity, and endpoint perturbation stability for symmetric Werner states\u2014with carefully calibrated claims that avoid unproved optimizer-uniqueness or product-ansatz assumptions. Within the evaluated sections, the Choi-state reformulation, real-basis symmetric-subspace compression (Section III), and explicit canonical channel (Section IV) are mathematically sound and algebraically consistent with the stated closed-form formula. Publication readiness is nonetheless held back by pervasive grammatical and typographical errors ('whom introduced', 'Therefor', 'Finall', 'Let define', sentence fragments), missing theorem/lemma environments, and heavy verbosity that spends ten pages on standard Choi duality and subspace restriction before completing even the lower bound."
+        },
+        {
+          "blind_id": "ext_23",
+          "cohort": "human_in_the_loop",
+          "source_id": "arXiv:2611.21657v1",
+          "category": "math.CO",
+          "scores": {
+            "correctness_rigor": 9.0,
+            "claim_calibration": 8.8,
+            "verification_grounding": 8.6,
+            "novelty_significance": 8.3,
+            "literature_attribution": 8.9,
+            "clarity_exposition": 8.6,
+            "overall": 8.7
+          },
+          "rationale": "This is a mathematically rigorous, publication-ready combinatorics manuscript that unifies the generating trees of inversion-sequence classes 207(2) and 207(3) into parallel catalytic systems differing by a single divided-difference term (Proposition 2) and solves 207(3) via an iterated kernel method with careful z-adic convergence proofs (Proposition 3). Every algebraic reduction, affine recurrence (Proposition 1, yielding an O(N^3) algorithm), and rational-factor identity in the evaluated sections is cleanly justified, and the positioning within the inversion-sequence and generating-tree literature is thorough and exact. The only blemishes observed in the text are a minor unresolved cross-reference ('?? of the supplement' in Section 2) and fairly dense exposition in the proof of the four-type succession rule (13)."
+        },
+        {
+          "blind_id": "ext_24",
+          "cohort": "human_only_arxiv",
+          "source_id": "arXiv:2611.00145v1",
+          "category": "math.CO",
+          "scores": {
+            "correctness_rigor": 2.6,
+            "claim_calibration": 3.0,
+            "verification_grounding": 2.5,
+            "novelty_significance": 3.0,
+            "literature_attribution": 6.2,
+            "clarity_exposition": 5.4,
+            "overall": 2.8
+          },
+          "rationale": "The central theorem of the manuscript (Theorem 4, claiming S(t) = (-1)^|V(t)| K(t) for Schmitt's Hopf algebra of graphs) is mathematically false: its proof asserts that a(t) = 1 for a tree, whereas a(G) counts all acyclic orientations of G and therefore equals 2^|E(G)| for any forest (already on K_2, Schmitt's antipode is S(K_2) = 2 K_1^2 - K_2 rather than K_1^2 - K_2). Additional technical flaws appear in Sections 2-4, including reversing the set-difference exponent in Eq. (18) (making it identically +1 for A subset of B), inconsistent poset orientation between Section 3.1 and Figure 1(a), mislabeling spanning subforests as proper subforests, undefined symbols, and an unbridged conceptual gap between the edge-deletion poset and Schmitt's induced-subgraph coproduct. Although auxiliary identities such as Proposition 2 and K^2 = id hold, the fatal error in the core Hopf-algebraic identification precludes publication."
+        },
+        {
+          "blind_id": "ext_25",
+          "cohort": "human_only_arxiv",
+          "source_id": "arXiv:2611.00126v1",
+          "category": "math.CO",
+          "scores": {
+            "correctness_rigor": 9.1,
+            "claim_calibration": 9.2,
+            "verification_grounding": 8.2,
+            "novelty_significance": 8.5,
+            "literature_attribution": 8.9,
+            "clarity_exposition": 9.1,
+            "overall": 8.8
+          },
+          "rationale": "This concise, lucidly written paper makes a strong contribution to spectral graph theory by classifying connected graphs with distance spectrum {rho, 0, -c} for c <= 3 (Theorem 1.1), characterizing the transmission-regular case for smallest distance eigenvalue -3 (Proposition 1.2), and disproving the natural transmission-regularity heuristic via two sporadic Seidel-switched graphs G_36 and G_55 proved unique within equitable switches of SRGs with smallest eigenvalue -2 (Theorem 1.3). All algebraic, interlacing, rank-minor, and inductive proofs are airtight and cleanly presented, supported by an informative geometric figure and exact spectral tables. The main minor weakness is that Theorem 1.1(c) depends critically on a computer search up to n = 19 (Claim 1) whose code and 3,931-graph dataset are only 'available upon request' rather than archived publicly, alongside a slight wording imprecision about alternating signs for positive semidefiniteness when zero is an eigenvalue."
+        },
+        {
+          "blind_id": "ext_26",
+          "cohort": "human_only_arxiv",
+          "source_id": "arXiv:2611.00201v1",
+          "category": "quant-ph",
+          "scores": {
+            "correctness_rigor": 8.7,
+            "claim_calibration": 8.6,
+            "verification_grounding": 8.3,
+            "novelty_significance": 8.1,
+            "literature_attribution": 8.8,
+            "clarity_exposition": 8.9,
+            "overall": 8.5
+          },
+          "rationale": "The manuscript presents a mathematically accurate and physically well-motivated hybrid qubit-qumode formulation of (1+1)D lattice Yukawa scattering and decay on trapped ions, with verified normal-mode Bogoliubov transformations, exact lattice leading-order width with group-velocity factor, native Trotter gate compilation (including exact parity cancellation of odd-mode unconditional displacements), and a coherent-subtracted Gaussian readout scheme. Its claims are well calibrated regarding N^2 interaction-gate and N(N-1)/2 beam-splitter scaling, hardware-versus-MPS state preparation, and apples-to-apples lattice RPA/NLO benchmarking. Minor caveats in the visible text include an unstated Jordan-Wigner phase gauge in Eq. (11) and an idealized blue-sideband single-phonon preparation step assuming the displaced interacting vacuum approximates the Fock vacuum, while the numerical emulation results themselves lie beyond the truncated window."
+        },
+        {
+          "blind_id": "ext_27",
+          "cohort": "autonomous_ai",
+          "source_id": "AgentAlphaXiv:01a18d0f-5a5",
+          "category": "Autonomous AI (Math/Theory)",
+          "scores": {
+            "correctness_rigor": 5.8,
+            "claim_calibration": 8.5,
+            "verification_grounding": 6.3,
+            "novelty_significance": 3.5,
+            "literature_attribution": 4.0,
+            "clarity_exposition": 6.8,
+            "overall": 4.8
+          },
+          "rationale": "The experiment exhibits disciplined preregistration, exact count-coupled masking, verified endpoint arithmetic, and admirably restrained claims that carefully rule out retention gains, ordinary-training superiority, or full VSD replication. However, its scientific significance is narrow\u2014testing standard argmax hard-example selection on a 192-item synthetic single-token memorization task in a 135M model where correctness gating essentially ties ordinary training (66.93% vs 66.63% joint)\u2014and it overlooks a major analytical confound: the uniform scalar control recovers roughly 85% of the joint-accuracy gap over random selection (64.81% vs 52.88%) with a smaller step-norm sum, indicating that sparse random-subset variance rather than hard-example identity drives most of the primary effect. Moreover, five of nine references are inaccessible private cohort preprints (which also hold the task specification and parent checkpoints), leaving key continual-learning and online-batch-selection literature unaddressed and the paper non-self-contained."
+        },
+        {
+          "blind_id": "ext_28",
+          "cohort": "human_in_the_loop",
+          "source_id": "arXiv:2611.04568v1",
+          "category": "quant-ph",
+          "scores": {
+            "correctness_rigor": 7.6,
+            "claim_calibration": 7.8,
+            "verification_grounding": 8.0,
+            "novelty_significance": 6.8,
+            "literature_attribution": 8.4,
+            "clarity_exposition": 6.9,
+            "overall": 7.2
+          },
+          "rationale": "This manuscript delivers clean, self-contained constructive proofs for a cyclic two-qutrit family under collective dephasing\u2014combining explicit finite product decompositions, realignment and cyclic Choi witnesses, closed-form time-invariant negativity, and one-copy distillability\u2014and makes a sharp observation showing via an explicit negative 3x3 partial-transpose determinant that the printed global dephasing channel entangles product inputs. However, Eq. (17) contains a genuine error: applying (D_kl tensor D_kl) rather than (D_kl tensor D_kl*) annihilates the off-diagonals of H_0 and preserves C_sw, reversing the stated action of the local random-unitary channel. In addition, the static separability classification is an acknowledged specialization of prior cyclic-sign-invariant results, the sweeping claim that prior distillability-sudden-death studies always ended in separability is insufficiently substantiated, and the prose contains numerous typos and grammatical slips."
+        },
+        {
+          "blind_id": "ext_29",
+          "cohort": "autonomous_ai",
+          "source_id": "AgentAlphaXiv:01a19561-135",
+          "category": "Autonomous AI (Math/Theory)",
+          "scores": {
+            "correctness_rigor": 6.8,
+            "claim_calibration": 9.0,
+            "verification_grounding": 7.1,
+            "novelty_significance": 5.2,
+            "literature_attribution": 6.8,
+            "clarity_exposition": 8.0,
+            "overall": 6.2
+          },
+          "rationale": "The study exemplifies transparent preregistered reporting, cleanly separating confirmatory from exploratory analyses, documenting deviations D1-D3, reporting the held-back 719-problem non-replication (0.0 pp), and highlighting that training-seed variance dominates test-sampling noise. Its publication readiness for a top-tier venue is limited by an inconclusive, underpowered primary test (m=3 seeds, t_2 interval [-6.3, +3.2] pp), anti-conservative three-seed bootstrap CIs without t_2 intervals on within-arm contrasts, an incomplete factorial design (missing the standard replace+restart cell and reducing accumulate+continue to one seed), and the lack of temperature- or entropy-matched evaluation to separate genuine coverage loss from distribution sharpening. Scope is further constrained to one 0.8B model on GSM8K, and the related-work discussion relies partly on inaccessible private cohort preprints and an informal room message."
+        },
+        {
+          "blind_id": "ext_30",
+          "cohort": "human_in_the_loop",
+          "source_id": "arXiv:2611.15431v1",
+          "category": "quant-ph",
+          "scores": {
+            "correctness_rigor": 9.3,
+            "claim_calibration": 9.3,
+            "verification_grounding": 8.8,
+            "novelty_significance": 9.4,
+            "literature_attribution": 9.0,
+            "clarity_exposition": 8.9,
+            "overall": 9.2
+          },
+          "rationale": "This manuscript settles an established open conjecture on bipartite subadditivity of subentropy across the entire Nichols-Wootters family in a common ambient dimension, completely resolves strong subadditivity failure (including exact +/- 1/12 quantum Markov defects), obtains optimal two-qubit constants (1/3 for subentropy and 2/3 for S_2^(4) and S_3^(4)), and establishes a novel operational classical-capacity interpretation. Every identity in the visible introduction and preliminaries\u2014including the contour and simplex formulas, zero-padding recursion, the positive Stiefel compression representation (Proposition 2.2), and the adapted Bregman divergence (Proposition 2.4)\u2014verifies cleanly, with rigorous calibration of the common-dimension requirement and clear credit to prior structural results. Only minor presentation issues appear in the excerpt (a slight log/ln inconsistency and monograph-scale length), while full verification of the downstream Section 4-5 and Appendix proofs lies beyond the evaluation window."
+        }
+      ],
+      "comparisons": {
+        "hitl_vs_ai": {
+          "mean_diff": 2.49,
+          "wins": 98,
+          "ties": 0,
+          "losses": 2,
+          "total_pairs": 100,
+          "exact_perm_p": 3.2e-05,
+          "perm_splits": 184756
+        },
+        "hitl_vs_human": {
+          "mean_diff": 1.09,
+          "wins": 56,
+          "ties": 2,
+          "losses": 42,
+          "total_pairs": 100,
+          "exact_perm_p": 0.223332,
+          "perm_splits": 184756,
+          "sd_compression_ratio": 4.24
+        }
+      }
+    }
+  },
+  "matched_pairs_10": [
+    {
+      "category": "quant-ph",
+      "human_blind_id": "ext_02",
+      "human_source_id": "arXiv:2610.21044v1",
+      "hitl_blind_id": "ext_05",
+      "hitl_source_id": "arXiv:2610.05623v2",
+      "scores": {
+        "codex_gpt61sol": {
+          "human": 4.4,
+          "hitl": 9.0
+        },
+        "claude_opus55": {
+          "human": 3.5,
+          "hitl": 6.2
+        },
+        "google_gemini": {
+          "human": 3.2,
+          "hitl": 8.2
+        }
+      }
+    },
+    {
+      "category": "math.CO",
+      "human_blind_id": "ext_03",
+      "human_source_id": "arXiv:2610.21036v1",
+      "hitl_blind_id": "ext_08",
+      "hitl_source_id": "arXiv:2610.24059v1",
+      "scores": {
+        "codex_gpt61sol": {
+          "human": 8.8,
+          "hitl": 9.0
+        },
+        "claude_opus55": {
+          "human": 7.6,
+          "hitl": 7.4
+        },
+        "google_gemini": {
+          "human": 9.0,
+          "hitl": 8.5
+        }
+      }
+    },
+    {
+      "category": "math.NT",
+      "human_blind_id": "ext_01",
+      "human_source_id": "arXiv:2610.21052v1",
+      "hitl_blind_id": "ext_12",
+      "hitl_source_id": "arXiv:2610.29608v1",
+      "scores": {
+        "codex_gpt61sol": {
+          "human": 8.6,
+          "hitl": 8.5
+        },
+        "claude_opus55": {
+          "human": 7.2,
+          "hitl": 5.9
+        },
+        "google_gemini": {
+          "human": 8.6,
+          "hitl": 8.2
+        }
+      }
+    },
+    {
+      "category": "cs.IT",
+      "human_blind_id": "ext_11",
+      "human_source_id": "arXiv:2610.21068v1",
+      "hitl_blind_id": "ext_09",
+      "hitl_source_id": "arXiv:2611.01064v1",
+      "scores": {
+        "codex_gpt61sol": {
+          "human": 7.8,
+          "hitl": 9.1
+        },
+        "claude_opus55": {
+          "human": 5.9,
+          "hitl": 7.6
+        },
+        "google_gemini": {
+          "human": 6.5,
+          "hitl": 8.9
+        }
+      }
+    },
+    {
+      "category": "math.GR",
+      "human_blind_id": "ext_14",
+      "human_source_id": "arXiv:2610.21600v2",
+      "hitl_blind_id": "ext_04",
+      "hitl_source_id": "arXiv:2610.20329v1",
+      "scores": {
+        "codex_gpt61sol": {
+          "human": 8.8,
+          "hitl": 8.5
+        },
+        "claude_opus55": {
+          "human": 5.8,
+          "hitl": 6.8
+        },
+        "google_gemini": {
+          "human": 8.0,
+          "hitl": 7.9
+        }
+      }
+    },
+    {
+      "category": "cs.FL",
+      "human_blind_id": "ext_16",
+      "human_source_id": "arXiv:2611.00153v1",
+      "hitl_blind_id": "ext_19",
+      "hitl_source_id": "arXiv:2610.39941v2",
+      "scores": {
+        "codex_gpt61sol": {
+          "human": 8.1,
+          "hitl": 7.5
+        },
+        "claude_opus55": {
+          "human": 8.0,
+          "hitl": 6.0
+        },
+        "google_gemini": {
+          "human": 9.2,
+          "hitl": 8.1
+        }
+      }
+    },
+    {
+      "category": "math.CO",
+      "human_blind_id": "ext_25",
+      "human_source_id": "arXiv:2611.00126v1",
+      "hitl_blind_id": "ext_18",
+      "hitl_source_id": "arXiv:2611.03956v1",
+      "scores": {
+        "codex_gpt61sol": {
+          "human": 7.8,
+          "hitl": 8.3
+        },
+        "claude_opus55": {
+          "human": 7.4,
+          "hitl": 6.3
+        },
+        "google_gemini": {
+          "human": 8.8,
+          "hitl": 8.3
+        }
+      }
+    },
+    {
+      "category": "quant-ph",
+      "human_blind_id": "ext_22",
+      "human_source_id": "arXiv:2611.00144v1",
+      "hitl_blind_id": "ext_28",
+      "hitl_source_id": "arXiv:2611.04568v1",
+      "scores": {
+        "codex_gpt61sol": {
+          "human": 7.5,
+          "hitl": 7.3
+        },
+        "claude_opus55": {
+          "human": 6.4,
+          "hitl": 5.9
+        },
+        "google_gemini": {
+          "human": 7.7,
+          "hitl": 7.2
+        }
+      }
+    },
+    {
+      "category": "math.CO",
+      "human_blind_id": "ext_24",
+      "human_source_id": "arXiv:2611.00145v1",
+      "hitl_blind_id": "ext_23",
+      "hitl_source_id": "arXiv:2611.21657v1",
+      "scores": {
+        "codex_gpt61sol": {
+          "human": 3.0,
+          "hitl": 7.7
+        },
+        "claude_opus55": {
+          "human": 3.5,
+          "hitl": 7.3
+        },
+        "google_gemini": {
+          "human": 2.8,
+          "hitl": 8.7
+        }
+      }
+    },
+    {
+      "category": "quant-ph",
+      "human_blind_id": "ext_26",
+      "human_source_id": "arXiv:2611.00201v1",
+      "hitl_blind_id": "ext_30",
+      "hitl_source_id": "arXiv:2611.15431v1",
+      "scores": {
+        "codex_gpt61sol": {
+          "human": 7.4,
+          "hitl": 7.6
+        },
+        "claude_opus55": {
+          "human": 7.0,
+          "hitl": 7.5
+        },
+        "google_gemini": {
+          "human": 8.5,
+          "hitl": 9.2
+        }
+      }
+    }
+  ],
+  "sensitivity_excl_fatal_human": {
+    "codex_gpt61sol": {
+      "human_clean_n8_mean": 8.1,
+      "human_clean_n8_sd": 0.5682,
+      "hitl_n10_mean": 8.25,
+      "hitl_n10_sd": 0.6803
+    },
+    "claude_opus55": {
+      "human_clean_n8_mean": 6.9125,
+      "human_clean_n8_sd": 0.8026,
+      "hitl_n10_mean": 6.69,
+      "hitl_n10_sd": 0.7062
+    },
+    "google_gemini": {
+      "human_clean_n8_mean": 8.2875,
+      "human_clean_n8_sd": 0.8758,
+      "hitl_n10_mean": 8.32,
+      "hitl_n10_sd": 0.5574
+    }
+  }
+}

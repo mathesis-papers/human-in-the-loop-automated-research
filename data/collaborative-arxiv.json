@@ -1,0 +1,479 @@
+{
+  "checked_at_utc": "2026-11-26T12:15:00+00:00",
+  "selection": "Seventeen distinct public arXiv records with exact Haobo Ma and Wenlin Zhang author identities (including the displayed Zhang Wenlin variant), verified against live primary arXiv API records and cross-checked against the public publication index on 26 November 2026. Sixteen of the seventeen list external academic coauthors.",
+  "scope": "Primary identities, author blocks, abstracts and version history; includes mathematical theorems, quantum information, combinatorics, automated reasoning and empirical evaluation.",
+  "discovery": {
+    "author_searches": [
+      "https://export.arxiv.org/api/query?search_query=au:%22Haobo+Ma%22+AND+au:%22Wenlin+Zhang%22&start=0&max_results=100",
+      "https://www.trureturing.org/assets/publication-index.json"
+    ],
+    "exact_paired_author_matches": 17,
+    "previous_working_inventory_count": 14
+  },
+  "papers": [
+    {
+      "paper_id": "mechanism-routing",
+      "arxiv_id": "2607.04534",
+      "arxiv_version": 1,
+      "title": "Mechanism-level routing failure in LLMs over Lean-verified algebraic structures",
+      "authors_primary_metadata": [
+        "Cázares, Manuel Israel",
+        "Zhang, Wenlin",
+        "Ma, Haobo"
+      ],
+      "authors_primary_display": "Authors: Manuel Israel Cázares , Wenlin Zhang , Haobo Ma",
+      "domain": "formal algebra and model evaluation",
+      "versioned_abstract_url": "https://arxiv.org/abs/2607.04534v1",
+      "versioned_pdf_url": "https://arxiv.org/pdf/2607.04534v1",
+      "primary_date_metadata": [
+        "2026/07/05"
+      ],
+      "version_history_display": "[Submitted on 5 Jul 2026]",
+      "abstract": "Abstract: We present an empirical study of structural routing failure in large language models (LLMs) over a formally verified algebraic corpus. The task requires selecting the correct proof-mechanism label from a fixed closed template set for compact mathematical objects drawn from the FiberRing formalization in Lean 4, where each item is anchored to a Lean-verified artifact and assigned a label from the corresponding certificate family. Our central finding is a mechanism-level routing ceiling: under blind conditions, gpt-oss-120b achieves 80.3% template accuracy on 22 FiberRing items (n=66; temperature=0, seed=0), while Llama 3.3 70B reaches 68.2%. Exposing a mechanism-bearing Lean verdict/witness cue (Condition A2) raises accuracy to 90.9% and 81.8% -- gaps of +10.6 and +13.6 pp termed cue-induced routing uplift. The dominant failure is a CRT-to-ring-equivalence misroute: gpt-oss-120b misroutes 7 of 12 CRT items (58.3%) blind, zero under A2. A cross-model dissociation in Llama is notable: verdict accuracy is identical in both conditions (95.5%), while template accuracy improves 13.6 pp -- confirming that truth inference and proof-mechanism classification are separable capacities. A cross-corpus extension (Set B; 6 POM/CollisionKernel items, 72 evaluations) provides a small cross-module check: CRT-granularity compression reappears with different labels, and an inverse cross-model dissociation emerges. These findings extend the router hypothesis (Cazares 2026) to formal algebraic structures. The full pipeline, manifest, and results are at this https URL .",
+      "identity_response_sha256": "a07c39033a5700a84d1615a40040d5d2051f69f552bc95debc1545f7c5261f52",
+      "outcome": "public_collaborative_preprint",
+      "peer_review_acceptance_inferred": false,
+      "review_input_sha256": null,
+      "review_status": "not_run",
+      "numeric_escape_reading_status": "not_assessed",
+      "bibliography_key": "routing",
+      "reported_scope": "Proof-mechanism routing over Lean-verified algebraic objects"
+    },
+    {
+      "paper_id": "eqt2",
+      "arxiv_id": "2609.00706",
+      "arxiv_version": 1,
+      "title": "A Certificate-Producing Cascade for Equational Implication: The SAIR EQT2 Stage 2 Solver",
+      "authors_primary_metadata": [
+        "Ma, Haobo",
+        "Zhang, Wenlin",
+        "Cázares, Manuel Israel"
+      ],
+      "authors_primary_display": "Authors: Haobo Ma , Wenlin Zhang , Manuel Israel Cázares",
+      "domain": "automated reasoning",
+      "versioned_abstract_url": "https://arxiv.org/abs/2609.00706v1",
+      "versioned_pdf_url": "https://arxiv.org/pdf/2609.00706v1",
+      "primary_date_metadata": [
+        "2026/09/01"
+      ],
+      "version_history_display": "[Submitted on 1 Sep 2026]",
+      "abstract": "Abstract: The SAIR Mathematics Distillation Challenge on Equational Theories asks a solver to classify whether one magma identity implies another and, for either verdict, to return a certificate accepted by a deterministic Lean judge. We present a single-file solver organized as a cheapest-first cascade. Its false branch combines coefficient tests over structured algebra families, bounded finite-model search, an explicit central-groupoid witness, and several infinite-carrier witnesses. Its true branch is a proof-producing ordered unit superposition procedure with Knuth-Bendix ordering, bidirectional demodulation, indexing, memoised substitution, and anytime size deepening. Search results remain outside the trusted base: successful derivations are replayed as small Lean terms, and countermodels are rechecked by the competition judge. The frozen solver is a 189,504-byte Python file with SHA-256 f2392533c9f4c03b.... In local runs through official judge revision 2848228, it produced accepted certificates for all 1,889 rows of the six public sets with no language-model calls. Separate measurements recorded full agreement on the 800 published Stage 1 evaluation-distribution problems, 100 accepted rows in the canonical Marathon manifest without tokens, and 200 accepted rows in the hosted playground. These are regression and playground measurements, not a leaderboard result and not evidence about a hidden set. All quantitative claims are tied to immutable result ledgers; the paper makes no completeness or comparative-superiority claim.",
+      "identity_response_sha256": "cb26351dfcd4a2826e1ecc69bebcca9c1af561d262b657a8fb69543eaada3261",
+      "outcome": "public_collaborative_preprint",
+      "peer_review_acceptance_inferred": false,
+      "review_input_sha256": null,
+      "review_status": "not_run",
+      "numeric_escape_reading_status": "not_assessed",
+      "bibliography_key": "eqt2",
+      "reported_scope": "Certificate-producing equational implication solver"
+    },
+    {
+      "paper_id": "generalized-fidelity",
+      "arxiv_id": "2609.09753",
+      "arxiv_version": 3,
+      "title": "Generalized Fidelity, the Data Processing Inequality, and Convexity",
+      "authors_primary_metadata": [
+        "Ma, Haobo",
+        "Rajaei, Reza",
+        "Zhang, Wenlin"
+      ],
+      "authors_primary_display": "Authors: Haobo Ma , Reza Rajaei , Wenlin Zhang",
+      "domain": "quantum information",
+      "versioned_abstract_url": "https://arxiv.org/abs/2609.09753v3",
+      "versioned_pdf_url": "https://arxiv.org/pdf/2609.09753v3",
+      "primary_date_metadata": [
+        "2026/09/09"
+      ],
+      "version_history_display": "[Submitted on 9 Sep 2026 ( v1 ), last revised 20 Oct 2026 (this version, v3)]",
+      "abstract": "Abstract: In this paper, we show that the generalized Bures--Wasserstein distance induced by the generalized fidelity fails the data processing inequality (DPI) in every dimension $n\\geq2$. In dimension two, we derive three sufficient conditions guaranteeing the DPI by using an explicit formula for the real part of the generalized fidelity. Furthermore, we find a necessary and sufficient condition under which the generalized fidelity reduces to the Uhlmann fidelity. We also show that neither the generalized Bures--Wasserstein distance nor its square is convex in one state, even with the other state and the reference fixed, in every dimension $n\\geq2$.",
+      "identity_response_sha256": "5aeff2bd4054f7dc34d8f067afff871ebd5c1d82f0ea85295cfc8f8c7e30be48",
+      "outcome": "public_collaborative_preprint",
+      "peer_review_acceptance_inferred": false,
+      "review_input_sha256": null,
+      "review_status": "not_run",
+      "numeric_escape_reading_status": "not_assessed",
+      "bibliography_key": "fidelity",
+      "reported_scope": "Data-processing and convexity obstructions for generalized fidelity"
+    },
+    {
+      "paper_id": "subquorum",
+      "arxiv_id": "2609.25128",
+      "arxiv_version": 4,
+      "title": "Sub-quorum colorings of graphs",
+      "authors_primary_metadata": [
+        "Ma, Haobo",
+        "Sahbi, Rafik",
+        "Wenlin, Zhang"
+      ],
+      "authors_primary_display": "Authors: Haobo Ma , Rafik Sahbi , Zhang Wenlin",
+      "domain": "graph theory",
+      "versioned_abstract_url": "https://arxiv.org/abs/2609.25128v4",
+      "versioned_pdf_url": "https://arxiv.org/pdf/2609.25128v4",
+      "primary_date_metadata": [
+        "2026/09/20"
+      ],
+      "version_history_display": "[Submitted on 20 Sep 2026 ( v1 ), last revised 10 Oct 2026 (this version, v4)]",
+      "abstract": "Abstract: A sub-quorum coloring is a partial vertex coloring in which every colored vertex sees at least half of its colored closed neighborhood in its own color. We study the maximum number of colors $\\psq(G)$ from structural, algorithmic and extremal viewpoints. Every $2$-independent set yields a sub-quorum coloring, so $\\psq(G)\\ge\\beta_2(G)$. We prove the degree bound $\\psq(G)\\le \\Delta(G)|V(G)|/(\\Delta(G)+\\delta(G)-1)$ for $\\delta(G)\\ge2$, and obtain an exact matching characterization for graphs of maximum degree at most three. Consequently every cubic graph of order $n$ satisfies $n/2\\le\\psq(G)\\le3n/5$, with a stability identity at the upper endpoint. For trees we give an edge representation and a linear-time dynamic program that computes both $\\psq(T)$ and an optimal coloring; we also show on the double star $S_{2,2}$ that $\\psq$ can exceed the dissociation number even on trees. We prove NP-completeness even for bipartite graphs and determine exact values for several classical families. For rectangular grids, we formulate the conjecture $\\psq(G_{m,n})=\\beta_2(G_{m,n})=F(m,n)$, recover the dissociation-number formula from known $3$-path vertex-cover results, prove the ladder case directly, and verify the conjecture for every fixed width $2\\le m\\le11$; widths $3$ through $11$ use exact transfer certificates. For hypercubes we prove $\\psq(Q_n)=\\beta_2(Q_n)=2^{n-1}$ for every $n\\ge2$. Finally, a Nordhaus--Gaddum argument gives $\\psq(G)+\\psq(\\overline G)>\\log_2 |V(G)|$ and leads to a complementary upper-bound problem.",
+      "identity_response_sha256": "3d20d686dce4ae1a63db04e58cf0da04004421d0f35ae109da0e22454414f159",
+      "outcome": "public_collaborative_preprint",
+      "peer_review_acceptance_inferred": false,
+      "review_input_sha256": null,
+      "review_status": "not_run",
+      "numeric_escape_reading_status": "not_assessed",
+      "bibliography_key": "subquorum",
+      "reported_scope": "Structural bounds, algorithms and exact sub-quorum coloring values"
+    },
+    {
+      "paper_id": "padovan",
+      "arxiv_id": "2609.33421",
+      "arxiv_version": 1,
+      "title": "A Padovan-automatic description of a nested recurrence",
+      "authors_primary_metadata": [
+        "Cloitre, Benoit",
+        "Ma, Haobo",
+        "Zhang, Wenlin"
+      ],
+      "authors_primary_display": "Authors: Benoit Cloitre , Haobo Ma , Wenlin Zhang",
+      "domain": "sequences and automata",
+      "versioned_abstract_url": "https://arxiv.org/abs/2609.33421v1",
+      "versioned_pdf_url": "https://arxiv.org/pdf/2609.33421v1",
+      "primary_date_metadata": [
+        "2026/09/27"
+      ],
+      "version_history_display": "[Submitted on 27 Sep 2026]",
+      "abstract": "Abstract: We study the sequence $a(0)=0$, $a(1)=1$ and $a(n)=n-a(n-a(n-a(n-1)))$ for $n\\ge 2$, listed as A076502 in the On-Line Encyclopedia of Integer Sequences. We identify $a(n)$ as a two-position shift in the greedy Padovan numeration system, with a finite-state correction. The proof constructs an addition automaton from an exact integer-carry invariant and certifies its completeness by finite-language inclusion; a synchronized automaton then verifies the nested recurrence. We establish bounded discrepancy from the line of slope $c$, where $c^3-c^2+2c-1=0$, and show that the exact set of offsets from $\\lfloor cn\\rfloor$ is $\\{-1,0,1,2\\}$. We construct an explicit 26-letter non-erasing morphic presentation of the first-difference word, prove that its least balance constant is 4, and give an effective procedure for enclosing the global discrepancy extrema to arbitrary accuracy. We formalize the recurrence identification, six-decimal discrepancy bound, exact offset set, concrete morphic identity, least balance constant, and an effective extrema algorithm in Lean. Separate exact computations refine the numerical enclosures.",
+      "identity_response_sha256": "314a1501eb909144738e7ea9f06de4fe4b8fde84a4c374ae8813bea1a79ec1dc",
+      "outcome": "public_collaborative_preprint",
+      "peer_review_acceptance_inferred": false,
+      "review_input_sha256": null,
+      "review_status": "not_run",
+      "numeric_escape_reading_status": "not_assessed",
+      "bibliography_key": "padovan",
+      "reported_scope": "Finite-state description and exact properties of a nested recurrence"
+    },
+    {
+      "paper_id": "cotfas-gaussian-discrete-approximation",
+      "arxiv_id": "2610.05623",
+      "arxiv_version": 2,
+      "title": "Approximation of a continuous-variable Gaussian state by discrete-variable quantum states",
+      "authors_primary_metadata": [
+        "Cotfas, Nicolae",
+        "Ma, Haobo",
+        "Zhang, Wenlin"
+      ],
+      "authors_primary_display": "Authors: Nicolae Cotfas , Haobo Ma , Wenlin Zhang",
+      "domain": "quantum information",
+      "versioned_abstract_url": "https://arxiv.org/abs/2610.05623v2",
+      "versioned_pdf_url": "https://arxiv.org/pdf/2610.05623v2",
+      "primary_date_metadata": [
+        "2026/10/04"
+      ],
+      "version_history_display": "[Submitted on 4 Oct 2026 ( v1 ), last revised 3 Nov 2026 (this version, v2)]",
+      "abstract": "Abstract: For every centered one-mode continuous-variable Gaussian state, we prove that the signed Wigner periodization defines a discrete-variable density operator in every odd dimension $d\\ge3$. Positivity is equivalent to the one-mode uncertainty condition, and we determine the complete inertia outside and on its boundary. A covariance-independent isometric embedding gives exponential convergence in trace norm, with an explicit error bound uniform in Planck's constant. For covariance twice the identity, dimension $31$ gives a certified trace-norm error below $1/8000$. The trace-norm estimate controls all measurement probabilities. We retain the original canonical-coherent-frame formula in terms of the determinant and trace of the covariance matrix, with continuous normalization fixed to agree with the discrete frame convention. The coherence comparisons identify which diagnostics accompany the controlled state approximation. Position- and momentum-basis coherences have exponentially convergent values after division by the square root of the dimension. Numerical comparisons of purity and frame coherence illustrate the discrete-continuous transition.",
+      "identity_response_sha256": "d1dde3a3383c59dbb87994ad5012241fd865766de0651cfcdd1fb40ef278873b",
+      "outcome": "public_collaborative_preprint",
+      "peer_review_acceptance_inferred": false,
+      "review_input_sha256": null,
+      "review_status": "not_run",
+      "numeric_escape_reading_status": "not_assessed",
+      "bibliography_key": "gaussian",
+      "reported_scope": "Positivity and trace-norm-controlled discrete Gaussian approximation"
+    },
+    {
+      "paper_id": "eof-coincidence",
+      "arxiv_id": "2610.18816",
+      "arxiv_version": 2,
+      "title": "On the coincidence of discrete and continuous definitions of Entanglement of Formation",
+      "authors_primary_metadata": [
+        "Ma, Haobo",
+        "Shirokov, Maksim E.",
+        "Zhang, Wenlin"
+      ],
+      "authors_primary_display": "Authors: Haobo Ma , Maksim E.Shirokov , Wenlin Zhang",
+      "domain": "quantum information",
+      "versioned_abstract_url": "https://arxiv.org/abs/2610.18816v2",
+      "versioned_pdf_url": "https://arxiv.org/pdf/2610.18816v2",
+      "primary_date_metadata": [
+        "2026/10/13"
+      ],
+      "version_history_display": "[Submitted on 13 Oct 2026 ( v1 ), last revised 15 Oct 2026 (this version, v2)]",
+      "abstract": "Abstract: It is proved that every Borel ensemble of pure states on a separable bipartite Hilbert space with finite average entanglement admits a countable ensemble with the same barycenter and arbitrarily small additional average entanglement. Consequently, the discrete and continuous versions of the Entanglement of Formation coincide on the whole space of states of infinite-dimensional bipartite quantum system (with infinite values allowed). The main idea of the proof (realized with the AI-assistance) is the lifting a Borel ensemble of pure bipartite states to a Borel probability measure on the unit sphere in the space of Hilbert--Schmidt operators followed by dividing the support of this measure into appropriate cells and replacing each cell by its conditional barycenter. The resulting countable ensemble is obtained by a recursive construction.",
+      "identity_response_sha256": "e2c1aadb0ef03c0e5a7195a118f1b60ca82e76a3afbafb523d82ed5578772baf",
+      "outcome": "public_collaborative_preprint",
+      "peer_review_acceptance_inferred": false,
+      "review_input_sha256": null,
+      "review_status": "not_run",
+      "numeric_escape_reading_status": "not_assessed",
+      "bibliography_key": "eof",
+      "reported_scope": "Coincidence of discrete and continuous entanglement-of-formation definitions"
+    },
+    {
+      "paper_id": "klein-four-ca",
+      "arxiv_id": "2610.20329",
+      "arxiv_version": 1,
+      "title": "Generation by lazy and invertible cellular automata over the Klein four-group",
+      "authors_primary_metadata": [
+        "Alcalá-Arroyo, Edgar",
+        "Castillo-Ramirez, Alonso",
+        "Ma, Haobo",
+        "Zhang, Wenlin"
+      ],
+      "authors_primary_display": "Authors: Edgar Alcalá-Arroyo , Alonso Castillo-Ramirez , Haobo Ma , Wenlin Zhang",
+      "domain": "cellular automata",
+      "versioned_abstract_url": "https://arxiv.org/abs/2610.20329v1",
+      "versioned_pdf_url": "https://arxiv.org/pdf/2610.20329v1",
+      "primary_date_metadata": [
+        "2026/10/14"
+      ],
+      "version_history_display": "[Submitted on 14 Oct 2026]",
+      "abstract": "Abstract: Let $G=C_2\\times C_2$ and $A=\\{0,1\\}$. We characterize the submonoid of $\\text{CA}(G;A)$ generated by lazy and invertible cellular automata. A cellular automaton belongs to this submonoid if and only if, whenever it maps the two free $G$-orbits onto the same free orbit, it maps both constant configurations and some two-point orbit to the same constant. The proof gives a factorization using elementary orbit collapses and three two-cell lazy maps. The criterion yields the cardinality $59\\,712$ and identifies the maps missed by a weaker constant-separation invariant. Adjoining one idempotent generates the full monoid, and the generated submonoid is contained in exactly one maximal proper submonoid, of cardinality $65\\,024$. The submonoid generated by lazy maps alone has $4\\,007$ elements, and for both generating sets the maximum shortest-word length is six. The criterion and the cardinalities $59\\,712$ and $4\\,007$ are formally verified in Lean.",
+      "identity_response_sha256": "c3a4d68cd151ee4bfbd4b46d3433a22fc24a6d4bb236ea890c323d8927bfff73",
+      "outcome": "public_collaborative_preprint",
+      "peer_review_acceptance_inferred": false,
+      "review_input_sha256": null,
+      "review_status": "not_run",
+      "numeric_escape_reading_status": "not_assessed",
+      "bibliography_key": "cellular",
+      "reported_scope": "Characterization and cardinalities of a generated cellular-automaton submonoid"
+    },
+    {
+      "paper_id": "petersen-zero-forcing",
+      "arxiv_id": "2610.24059",
+      "arxiv_version": 1,
+      "title": "Sharp zero forcing numbers for the generalized Petersen graphs $P(n,3)$ and $P(n,4)$",
+      "authors_primary_metadata": [
+        "Krishnan, Arnav",
+        "Ma, Haobo",
+        "Zhang, Wenlin"
+      ],
+      "authors_primary_display": "Authors: Arnav Krishnan , Haobo Ma , Wenlin Zhang",
+      "domain": "graph theory",
+      "versioned_abstract_url": "https://arxiv.org/abs/2610.24059v1",
+      "versioned_pdf_url": "https://arxiv.org/pdf/2610.24059v1",
+      "primary_date_metadata": [
+        "2026/10/16"
+      ],
+      "version_history_display": "[Submitted on 16 Oct 2026]",
+      "abstract": "Abstract: We prove that $Z(P(n,3))=8$ for every $n\\ge13$ and $Z(P(n,4))=10$ for every $n\\ge18$, with both stabilization thresholds sharp, and give the exact values for all smaller admissible $n$. The first equality proves Krishnan's Conjecture 5; his Proposition 4 supplies its upper bound. The lower bounds use the external boundary of the first forcing sources: ten vertices have boundary at least eight in $P(n,3)$ for $n\\ge14$, and sixteen vertices have boundary at least ten in $P(n,4)$ for $n\\ge20$. Deletion within an empty column interval reduces these assertions to finite checks, and forts settle the remaining cases. The $k=3$ stabilization theorem has a Lean 4 formalization; the $k=4$ proof uses 89 boundary formulas and 11 fort formulas with separately checked DRAT certificates, together with explicit forcing sequences.",
+      "identity_response_sha256": "7769baddbeea6c4563723ee74a225c9ebca6bcc3761e3c72e19b36be7d8409c0",
+      "outcome": "public_collaborative_preprint",
+      "peer_review_acceptance_inferred": false,
+      "review_input_sha256": null,
+      "review_status": "not_run",
+      "numeric_escape_reading_status": "not_assessed",
+      "bibliography_key": "petersen",
+      "reported_scope": "Sharp zero forcing numbers for two generalized Petersen graph families"
+    },
+    {
+      "paper_id": "residue-sums",
+      "arxiv_id": "2610.29608",
+      "arxiv_version": 1,
+      "title": "Residue Sums Modulo Products of Two Distinct Odd Primes",
+      "authors_primary_metadata": [
+        "Ma, Haobo",
+        "Merca, Mircea",
+        "Zhang, Wenlin"
+      ],
+      "authors_primary_display": "Authors: Haobo Ma , Mircea Merca , Wenlin Zhang",
+      "domain": "number theory",
+      "versioned_abstract_url": "https://arxiv.org/abs/2610.29608v1",
+      "versioned_pdf_url": "https://arxiv.org/pdf/2610.29608v1",
+      "primary_date_metadata": [
+        "2026/10/21"
+      ],
+      "version_history_display": "[Submitted on 21 Oct 2026]",
+      "abstract": "Abstract: Let $S_m(a)$ denote the sum of the least positive residues in one multiplicative period of $a$ modulo $m$, of length $k$. We study the equality $S_m(a)=mk/2$ for $m=pq$, where $p,q$ are distinct odd primes and $k$ is even. Complementary pairing settles subgroups containing $-1$; the remaining cases depend on their embedding in the two local unit groups. At index four, we exclude mixed cyclic subgroups with biquadratic annihilator and classify every eligible imprimitive quartic kernel using two odd integer moments at its prime conductor. For each fixed conductor, the proportion of admissible second primes giving equality is $1/4$ or $1/2$; full coset balance has proportion $1/4$. For primitive quartic characters, classical triangular character-sum identities yield explicit short-sum criteria, and the relative class-number formula gives an obstruction to a centered coset. At index six, we give structural counts and construct an infinite family modulo $19q$ in which nonzero sextic and quadratic moments cancel. These applications use a standard odd-character expansion, which also recovers the known index-two balance classification and determines the sign of its deviation. A reproducible census for $pq\\le10000$ counts $75\\,090$ eligible cyclic subgroups and identifies $101$ mixed index-four subgroups whose own sum is centered although some coset sums are not.",
+      "identity_response_sha256": "adad77399b6ad67d1bb65c311443662a5ae13679f1ab747b465ecb2914d2d537",
+      "outcome": "public_collaborative_preprint",
+      "peer_review_acceptance_inferred": false,
+      "review_input_sha256": null,
+      "review_status": "not_run",
+      "numeric_escape_reading_status": "not_assessed",
+      "bibliography_key": "residues",
+      "reported_scope": "Centered residue sums for cyclic subgroups modulo two odd primes"
+    },
+    {
+      "paper_id": "block-exchange-descent",
+      "arxiv_id": "2610.39941",
+      "arxiv_version": 2,
+      "title": "Block-exchange descent for insertion: commuting projections and minimum masks",
+      "authors_primary_metadata": [
+        "Ma, Haobo",
+        "Zhang, Wenlin",
+        "Hughes, Charles E."
+      ],
+      "authors_primary_display": "Authors: Haobo Ma , Wenlin Zhang , Charles E. Hughes",
+      "domain": "combinatorics on words",
+      "versioned_abstract_url": "https://arxiv.org/abs/2610.39941v2",
+      "versioned_pdf_url": "https://arxiv.org/pdf/2610.39941v2",
+      "primary_date_metadata": [
+        "2026/10/29"
+      ],
+      "version_history_display": "[Submitted on 29 Oct 2026 (v1), last revised 10 Nov 2026 (this version, v2)]",
+      "abstract": "Abstract: For fixed nonempty words $u,v$, the minimum insertion degree of a shuffle is the least number of inserted-source runs among its representations. We prove that, after a block exchange from a minimum mask of degree $r$, the minimum over masks with commuting source projections is exactly $r-1$; a larger decrease occurs precisely when a noncommuting mask has fewer runs. If either source is unary, every such exchange is exact. We prove an explicit repair for an infinite periodic degree-three family. Computer-assisted results establish first-mask descent through combined length seventeen over every alphabet, degree-three first-mask descent through length thirty, and a uniform repair of all degree-three failures through length thirty, including all further letter identifications. Counterexamples to arbitrary, first, and last minimum-mask choices explain the need for alternative masks. Finally, we prove that minimum iteration depths have no gaps for arbitrary languages. General block-exchange descent and Singleton No-Gap remain open.",
+      "identity_response_sha256": "0643d2777dba164f4361473727e12900cd574c1e9981e10be179990fa53996dc",
+      "outcome": "public_collaborative_preprint",
+      "peer_review_acceptance_inferred": false,
+      "review_input_sha256": null,
+      "review_status": "not_run",
+      "numeric_escape_reading_status": "not_assessed",
+      "bibliography_key": "insertion",
+      "reported_scope": "Block-exchange descent under commuting source projections; bounded computations"
+    },
+    {
+      "paper_id": "binary-channel-entropy",
+      "arxiv_id": "2611.01064",
+      "arxiv_version": 1,
+      "title": "Maximal input entropy for binary two-deletion and two-insertion channels",
+      "authors_primary_metadata": [
+        "Ma, Haobo",
+        "Zhang, Wenlin"
+      ],
+      "authors_primary_display": "Authors: Haobo Ma , Wenlin Zhang",
+      "domain": "information theory",
+      "versioned_abstract_url": "https://arxiv.org/abs/2611.01064v1",
+      "versioned_pdf_url": "https://arxiv.org/pdf/2611.01064v1",
+      "primary_date_metadata": [
+        "2026/10/31"
+      ],
+      "version_history_display": "[Submitted on 31 Oct 2026]",
+      "abstract": "Abstract: Under uniform transmission, we determine the received binary words that maximize input entropy for two-deletion and two-insertion channels. For two deletions the maximizers are exactly the two alternating words at every positive received length. For two insertions the same conclusion holds from received length five onward; we give all smaller cases and exact maximal values. The proof combines an embedding-count identity organized by runs with strict convexity estimates, and a grouping of two-position deletion masks. For every insertion radius we give the complete positive embedding histogram of an alternating received word. We also determine its three-deletion histogram for every length, and certify all three-deletion maximizers through received length twelve and all three-insertion maximizers through length eighteen by exact integer comparison. These computations give precise three-error conjectures with their small-length exceptions.",
+      "identity_response_sha256": "4ba332e45149d5b9246659a5c7677ddf30dfd444fbd275c402bc787df570ed1d",
+      "outcome": "public_collaborative_preprint",
+      "peer_review_acceptance_inferred": false,
+      "review_input_sha256": null,
+      "review_status": "not_run",
+      "numeric_escape_reading_status": "not_assessed",
+      "bibliography_key": "entropy",
+      "reported_scope": "Exact entropy-maximizing binary words for two-deletion and two-insertion channels"
+    },
+    {
+      "paper_id": "well-covered-powers-cartesian-products-and-cayley-graphs",
+      "arxiv_id": "2611.03956",
+      "arxiv_version": 1,
+      "title": "Well-Covered Powers: Cartesian Products and Cayley Graphs",
+      "authors_primary_metadata": [
+        "Ma, Haobo",
+        "Vu, Thanh",
+        "Zhang, Wenlin"
+      ],
+      "authors_primary_display": "Authors: Haobo Ma , Thanh Vu , Wenlin Zhang",
+      "domain": "graph theory",
+      "versioned_abstract_url": "https://arxiv.org/abs/2611.03956v1",
+      "versioned_pdf_url": "https://arxiv.org/pdf/2611.03956v1",
+      "primary_date_metadata": [
+        "2026/11/02"
+      ],
+      "version_history_display": "[Submitted on 2 Nov 2026]",
+      "abstract": "Abstract: We study graphs whose powers are well-covered, with an emphasis on Cartesian products and Cayley graphs. We first establish necessary conditions and sufficient criteria for Cartesian products, provide examples showing that a factor need not be well-covered and that two noncomplete factors can have the well-covered powers property, and classify several structured product families. In particular, we construct graphs satisfying the well-covered powers property for arbitrarily large diameters. We then show that the Cartesian square of a connected abelian Cayley graph is well-covered exactly when the graph is complete. We classify the well-covered-power graphs among connected circulant graphs of degree at most four. For Cartesian products of any number of complete graphs, we also prove that the recursive alphabet-size inequalities in the final conjecture are sufficient for all powers to be well-covered, prove partial converses for arbitrarily many factors, and give explicit obstructions for every binary prefix followed by one complete factor.",
+      "identity_response_sha256": "a106cf27cb51a2071af9883935ed8835068161396669e7804136882bb55dd909",
+      "outcome": "public_collaborative_preprint",
+      "peer_review_acceptance_inferred": false,
+      "review_input_sha256": null,
+      "review_status": "not_run",
+      "numeric_escape_reading_status": "not_assessed",
+      "bibliography_key": "wellcovered",
+      "reported_scope": "Well-covered graph powers, Cartesian products and Cayley classifications"
+    },
+    {
+      "paper_id": "two-qutrit-time-invariant-negativity",
+      "arxiv_id": "2611.04568",
+      "arxiv_version": 1,
+      "title": "Time-invariant negativity and persistent bound entanglement in a cyclic two-qutrit family",
+      "authors_primary_metadata": [
+        "Zhang, Wenlin",
+        "Ali, Mazhar",
+        "Ma, Haobo"
+      ],
+      "authors_primary_display": "Authors: Wenlin Zhang , Mazhar Ali , Haobo Ma",
+      "domain": "quantum information",
+      "versioned_abstract_url": "https://arxiv.org/abs/2611.04568v1",
+      "versioned_pdf_url": "https://arxiv.org/pdf/2611.04568v1",
+      "primary_date_metadata": [
+        "2026/11/03"
+      ],
+      "version_history_display": "[Submitted on 3 Nov 2026]",
+      "abstract": "Abstract: We study the entanglement dynamics of two qutrits under collective dephasing for a family of states obtained by mixing a maximally entangled state that lives in the decoherence-free subspace with three nonstationary two-term states sharing a common amplitude ratio $r$. We obtain exact PPT and separability regions along the whole trajectory, a specialization of known results on cyclic sign invariant states, and we supply explicit certificates: a finite product decomposition, three fixed positive-map witnesses, and a closed realignment formula that detects every PPT-entangled state, so that no state is left undecided. The negativity is computed in closed form. It shows that the entanglement is time-invariant, positive and constant from the initial time although the state changes, exactly when the weight of the maximally entangled state exceeds the threshold $U_r=r/(1+r+r^2)$. To our knowledge, this is the first demonstration of time-invariant entanglement for qutrit--qutrit systems under collective dephasing. For smaller weights the entanglement decays and vanishes at a finite time: the state either becomes separable (entanglement sudden death) or, for $r\\neq1$ in an intermediate range, loses distillability suddenly and remains bound entangled at all later times. Every state with negative partial transpose is one-copy distillable by a fixed local projection. The same trajectories arise from the global dephasing map and from a correlated local random-unitary semigroup, although the two channels differ on product inputs. Exact rational benchmarks and embeddings of the Horodecki and Ha--Kye--Park families are provided.",
+      "identity_response_sha256": "a1d9b207fe11d839efb5a696035a2a4b0de079a1157db95d7cee85f31381dcf8",
+      "outcome": "public_collaborative_preprint",
+      "peer_review_acceptance_inferred": false,
+      "review_input_sha256": null,
+      "review_status": "not_run",
+      "numeric_escape_reading_status": "not_assessed",
+      "bibliography_key": "qutrit",
+      "reported_scope": "Exact entanglement regions and dynamics for a cyclic two-qutrit family"
+    },
+    {
+      "paper_id": "nichols-wootters-subadditivity",
+      "arxiv_id": "2611.15431",
+      "arxiv_version": 1,
+      "title": "Subadditivity and the failure of strong subadditivity in the Nichols--Wootters family of entropies",
+      "authors_primary_metadata": [
+        "Zhang, Lin",
+        "Zhang, Wenlin",
+        "Ma, Haobo"
+      ],
+      "authors_primary_display": "Authors: Lin Zhang , Wenlin Zhang , Haobo Ma",
+      "domain": "quantum information",
+      "versioned_abstract_url": "https://arxiv.org/abs/2611.15431v1",
+      "versioned_pdf_url": "https://arxiv.org/pdf/2611.15431v1",
+      "primary_date_metadata": [
+        "2026/11/11"
+      ],
+      "version_history_display": "[Submitted on 11 Nov 2026]",
+      "abstract": "Abstract: We prove subadditivity for the Nichols--Wootters family of entropies interpolating between the von Neumann entropy and the subentropy, with all spectra evaluated in one common ambient dimension. Beyond the von Neumann entropy, equality holds exactly when at least one marginal is pure. This settles the subadditivity conjecture concerning subentropy. Every member except the von Neumann entropy fails strong subadditivity, already on a maximally entangled two-qubit state tensored with a mixed qubit. Its strong-subadditivity defect takes both signs on quantum Markov states. For a pure bipartite state tensored with an ancillary state, we identify the defect with a separately concave product gap and determine its exact maximum under rank constraints. For arbitrary bipartite states, we obtain an explicit lower bound in the marginal purities. For two-qubit states, we determine the optimal coefficient multiplying the product of the smaller marginal eigenvalues in every common ambient dimension, including the subentropy coefficient $1/3$. A positive representation by Haar averages of compressed matrix entropies gives the pinching inequality underlying these results and also yields entropy-gain bounds for unital quantum channels. As an application, each entropy equals the classical communication capacity retained after a specified isotropic partial projective measurement, at a prescribed average input state, even when entangled block encodings are allowed.",
+      "outcome": "public_collaborative_preprint",
+      "peer_review_acceptance_inferred": false,
+      "bibliography_key": "subadditivity",
+      "reported_scope": "Proof of subadditivity (settling the subentropy conjecture) and failure of strong subadditivity across the Nichols--Wootters family"
+    },
+    {
+      "paper_id": "meta-nested-recurrences",
+      "arxiv_id": "2611.15815",
+      "arxiv_version": 1,
+      "title": "Meta-Nested Recurrences",
+      "authors_primary_metadata": [
+        "Cloitre, Benoît",
+        "Ma, Haobo",
+        "Zhang, Wenlin"
+      ],
+      "authors_primary_display": "Authors: Benoît Cloitre , Haobo Ma , Wenlin Zhang",
+      "domain": "sequences and recurrences",
+      "versioned_abstract_url": "https://arxiv.org/abs/2611.15815v1",
+      "versioned_pdf_url": "https://arxiv.org/pdf/2611.15815v1",
+      "primary_date_metadata": [
+        "2026/11/11"
+      ],
+      "version_history_display": "[Submitted on 11 Nov 2026]",
+      "abstract": "Abstract: We study recurrences in which a previous sequence value determines the number of iterations of an inner map. Campbell's example has an explicit power-of-three formula and inner orbits of eventual period at most two. Its normalized lower and upper limits are $2/5$ and $3/4$. For a variable-depth Conway recurrence $C$, we prove the golden-ratio lower bound, its exact equality set, a Fibonacci upper cap, and the landing of the inner orbit at every Fibonacci index $F_k$ with $k\\ge 6$. These proofs are elementary and start from twenty-four initial values. The plateau of $C$ to the left of $F_k$ has width exactly $\\lfloor(2k-9)/3\\rfloor$, and $C(F_k+t)=F_{k-1}+t$ for $0\\le t\\le\\lfloor(k-8)/6\\rfloor$. A maximum principle turns a finite exact computation into the bound $\\limsup C(n)/n<0.65446923$. We characterize the convergence of $C(n)/n$ to $\\alpha=(\\sqrt{5}-1)/2$ in terms of negative selected orbit jumps and of a limiting convex profile, and we derive entropy and variance budgets for the recursive splits. Along inverse rays of the map $x\\mapsto C(x)$, the relative errors are absolutely summable and the growth is asymptotically Fibonacci. For Grytczuk's fixed-depth recurrence, we give a Pascal-word proof of convergence with the sharp error order $n/\\sqrt{\\log n}$ along interval maxima. The full variable-depth limit remains open.",
+      "outcome": "public_collaborative_preprint",
+      "peer_review_acceptance_inferred": false,
+      "bibliography_key": "metanested",
+      "reported_scope": "Golden-ratio bounds and Fibonacci orbit landings for variable-depth meta-nested recurrences; sharp error order for Grytczuk's fixed-depth recurrence"
+    },
+    {
+      "paper_id": "inversion-sequence-classes-152-207",
+      "arxiv_id": "2611.21657",
+      "arxiv_version": 1,
+      "title": "Counting formulas and refined generating functions for inversion-sequence Classes 152 and 207",
+      "authors_primary_metadata": [
+        "Ma, Haobo",
+        "Mansour, Toufik",
+        "Zhang, Wenlin"
+      ],
+      "authors_primary_display": "Authors: Haobo Ma , Toufik Mansour , Wenlin Zhang",
+      "domain": "enumerative combinatorics",
+      "versioned_abstract_url": "https://arxiv.org/abs/2611.21657v1",
+      "versioned_pdf_url": "https://arxiv.org/pdf/2611.21657v1",
+      "primary_date_metadata": [
+        "2026/11/04"
+      ],
+      "version_history_display": "[Submitted on 4 Nov 2026]",
+      "abstract": "Abstract: For the two Class 152 pattern sets, we prove that the common number of inversion sequences of length $n\\geq 1$ is $a_n=1+\\sum_{j=1}^{n-1}\\binom{2j}{j}$. The Class 152 proof uses first-descent and last-zero decompositions, with weighted Dyck paths evaluating the resulting generating functions. For Class 207, we prove equality of the three total-count series and give their common generating function as an explicit Lambert-series expression after the substitution $z=q/(1+q)^2$. Complete legal-site and catalytic recurrences lead to a Lambert series for one class and $q$-product orbit sums for another. A cubic limit of the balanced nonterminating ${}_3\\phi_2$ $q$-Saalschutz summation identifies these expressions. Fixed-maximum expansions, finite verification data, refined analytic obstructions, and signed specializations are recorded in the supplementary material.",
+      "outcome": "public_collaborative_preprint",
+      "peer_review_acceptance_inferred": false,
+      "bibliography_key": "inversions",
+      "reported_scope": "Exact counting formula for Class 152 and Lambert-series generating functions for Class 207 inversion sequences"
+    }
+  ]
+}

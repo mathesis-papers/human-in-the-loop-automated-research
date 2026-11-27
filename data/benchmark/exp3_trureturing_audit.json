@@ -1,0 +1,39 @@
+{
+  "repository": "the-omega-institute/trureturing",
+  "sampled_recent_completed_prs": 1000,
+  "date_range_utc": [
+    "2026-11-22T14:06:12Z",
+    "2026-11-27T05:13:18Z"
+  ],
+  "all_time": {
+    "merged_all_time": 22930,
+    "closed_unmerged_all_time": 1995,
+    "open_current": 51,
+    "issues_all_time": 9771,
+    "issues_closed_all_time": 4048,
+    "completed_all_time": 24925,
+    "all_time_merge_rate_pct": 92.0,
+    "all_time_closed_unmerged_rate_pct": 8.0
+  },
+  "recent_1000_sample": {
+    "n": 1000,
+    "merged": 935,
+    "closed_unmerged": 65,
+    "merge_rate_pct": 93.5,
+    "closed_unmerged_rate_pct": 6.5,
+    "median_time_to_merge_min": 31.9,
+    "p75_time_to_merge_min": 53.9,
+    "multi_commit_revision_rate_pct": 59.57,
+    "multi_commit_merged_count": 557,
+    "prereg_or_issue_linked_merged_count": 578,
+    "prereg_or_issue_linked_pct": 61.82,
+    "escape_or_witness_mentioned_merged_count": 456,
+    "escape_or_witness_mentioned_pct": 48.77,
+    "title_refutation_count": 2,
+    "title_proof_count": 9,
+    "median_additions_merged": 661,
+    "median_changed_files_merged": 6,
+    "closed_unmerged_median_commits": 3,
+    "closed_unmerged_median_additions": 311
+  }
+}
