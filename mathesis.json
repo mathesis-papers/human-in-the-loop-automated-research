@@ -1,0 +1,93 @@
+{
+  "schema": "mathesis.pre-reviewed-delivery.v1",
+  "producer": "mathesis-papers",
+  "work_id": "human-in-the-loop-automated-research",
+  "version": 1,
+  "previous_version": null,
+  "authorize_publication": true,
+  "paper": {
+    "kind": "methodology",
+    "title": "Human-in-the-Loop Automated Research: Verification-Centered Scientific Discovery",
+    "abstract": "Scientific discovery is defined by the ability to recognize the boundaries of existing knowledge, decide which questions matter, and establish new truths that a scholarly community can inspect and build upon. As foundation models and neural theorem provers shift theoretical research from proof scarcity toward automated abundance, artificial intelligence is moving from a passive assistant to an active partner in discovery. Yet full autonomy without human guidance or formal grounding faces a sharp failure mode: unguided agents generate locally plausible \"scientific slop\" whose global logic collapses, while unchecked theorem provers produce opaque formal code (\"proof indigestion\") that outpaces human comprehension. Here we introduce a verification-centered, human-in-the-loop methodology for automated scientific discovery and evaluate it on its strictest deductive proving ground across mathematics, quantum information, mathematical physics and theoretical computer science. Specifically, human researchers provide scientific direction (from sharp open conjectures to embryonic conceptual intuitions), redirect false premises and evaluate the readable proof. An open, model-agnostic orchestration harness stores authoritative state outside any single model and coordinates derivation, counterexample search, cold cross-family adversarial critique and four anti-inflation Lean 4 admission gates. Internal review translates disputed claims into executable verification targets, while direct collaboration with living domain scholars reconnects machine-checked arguments to human understanding. Across 30 public manuscripts evaluated blindly by three independent frontier model families (OpenAI Codex, Anthropic Claude and Google Gemini; 90 evaluations; Kendall concordance W = 0.828), collaborative preprints rank highest under every judge, outperforming autonomous AI-only studies in 260 of 300 cross-cohort comparisons (exact permutation p = 0.0012, 0.0149 and 3.2 × 10⁻⁵), matching sound human-only arXiv preprints with 2.3- to 4.2-fold narrower overall dispersion and carrying formal or certified checks in all ten papers versus one of ten human preprints and none of ten autonomous studies. A controlled ablation over 20 real mathematical claims shows that enforcing an executable counterexample witness eliminates false-positive \"review slop\" while retaining high flaw recall, and an audit of 24,925 public formal-gate contributions documents systematic pre-admission rejection and multi-commit repair. Together with 17 collaborative arXiv preprints (16 with external coauthors), 177 proof-checking scholars and an instrumented 33-hour research trace, these results show how human-guided, verification-centered automation can expand the frontier of rigorous scientific knowledge.",
+    "authors": [
+      {
+        "name": "Chloe Chew",
+        "affiliation": "ChronoAI Pte Ltd, Singapore"
+      },
+      {
+        "name": "Abigail Deng",
+        "affiliation": "ChronoAI Pte Ltd, Singapore"
+      },
+      {
+        "name": "Zongzhe Huang",
+        "affiliation": "ChronoAI Pte Ltd, Singapore"
+      },
+      {
+        "name": "Louis Li",
+        "affiliation": "ChronoAI Pte Ltd, Singapore"
+      },
+      {
+        "name": "Rona Liang",
+        "affiliation": "ChronoAI Pte Ltd, Singapore"
+      },
+      {
+        "name": "Kai Huei Lim",
+        "affiliation": "ChronoAI Pte Ltd, Singapore"
+      },
+      {
+        "name": "Kai Wei Lim",
+        "affiliation": "ChronoAI Pte Ltd, Singapore"
+      },
+      {
+        "name": "Yitian Liu",
+        "affiliation": "ChronoAI Pte Ltd, Singapore"
+      },
+      {
+        "name": "Haobo Ma",
+        "affiliation": "ChronoAI Pte Ltd, Singapore"
+      },
+      {
+        "name": "Wen Niu",
+        "affiliation": "ChronoAI Pte Ltd, Singapore"
+      },
+      {
+        "name": "Jianwei Su",
+        "affiliation": "ChronoAI Pte Ltd, Singapore"
+      },
+      {
+        "name": "Calvin Tan",
+        "affiliation": "ChronoAI Pte Ltd, Singapore"
+      },
+      {
+        "name": "Haylee Wang",
+        "affiliation": "ChronoAI Pte Ltd, Singapore"
+      },
+      {
+        "name": "Jason Wang",
+        "affiliation": "ChronoAI Pte Ltd, Singapore"
+      },
+      {
+        "name": "Shining Wang",
+        "affiliation": "ChronoAI Pte Ltd, Singapore"
+      },
+      {
+        "name": "Wenlin Zhang",
+        "affiliation": "ChronoAI Pte Ltd, Singapore; National University of Singapore, Singapore"
+      }
+    ],
+    "license": "CC-BY-4.0",
+    "msc": [],
+    "repository_url": "https://github.com/mathesis-papers/human-in-the-loop-automated-research",
+    "issues_url": "https://github.com/mathesis-papers/human-in-the-loop-automated-research/issues",
+    "version_label": "v1.0",
+    "changelog": "Initial public methodology release (24 A4 pages, 78 external references, 30-paper three-family blind benchmark, 20-claim executable-gate ablation, 24,925-PR formal-gate audit, and 33-hour instrumented trace)."
+  },
+  "review": {
+    "verdict": "INTERNAL_EDITORIAL",
+    "record": {
+      "route": "internal_editorial_methodology",
+      "repository": "https://github.com/mathesis-papers/human-in-the-loop-automated-research",
+      "version_label": "v1.0"
+    }
+  }
+}
